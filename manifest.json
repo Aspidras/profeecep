@@ -1,0 +1,10 @@
+{
+  "name":"ProfeECEP",
+  "short_name":"ProfeECEP",
+  "description":"Preparación personalizada para la ECEP 2026",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f4f7fb",
+  "theme_color":"#17324d",
+  "lang":"es"
+}
