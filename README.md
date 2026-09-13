@@ -48,3 +48,7 @@ La fase 2.8.1 asegura al menos dos oportunidades de trabajo por cada indicador d
 ## Clasificación y tutor 2.8.5
 
 Las preguntas incluyen dominio, subdominio, indicador exacto, habilidad, tipo, dificultad, origen y explicación de alternativas. El tutor socrático guía el razonamiento en pasos antes de mostrar la solución y permite iniciar sesiones a partir de errores pendientes.
+
+## Accesibilidad, calendario e informes 2.8.6
+
+La aplicación incorpora controles de tamaño de texto, alto contraste, modo oscuro y reducción de movimiento, con preferencias guardadas en el dispositivo. También muestra la cuenta regresiva de las sesiones ECEP previstas para el 18 y 19 de diciembre de 2026 y enlaces a la información oficial. El progreso se puede descargar como JSON o CSV, o imprimir como informe resumido por especialidad y dominio.
