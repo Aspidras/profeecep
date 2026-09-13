@@ -52,3 +52,9 @@ Las preguntas incluyen dominio, subdominio, indicador exacto, habilidad, tipo, d
 ## Accesibilidad, calendario e informes 2.8.6
 
 La aplicación incorpora controles de tamaño de texto, alto contraste, modo oscuro y reducción de movimiento, con preferencias guardadas en el dispositivo. También muestra la cuenta regresiva de las sesiones ECEP previstas para el 18 y 19 de diciembre de 2026 y enlaces a la información oficial. El progreso se puede descargar como JSON o CSV, o imprimir como informe resumido por especialidad y dominio.
+
+## Banco ampliado y fuentes públicas 2.8.7
+
+Se agregan 151 preguntas originales de práctica: 49 para Educación Básica Matemática, 22 para Ciencias Naturales y 20 para cada una de las otras cuatro especialidades. Cada ítem queda clasificado por dominio, subdominio, indicador, habilidad, dificultad y tipo de tarea, con explicación de la respuesta.
+
+La expansión se diseñó a partir de los temarios ECEP 2026 y del formato descrito por CPEIP/Docentemás para las pruebas públicas (60 preguntas de selección múltiple, cuatro alternativas, dominios y niveles de complejidad). La aplicación enlaza los portales oficiales y las publicaciones de cuadernillos y plantillas liberados por año. Las preguntas de ProfeECEP son nuevas, no son preguntas oficiales ni provienen de filtraciones o material obtenido de forma no autorizada.
