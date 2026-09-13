@@ -44,3 +44,7 @@ La expansión 2.8 incorpora 20 preguntas propias adicionales por especialidad. E
 ## Cobertura 2.8.1
 
 La fase 2.8.1 asegura al menos dos oportunidades de trabajo por cada indicador del temario activo. El banco resultante contiene 178 preguntas para Matemática, 86 para Ciencias Naturales, 80 para Historia y Geografía, 82 para Inglés, 60 para Lenguaje básico y 77 para Lengua y Literatura media. Las preguntas generadas para cubrir indicadores se identifican como contenido propio de cobertura y quedan disponibles para una revisión editorial posterior.
+
+## Clasificación y tutor 2.8.5
+
+Las preguntas incluyen dominio, subdominio, indicador exacto, habilidad, tipo, dificultad, origen y explicación de alternativas. El tutor socrático guía el razonamiento en pasos antes de mostrar la solución y permite iniciar sesiones a partir de errores pendientes.
