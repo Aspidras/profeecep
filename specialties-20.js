@@ -3,10 +3,11 @@ window.PE20={};
 
 PE20.registry=[
  {id:"basica-matematica",name:"Educación Básica Matemática",short:"Matemática",status:"active",year:"2026"},
- {id:"basica-general",name:"Educación Básica Generalista",short:"Básica Generalista",status:"active"},
- {id:"media-matematica",name:"Educación Media Matemática",short:"Media Matemática",status:"coming"},
- {id:"media-lengua",name:"Educación Media Lengua y Literatura",short:"Lengua y Literatura",status:"coming"},
- {id:"media-ciencias",name:"Educación Media Ciencias",short:"Ciencias",status:"coming"}
+ {id:"basica-ciencias",name:"Educación Básica Ciencias Naturales",short:"Ciencias Naturales",status:"active",year:"2026"},
+ {id:"basica-historia",name:"Educación Básica Historia, Geografía y Ciencias Sociales",short:"Historia y Geografía",status:"active",year:"2026"},
+ {id:"basica-ingles",name:"Educación Básica Inglés",short:"Inglés",status:"active",year:"2026"},
+ {id:"basica-lenguaje",name:"Educación Básica Lenguaje y Comunicación",short:"Lenguaje",status:"active",year:"2026"},
+ {id:"media-lengua",name:"Educación Media Lengua y Literatura",short:"Lengua y Literatura",status:"active",year:"2026"}
 ];
 
 PE20.package={
