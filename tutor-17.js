@@ -117,4 +117,3 @@ openStudy=function(id){const r=pe17OpenStudy(id);setTimeout(PE17.studyButton,0);
 const pe17Check=checkAnswer;
 checkAnswer=function(){const r=pe17Check();setTimeout(PE17.wrapFeedback,0);return r};
 setTimeout(PE17.inject,0);
-import("./errors-18.js");

@@ -2,7 +2,7 @@
 window.PE21={};
 
 PE21.domainOptions=function(){
- return D.map(d=>d[0]);
+ return D.filter(d=>Q.some(q=>q.d===d[0])).map(d=>d[0]);
 };
 
 PE21.availableQuestions=function(filters){
@@ -48,6 +48,7 @@ PE21.start=function(){
  const focus=document.getElementById("sim21focus")?.value||"balanced";
  const balance=document.getElementById("sim21balance")?.checked!==false;
  const domains=[...document.querySelectorAll(".sim21domain:checked")].map(x=>x.value);
+ if(!domains.length){PE21.message("Selecciona al menos un dominio.");return;}
  const filters={count,difficulty,focus,balance,domains};
  const built=PE21.build(filters);
  if(!built.length){
@@ -58,9 +59,9 @@ PE21.start=function(){
  quiz=built;
  SIM12={
    index:0,answers:{},marked:{},timeSpent:{},enteredAt:Date.now(),
-   seconds:Math.max(15,Math.round(count*1.5))*60,
+   seconds:Math.max(90,built.length*90),
    startedAt:new Date().toISOString(),
-   generatedBy:"2.1",
+   generatedBy:"2.2",
    filters
  };
  clearInterval(SIM12_TIMER);
@@ -81,7 +82,7 @@ PE21.panel=function(){
  const practice=el("practice");if(!practice||practice.querySelector(".sim21"))return;
  const c=document.createElement("div");c.className="card sim21";
  const hasQuestions=Q.length>0;
- c.innerHTML='<span class="pill">Simulador 2.1</span><h3>Generador inteligente</h3><p class="muted">Configura un simulacro según tu objetivo de práctica.</p>'+
+ c.innerHTML='<span class="pill">Simulador 2.2</span><h3>Generador inteligente</h3><p class="muted">Configura un simulacro según tu objetivo de práctica.</p>'+ 
  (hasQuestions?'<div class="sim21grid"><label>Cantidad<select id="sim21count">'+[10,15,20,30].map(n=>'<option value="'+n+'">'+n+' preguntas</option>').join("")+'</select></label><label>Dificultad<select id="sim21difficulty"><option value="all">Mixta</option><option value="básica">Básica</option><option value="media">Media</option><option value="alta">Alta</option></select></label><label>Enfoque<select id="sim21focus"><option value="balanced">Equilibrado</option><option value="weak">Debilidades</option><option value="errors">Errores pendientes</option></select></label></div><div class="sim21domains"><b>Dominios</b>'+PE21.domainOptions().map(d=>'<label><input class="sim21domain" type="checkbox" value="'+d+'" checked> '+d+'</label>').join("")+'</div><label class="sim21check"><input id="sim21balance" type="checkbox" checked> Distribuir preguntas entre los dominios seleccionados</label><div id="sim21msg" class="tiny"></div><button class="btn full" onclick="PE21.start()">Generar simulacro</button>':'<div class="card warning"><b>Banco aún no disponible</b><p class="muted">El temario oficial de esta especialidad ya está cargado, pero todavía no existe un banco de preguntas propio. No se reutilizarán preguntas de otra asignatura.</p></div>');
  const old=[...practice.querySelectorAll(".simulator12Card")][0];
  if(old)old.before(c);else practice.prepend(c);

@@ -84,4 +84,3 @@ PE15.inject=function(){
 window.PE15=PE15;
 const pe15Render=render;render=function(){pe15Render();setTimeout(PE15.inject,0)};
 setTimeout(PE15.inject,0);
-import("./study-16.js");

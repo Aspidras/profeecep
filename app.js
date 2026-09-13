@@ -1,14 +1,15 @@
 const D=window.ECEP_DATA||[],Q=window.QBANK||[],G=window.STUDY_GUIDES||{},K="profeecep";
-let S;try{S=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){S={}}
+let S=window.PE_PROGRESS.load();
 S=Object.assign({done:[],right:0,total:0,byDomain:{},wrong:[],diagnosis:null,lastStudy:null,history:[],simulations:[],plan:{examDate:"2026-12-18",minutes:20,daysPerWeek:5}},S);
 S.done=Array.isArray(S.done)?S.done:[];S.byDomain=S.byDomain||{};S.wrong=Array.isArray(S.wrong)?S.wrong:[];S.history=Array.isArray(S.history)?S.history:[];S.simulations=Array.isArray(S.simulations)?S.simulations:[];S.plan=Object.assign({examDate:"2026-12-18",minutes:20,daysPerWeek:5},S.plan||{});
 let quiz=[],pos=0,sel=null,answers=[],mode="practice";
+window.PE22_RUNTIME=()=>({quiz,pos,mode});
 const flat=[];
 D.forEach((d,di)=>d[1].forEach((s,si)=>s[1].forEach((t,ii)=>flat.push({id:di+"-"+si+"-"+ii,t,di,si,domain:d[0],sub:s[0]}))));
 const el=id=>document.getElementById(id);
 const pct=(a,b)=>b?Math.round(a/b*100):0;
 const domainStats=name=>S.byDomain[name]||{right:0,total:0};
-function saveState(){localStorage.setItem(K,JSON.stringify(S))}
+function saveState(){window.PE_PROGRESS.save(S)}
 function go(id){document.querySelectorAll(".screen").forEach(x=>x.classList.remove("on"));const t=el(id);if(t)t.classList.add("on");window.scrollTo(0,0)}
 function priorityDomains(){if(!S.diagnosis||!S.diagnosis.byDomain)return[];return Object.entries(S.diagnosis.byDomain).map(([name,v])=>({name,p:pct(v.right,v.total)})).sort((a,b)=>a.p-b.p)}
 function recentStats(){const h=S.history.slice(-10),r=h.filter(x=>x.ok).length;return{n:h.length,r,p:pct(r,h.length)}}

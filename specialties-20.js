@@ -20,7 +20,7 @@ PE20.package={
 };
 
 PE20.activeId=function(){
- return (S&&S.specialtyId)||localStorage.getItem("pe_specialty_id")||"basica-matematica";
+ return window.PE_ACTIVE_SPECIALTY||"basica-matematica";
 };
 
 PE20.active=function(){
@@ -28,9 +28,8 @@ PE20.active=function(){
 };
 
 PE20.persist=function(id){
- S.specialtyId=id;
- localStorage.setItem("pe_specialty_id",id);
  saveState();
+ localStorage.setItem("pe_specialty_id",id);
 };
 
 PE20.available=function(id){
@@ -103,4 +102,3 @@ PE20.inject=function(){
 const pe20Render=render;
 render=function(){pe20Render();setTimeout(PE20.inject,0)};
 setTimeout(PE20.inject,0);
-import("./simulator-21.js");

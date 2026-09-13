@@ -39,42 +39,49 @@ function peBlankState(){
   return {done:[],right:0,total:0,byDomain:{},wrong:[],diagnosis:null,lastStudy:null,history:[],simulations:[],plan:{examDate:"2026-12-18",minutes:20,daysPerWeek:5}};
 }
 function peHasMeaningfulLocal(){
-  return (S.done&&S.done.length)||(S.total||0)||(S.history&&S.history.length)||(S.simulations&&S.simulations.length)||S.diagnosis;
+  const all=PE_PROGRESS.read();
+  return [all,...Object.values(all.specialtyProgress||{})].some(s=>(s.done&&s.done.length)||(s.total||0)||(s.history&&s.history.length)||(s.simulations&&s.simulations.length)||s.diagnosis);
 }
+function peRestoreActive(){S=Object.assign(peBlankState(),PE_PROGRESS.load());}
 async function peCloudRow(){
   if(!PE_USER)return null;
   const rows=await peApi("/rest/v1/user_progress?user_id=eq."+encodeURIComponent(PE_USER.id)+"&select=state,updated_at");
   return Array.isArray(rows)&&rows.length?rows[0]:null;
 }
-async function pePushCloud(){
+async function pePushCloud(knownRow){
   if(!PE_USER)return;
+  const userId=PE_USER.id;
+  const row=knownRow===undefined?await peCloudRow():knownRow;
+  if(!PE_USER||PE_USER.id!==userId)return;
+  const state=PE_PROGRESS.merge(PE_PROGRESS.read(),row&&row.state,row&&row.updated_at);
+  PE_PROGRESS.replace(state);peRestoreActive();
   const now=new Date().toISOString();
   await peApi("/rest/v1/user_progress?on_conflict=user_id",{
     method:"POST",
     headers:{"Prefer":"resolution=merge-duplicates,return=representation"},
-    body:JSON.stringify({user_id:PE_USER.id,state:S,updated_at:now})
+    body:JSON.stringify({user_id:userId,state,updated_at:now})
   });
+  if(!PE_USER||PE_USER.id!==userId)return;
   localStorage.setItem(PE_LOCAL_UPDATED,now);
   peSetAccountButton("Sincronizado");
 }
 async function peSyncOnLogin(){
+  const userId=PE_USER&&PE_USER.id;if(!userId)return;
   const row=await peCloudRow();
-  const cloudT=row?Date.parse(row.updated_at||0):0;
-  const localT=Date.parse(localStorage.getItem(PE_LOCAL_UPDATED)||0);
+  if(!PE_USER||PE_USER.id!==userId)return;
   const owner=localStorage.getItem(PE_OWNER);
-  if(row&&cloudT>=localT){
-    S=Object.assign(peBlankState(),row.state||{});
-    localStorage.setItem(K,JSON.stringify(S));
-    localStorage.setItem(PE_LOCAL_UPDATED,row.updated_at||new Date().toISOString());
-  }else if(!row&&owner&&owner!==PE_USER.id){
-    S=peBlankState();localStorage.setItem(K,JSON.stringify(S));
-    await pePushCloud();
-  }else if(!row&&peHasMeaningfulLocal()){
-    await pePushCloud();
-  }else if(row&&localT>cloudT){
-    await pePushCloud();
+  // A different account must never receive another account's local progress.
+  if(owner!==userId&&(owner||row)){
+    if(peHasMeaningfulLocal())localStorage.setItem("profeecep_backup_"+(owner||"guest"),JSON.stringify(PE_PROGRESS.read()));
+    PE_PROGRESS.reset();
+    if(row){
+      PE_PROGRESS.replace(row.state||{});
+      localStorage.setItem(PE_LOCAL_UPDATED,row.updated_at||new Date().toISOString());
+    }
   }
-  localStorage.setItem(PE_OWNER,PE_USER.id);
+  localStorage.setItem(PE_OWNER,userId);
+  await pePushCloud(row);
+  peRestoreActive();
   render();peSetAccountButton("Sincronizado");
 }
 function peScheduleSync(){
@@ -136,11 +143,12 @@ async function peRegister(){
     }else peMsg("Cuenta creada. Revisa tu correo para confirmarla y luego inicia sesión.");
   }catch(e){peMsg(e.message,true)}
 }
-async function peManualSync(){try{await pePushCloud();peRenderAuth()}catch(e){alert("No se pudo sincronizar: "+e.message)}}
+async function peManualSync(){try{await pePushCloud();render();peRenderAuth()}catch(e){alert("No se pudo sincronizar: "+e.message)}}
 async function peLogout(){
-  if(PE_USER)localStorage.setItem("profeecep_backup_"+PE_USER.id,JSON.stringify(S));
+  clearTimeout(PE_SYNC_TIMER);
+  if(PE_USER)localStorage.setItem("profeecep_backup_"+PE_USER.id,JSON.stringify(PE_PROGRESS.read()));
   localStorage.removeItem(PE_ACCESS);localStorage.removeItem(PE_REFRESH);localStorage.removeItem(PE_OWNER);
-  PE_USER=null;S=peBlankState();localStorage.setItem(K,JSON.stringify(S));render();peSetAccountButton();peRenderAuth();
+  PE_USER=null;PE_PROGRESS.reset();peRestoreActive();render();peSetAccountButton();peRenderAuth();
 }
 async function peBoot(){
   peEnsureAccountButton();
