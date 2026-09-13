@@ -153,8 +153,7 @@
       const date = (current.plan && current.plan.examDate) || '2026-12-18';
       card.className = 'card calendar286';
       card.innerHTML =
-        '<span class="pill">Calendario ECEP 2.8.6</span><h3>Cuenta regresiva: ' +
-        countdown(date) + ' día(s)</h3><p class="muted">Sesiones previstas: 18 y 19 de diciembre de 2026. ' +
+        '<span class="pill">Calendario ECEP 2.8.6</span><h3>Fechas importantes</h3><p class="muted">Sesiones previstas: 18 y 19 de diciembre de 2026. ' +
         'Fecha configurada: ' + new Date(date + 'T12:00:00').toLocaleDateString('es-CL') +
         '.</p><div class="calendar286Links"><a href="https://www.evaluacionconocimientos.cl/" ' +
         'target="_blank" rel="noopener">Plataforma oficial ECEP</a><a href="https://www.cpeip.cl/sistema-reconocimiento/" ' +

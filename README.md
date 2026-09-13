@@ -58,3 +58,7 @@ La aplicación incorpora controles de tamaño de texto, alto contraste, modo osc
 Se agregan 151 preguntas originales de práctica: 49 para Educación Básica Matemática, 22 para Ciencias Naturales y 20 para cada una de las otras cuatro especialidades. Cada ítem queda clasificado por dominio, subdominio, indicador, habilidad, dificultad y tipo de tarea, con explicación de la respuesta.
 
 La expansión se diseñó a partir de los temarios ECEP 2026 y del formato descrito por CPEIP/Docentemás para las pruebas públicas (60 preguntas de selección múltiple, cuatro alternativas, dominios y niveles de complejidad). La aplicación enlaza los portales oficiales y las publicaciones de cuadernillos y plantillas liberados por año. Las preguntas de ProfeECEP son nuevas, no son preguntas oficiales ni provienen de filtraciones o material obtenido de forma no autorizada.
+
+## Ajuste de calendario 2.8.8
+
+Se mantiene la información de las fechas ECEP, pero se oculta la cuenta regresiva de días para evitar presión visual y dejar el calendario como referencia informativa.
