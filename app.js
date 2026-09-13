@@ -1,7 +1,7 @@
 const D=window.ECEP_DATA||[],Q=window.QBANK||[],G=window.STUDY_GUIDES||{},K="profeecep";
 let S;try{S=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){S={}}
-S=Object.assign({done:[],right:0,total:0,byDomain:{},wrong:[],diagnosis:null,lastStudy:null,history:[],simulations:[]},S);
-S.done=Array.isArray(S.done)?S.done:[];S.byDomain=S.byDomain||{};S.wrong=Array.isArray(S.wrong)?S.wrong:[];S.history=Array.isArray(S.history)?S.history:[];S.simulations=Array.isArray(S.simulations)?S.simulations:[];
+S=Object.assign({done:[],right:0,total:0,byDomain:{},wrong:[],diagnosis:null,lastStudy:null,history:[],simulations:[],plan:{examDate:"2026-12-18",minutes:20,daysPerWeek:5}},S);
+S.done=Array.isArray(S.done)?S.done:[];S.byDomain=S.byDomain||{};S.wrong=Array.isArray(S.wrong)?S.wrong:[];S.history=Array.isArray(S.history)?S.history:[];S.simulations=Array.isArray(S.simulations)?S.simulations:[];S.plan=Object.assign({examDate:"2026-12-18",minutes:20,daysPerWeek:5},S.plan||{});
 let quiz=[],pos=0,sel=null,answers=[],mode="practice";
 const flat=[];
 D.forEach((d,di)=>d[1].forEach((s,si)=>s[1].forEach((t,ii)=>flat.push({id:di+"-"+si+"-"+ii,t,di,si,domain:d[0],sub:s[0]}))));
@@ -20,7 +20,7 @@ function render(){
  const studyPct=pct(S.done.length,flat.length),priorities=priorityDomains();
  const diagCard=S.diagnosis?'<div class="card"><div class="row"><div><span class="pill">Diagnóstico completado</span><h3>Tu prioridad actual</h3><div class="muted">'+(priorities[0]?priorities[0].name:"—")+'</div></div><button class="btn ghost" onclick="showDiagnosisResult()">Ver resultado</button></div></div>':'<div class="card emphasis"><span class="pill">Diagnóstico</span><h3>Descubre por dónde empezar</h3><p>10 preguntas equilibradas entre los cinco dominios.</p><button class="btn full" onclick="startDiagnosis()">Comenzar diagnóstico</button></div>';
  const continueStudy=S.lastStudy?'<div class="card emphasis"><span class="pill">Centro de estudio</span><h3>Continuar estudiando</h3><p>'+((flat.find(x=>x.id===S.lastStudy)||{}).t||"")+'</p><button class="btn full" onclick="openStudy(\''+S.lastStudy+'\')">Continuar</button></div>':'';
- homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 0.6</span><h1>Practica más y prueba un simulacro.</h1><p>Banco ampliado, centro de estudio, análisis de progreso y simulacro breve ECEP.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
+ homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 0.7</span><h1>Ahora tienes un plan de estudio personalizado.</h1><p>Tu diagnóstico, avance y rendimiento se convierten en una ruta concreta hasta la ECEP.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
 
  mapEl.innerHTML='<h2>Mapa ECEP 2026</h2><p class="muted">Abre un indicador para estudiarlo o márcalo como revisado.</p>'+D.map((d,di)=>'<div class="domain"><div class="row"><h3>'+d[0]+'</h3><button class="btn ghost" onclick="startQuiz(\''+d[0]+'\',5)">Practicar</button></div>'+d[1].map((s,si)=>'<div class="sub"><b>'+s[0]+'</b>'+s[1].map((t,ii)=>{let id=di+"-"+si+"-"+ii;return '<div class="indicator"><div class="indicatorText" onclick="openStudy(\''+id+'\')"><span class="studyIcon">📚</span><span>'+t+'</span></div><div class="indicatorActions"><button class="mini ghost2" onclick="openStudy(\''+id+'\')">Estudiar</button><button class="mini '+(S.done.includes(id)?"done":"")+'" onclick="toggle(\''+id+'\')">'+(S.done.includes(id)?"✓":"○")+'</button></div></div>'}).join("")+'</div>').join("")+'</div>').join("");
 
@@ -54,3 +54,35 @@ function finishDiagnosis(){const byDomain={};answers.forEach(a=>{if(!byDomain[a.
 function showDiagnosisResult(){if(!S.diagnosis){startDiagnosis();return}const sorted=priorityDomains(),p=pct(S.diagnosis.right,S.diagnosis.total);el("diagnosis").innerHTML='<span class="pill">Diagnóstico 0.3</span><h2>Tu punto de partida</h2><div class="card"><span class="muted">Resultado general</span><strong class="score">'+S.diagnosis.right+' / '+S.diagnosis.total+'</strong><div class="bar"><i style="width:'+p+'%"></i></div><p>'+p+'% de respuestas correctas</p></div><h3>Prioridad recomendada</h3>'+sorted.map((x,i)=>'<div class="card '+(i===0?"priority":"")+'"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><div class="bar"><i style="width:'+x.p+'%"></i></div>'+(i===0?'<p class="muted">Te recomendamos comenzar aquí.</p><button class="btn full" onclick="startQuiz(\''+x.name+'\',5)">Practicar este dominio</button>':"")+'</div>').join("")+'<button class="btn ghost full" onclick="startDiagnosis()">Repetir diagnóstico</button>';go("diagnosis")}
 document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>{render();go(b.dataset.go)}));
 render();go("home");
+function planDays(){return Math.max(0,Math.ceil((new Date(S.plan.examDate+"T12:00:00")-new Date())/86400000))}
+function planRank(){
+ const diag=priorityDomains();
+ return D.map(d=>{
+  const st=domainStats(d[0]),practice=st.total?pct(st.right,st.total):null,dg=diag.find(x=>x.name===d[0]),base=dg?dg.p:null;
+  const score=practice!==null&&base!==null?Math.round(practice*.6+base*.4):(practice!==null?practice:(base!==null?base:50));
+  return{name:d[0],score};
+ }).sort((a,b)=>a.score-b.score);
+}
+function savePlan(){
+ const m=el("planMinutes"),d=el("planDays"),date=el("planDate");
+ if(m)S.plan.minutes=Math.max(10,Math.min(120,Number(m.value)||20));
+ if(d)S.plan.daysPerWeek=Math.max(1,Math.min(7,Number(d.value)||5));
+ if(date&&date.value)S.plan.examDate=date.value;
+ saveState();render();go("progress");
+}
+function injectPlan(){
+ const ranked=planRank(),one=ranked[0]||{name:"Números"},two=ranked[1]||one,three=ranked[2]||two;
+ const home=el("home"),progress=el("progress");
+ if(home&&!home.querySelector(".plan07")){
+  const c=document.createElement("div");c.className="card emphasis plan07";
+  c.innerHTML='<span class="pill">Plan 0.7</span><h3>Tu objetivo de hoy</h3><p><b>'+one.name+'</b> · '+S.plan.minutes+' min</p><div class="muted">Quedan '+planDays()+' días para tu fecha objetivo.</div><div class="planSteps"><div>1. Revisa un indicador de '+one.name+'.</div><div>2. Responde 5 preguntas de ese dominio.</div><div>3. Revisa un error anterior.</div></div><button class="btn full" onclick="startQuiz(\''+one.name+'\',5)">Comenzar sesión</button>';
+  const hero=home.querySelector(".hero");if(hero)hero.after(c);else home.prepend(c);
+ }
+ if(progress&&!progress.querySelector(".plan07detail")){
+  const c=document.createElement("div");c.className="plan07detail";
+  c.innerHTML='<h3>Plan de estudio personalizado</h3><div class="card"><div class="row"><div><b>Fecha objetivo</b><div class="muted">'+new Date(S.plan.examDate+"T12:00:00").toLocaleDateString("es-CL")+'</div></div><b>'+planDays()+' días</b></div><div class="planFields"><label>Fecha<input id="planDate" type="date" value="'+S.plan.examDate+'"></label><label>Minutos por sesión<input id="planMinutes" type="number" min="10" max="120" value="'+S.plan.minutes+'"></label><label>Días por semana<input id="planDays" type="number" min="1" max="7" value="'+S.plan.daysPerWeek+'"></label></div><button class="btn ghost full" onclick="savePlan()">Actualizar plan</button><div class="weekly"><p><b>Prioridad 1:</b> '+one.name+'</p><p><b>Prioridad 2:</b> '+two.name+'</p><p><b>Prioridad 3:</b> '+three.name+'</p></div></div>';
+  progress.prepend(c);
+ }
+}
+const render07=render;render=function(){render07();setTimeout(injectPlan,0)};
+injectPlan();
