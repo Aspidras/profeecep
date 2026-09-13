@@ -2,7 +2,7 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
-## Versión 1.7
+## Versión 1.8
 
 Piloto actual: **Educación Básica Matemática 2026**.
 
@@ -16,21 +16,21 @@ Piloto actual: **Educación Básica Matemática 2026**.
 - Motor adaptativo 2.0.
 - Planificador ECEP 2.0.
 - Centro de estudio por microlecciones.
+- Tutor contextual ProfeECEP.
 
-### Nuevo en 1.7 — Tutor ProfeECEP
-El tutor contextual trabaja con el contenido ya cargado en ProfeECEP y puede:
-- explicar un contenido de forma más simple;
-- explicar por qué una respuesta es correcta;
-- revisar alternativas sin inventar justificaciones no almacenadas;
-- resumir qué conviene recordar;
-- proponer otra práctica relacionada;
-- abrirse desde una microlección;
-- abrirse después de responder una pregunta.
+### Nuevo en 1.8 — Entrenador de errores
+ProfeECEP ahora analiza patrones del historial para detectar:
+- preguntas falladas repetidamente;
+- tipos de razonamiento con alta tasa de error;
+- contenidos/subdominios con errores frecuentes;
+- respuestas incorrectas realizadas demasiado rápido.
 
-Esta primera versión no depende de una API externa de IA, por lo que no añade costos de uso ni expone datos del usuario a un proveedor adicional. Está preparada para evolucionar posteriormente hacia un tutor con IA real y contexto ECEP.
+A partir del patrón prioritario, genera una sesión específica de corrección de hasta 5 preguntas relacionadas. El objetivo no es solo repetir ejercicios, sino reforzar el tipo de razonamiento o contenido que está originando el error.
+
+Los patrones se muestran en Inicio, Progreso y Practicar.
 
 ## Fuente del temario
 La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de ProfeECEP.
 
 ## Próximo avance
-1.8: entrenador de errores, con detección de patrones y sesiones específicas de corrección.
+1.9: motivación y constancia con metas, rachas, hitos y porcentaje de preparación.
