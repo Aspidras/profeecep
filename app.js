@@ -20,7 +20,7 @@ function render(){
  const studyPct=pct(S.done.length,flat.length),priorities=priorityDomains();
  const diagCard=S.diagnosis?'<div class="card"><div class="row"><div><span class="pill">Diagnóstico completado</span><h3>Tu prioridad actual</h3><div class="muted">'+(priorities[0]?priorities[0].name:"—")+'</div></div><button class="btn ghost" onclick="showDiagnosisResult()">Ver resultado</button></div></div>':'<div class="card emphasis"><span class="pill">Diagnóstico</span><h3>Descubre por dónde empezar</h3><p>10 preguntas equilibradas entre los cinco dominios.</p><button class="btn full" onclick="startDiagnosis()">Comenzar diagnóstico</button></div>';
  const continueStudy=S.lastStudy?'<div class="card emphasis"><span class="pill">Centro de estudio</span><h3>Continuar estudiando</h3><p>'+((flat.find(x=>x.id===S.lastStudy)||{}).t||"")+'</p><button class="btn full" onclick="openStudy(\''+S.lastStudy+'\')">Continuar</button></div>':'';
- homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 1.0</span><h1>Tu progreso ahora puede acompañarte en cualquier dispositivo.</h1><p>Cuentas reales, sincronización en la nube y todo el sistema adaptativo construido hasta 0.9.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
+ homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 1.1</span><h1>Ahora tienes un banco de práctica mucho más amplio y clasificable.</h1><p>60 preguntas propias clasificadas por dificultad y tipo de razonamiento, manteniendo cuentas y sincronización.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
 
  mapEl.innerHTML='<h2>Mapa ECEP 2026</h2><p class="muted">Abre un indicador para estudiarlo o márcalo como revisado.</p>'+D.map((d,di)=>'<div class="domain"><div class="row"><h3>'+d[0]+'</h3><button class="btn ghost" onclick="startQuiz(\''+d[0]+'\',5)">Practicar</button></div>'+d[1].map((s,si)=>'<div class="sub"><b>'+s[0]+'</b>'+s[1].map((t,ii)=>{let id=di+"-"+si+"-"+ii;return '<div class="indicator"><div class="indicatorText" onclick="openStudy(\''+id+'\')"><span class="studyIcon">📚</span><span>'+t+'</span></div><div class="indicatorActions"><button class="mini ghost2" onclick="openStudy(\''+id+'\')">Estudiar</button><button class="mini '+(S.done.includes(id)?"done":"")+'" onclick="toggle(\''+id+'\')">'+(S.done.includes(id)?"✓":"○")+'</button></div></div>'}).join("")+'</div>').join("")+'</div>').join("");
 
@@ -160,3 +160,30 @@ function injectReview09(){
 const render09=render;
 render=function(){render09();setTimeout(injectReview09,0)};
 injectReview09();
+
+function startLevel(level,count=5){
+  mode="practice";
+  const pool=Q.filter(q=>q.diff===level);
+  quiz=shuffle(pool).slice(0,Math.min(count,pool.length));
+  pos=0;answers=[];showQ();
+}
+function injectBank11(){
+  const practice=el("practice"),home=el("home");
+  if(home&&!home.querySelector(".bank11home")){
+    const c=document.createElement("div");
+    c.className="card bank11home";
+    c.innerHTML='<span class="pill">Banco 1.1</span><h3>'+Q.length+' preguntas disponibles</h3><p class="muted">Clasificadas por dominio, subdominio, dificultad y tipo de razonamiento.</p>';
+    const hero=home.querySelector(".hero");if(hero)hero.after(c);else home.prepend(c);
+  }
+  if(practice&&!practice.querySelector(".bank11levels")){
+    const levels=["básica","media","alta"];
+    const c=document.createElement("div");
+    c.className="bank11levels";
+    c.innerHTML='<h3>Practicar por dificultad</h3><div class="grid2">'+levels.map(l=>'<div class="card"><span class="pill">'+l+'</span><h3>'+Q.filter(q=>q.diff===l).length+' preguntas</h3><p class="muted">Entrena un nivel específico.</p><button class="btn full" onclick="startLevel(\''+l+'\',5)">Practicar '+l+'</button></div>').join("")+'</div>';
+    const first=practice.querySelector(".card");if(first)first.before(c);else practice.appendChild(c);
+  }
+}
+window.startLevel=startLevel;
+const render11=render;
+render=function(){render11();setTimeout(injectBank11,0)};
+injectBank11();

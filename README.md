@@ -2,34 +2,31 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
-## Versión 1.0
+## Versión 1.1
 
 Piloto actual: **Educación Básica Matemática 2026**.
 
-### Funciones actuales
-- Temario oficial organizado por dominio, subdominio e indicador.
+### Funciones principales
+- Cuentas reales y progreso sincronizado con Supabase.
+- Temario organizado por dominio, subdominio e indicador.
 - Centro de estudio.
 - Diagnóstico inicial.
-- Banco de preguntas propias y simulacro.
-- Analítica de progreso.
 - Plan de estudio personalizado.
 - Entrenamiento adaptativo.
 - Repetición espaciada y revisión inteligente.
-- **Cuentas reales con Supabase Auth.**
-- **Sincronización del progreso entre dispositivos.**
-- Recuperación de sesión.
-- Migración del progreso local a la nube al iniciar sesión.
-- Seguridad por usuario mediante RLS en `user_progress`.
+- Simulacro breve.
+- Analítica de progreso.
 
-## Arquitectura 1.0
-- GitHub: código fuente.
-- Vercel: despliegue.
-- Supabase: autenticación y progreso sincronizado.
-- Las variables `SUPABASE_URL` y `SUPABASE_PUBLISHABLE_KEY` se configuran en Vercel.
-- Vercel Git deployment enabled.
+### Nuevo en 1.1
+- Banco ampliado de **30 a 60 preguntas propias**.
+- Cobertura ampliada de los 5 dominios.
+- Clasificación de preguntas por **dificultad**: básica, media y alta.
+- Clasificación por **tipo de razonamiento**: cálculo, interpretación, modelación, análisis pedagógico, evaluación, etc.
+- Práctica específica por nivel de dificultad.
+- Metadatos preparados para que el motor adaptativo seleccione preguntas con mayor precisión en versiones posteriores.
 
 ## Fuente del temario
-La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de Pr[...]
+La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de ProfeECEP.
 
 ## Próximo avance
-1.1: ampliar de forma importante el banco de preguntas y clasificarlo por indicador, dificultad y tipo de razonamiento.
+1.2: simulador ECEP completo, con cronómetro, navegación entre preguntas, marcado para revisión y experiencia de prueba más realista.
