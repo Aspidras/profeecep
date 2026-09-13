@@ -228,7 +228,7 @@ function renderSimulation12(){
  const answered=Object.keys(SIM12.answers).length,marked=Object.keys(SIM12.marked).filter(k=>SIM12.marked[k]).length;
  const target=el("simulation");
  target.innerHTML=
- '<div class="sim12Top"><div><span class="pill">Simulador 1.2</span><div class="muted">30 preguntas · simulación propia ProfeECEP</div></div><div class="sim12Clock"><span>Tiempo</span><b id="sim12time">'+formatSim12Time(SIM12.seconds)+'</b></div></div>'+
+ '<div class="sim12Top"><div><span class="pill">'+(SIM12.examTitle||"Simulador 1.2")+'</span><div class="muted">'+(SIM12.examLabel||quiz.length+' preguntas · simulación propia ProfeECEP')+'</div></div><div class="sim12Clock"><span>Tiempo</span><b id="sim12time">'+formatSim12Time(SIM12.seconds)+'</b></div></div>'+ 
  '<div class="sim12Stats"><span>'+answered+' respondidas</span><span>'+marked+' marcadas</span><span>'+(SIM12.index+1)+' / '+quiz.length+'</span></div>'+
  '<div class="card sim12Question"><div class="muted">'+x.d+' · '+x.i+'</div><h2>'+x.q+'</h2>'+
  x.o.map((o,i)=>'<button class="opt '+(selected===i?"sel":"")+'" onclick="sim12Choose('+i+')">'+String.fromCharCode(65+i)+'. '+o+'</button>').join("")+
@@ -269,6 +269,7 @@ function sim12ConfirmFinish(){
 function finishSimulation12(auto=false){
  if(!SIM12)return;
  clearInterval(SIM12_TIMER);
+ const maxSeconds=SIM12.maxSeconds||45*60;
  const rows=quiz.map(q=>{
    const selected=SIM12.answers[q.id];
    return{id:q.id,d:q.d,ok:selected===q.a,selected,unanswered:selected===undefined,marked:!!SIM12.marked[q.id]};
@@ -284,12 +285,12 @@ function finishSimulation12(auto=false){
    }
  });
  if(S.history.length>300)S.history=S.history.slice(-300);
- S.simulations.push({date:new Date().toISOString(),right:correct,total:quiz.length,byDomain:by,durationSeconds:45*60-SIM12.seconds,unanswered,version:"1.2"});
+ S.simulations.push({date:new Date().toISOString(),right:correct,total:quiz.length,byDomain:by,durationSeconds:maxSeconds-SIM12.seconds,unanswered,version:SIM12.generatedBy||"1.2"});
  if(S.simulations.length>20)S.simulations=S.simulations.slice(-20);
  saveState();
  el("simulation").innerHTML=
- '<span class="pill">Simulador 1.2 completado</span><h2>'+(auto?"Tiempo finalizado":"Resultado del simulacro")+'</h2>'+
- '<div class="grid2"><div class="card"><span class="muted">Resultado</span><strong class="score">'+correct+' / '+quiz.length+'</strong><div class="bar"><i style="width:'+p+'%"></i></div><p>'+p+'% correctas</p></div><div class="card"><span class="muted">Sin responder</span><strong class="score">'+unanswered+'</strong><p>Tiempo usado: '+formatSim12Time(45*60-SIM12.seconds)+'</p></div></div>'+
+ '<span class="pill">'+(SIM12.examTitle||"Simulador 1.2")+' completado</span><h2>'+(auto?"Tiempo finalizado":"Resultado del simulacro")+'</h2>'+
+ '<div class="grid2"><div class="card"><span class="muted">Resultado</span><strong class="score">'+correct+' / '+quiz.length+'</strong><div class="bar"><i style="width:'+p+'%"></i></div><p>'+p+'% correctas</p></div><div class="card"><span class="muted">Sin responder</span><strong class="score">'+unanswered+'</strong><p>Tiempo usado: '+formatSim12Time(maxSeconds-SIM12.seconds)+'</p></div></div>'+
  '<h3>Rendimiento por dominio</h3>'+Object.entries(by).map(([name,v])=>'<div class="card"><div class="row"><b>'+name+'</b><b>'+pct(v.right,v.total)+'%</b></div><div class="bar"><i style="width:'+pct(v.right,v.total)+'%"></i></div><div class="tiny">'+v.right+' de '+v.total+' correctas</div></div>').join("")+
  '<h3>Revisión de respuestas</h3>'+rows.filter(a=>!a.ok).map(a=>{const q=Q.find(x=>x.id===a.id);return '<div class="card bad"><b>'+q.i+'</b><p>'+q.q+'</p><div class="muted">'+(a.unanswered?"Sin respuesta. ":"Tu respuesta: "+String.fromCharCode(65+a.selected)+". "+q.o[a.selected]+". ")+'Correcta: '+String.fromCharCode(65+q.a)+'. '+q.o[q.a]+'</div></div>'}).join("")+
  '<button class="btn full" onclick="SIM12=null;render();go(\'practice\')">Volver a práctica</button>';
