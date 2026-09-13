@@ -29,5 +29,8 @@ La duración se calcula automáticamente según la cantidad seleccionada y el si
 ## Contenido oficial y contenido propio
 Los temarios cargados corresponden a la estructura de los documentos ECEP 2026 entregados por el usuario. Las preguntas, guías, simulacros y explicaciones de ProfeECEP son contenido propio y se identifican como tal.
 
-## Próximo avance
-2.2: bancos iniciales y centro de estudio para las nuevas especialidades, construidos sobre sus indicadores oficiales.
+## Versión 2.3
+
+Los bancos iniciales de las cinco especialidades no matemáticas pasan de 5 a 10 preguntas propias por especialidad. Cada pregunta se asocia a un indicador del temario, incorpora dificultad, habilidad, explicación y retroalimentación de alternativas.
+
+La aplicación conserva el progreso separado por especialidad y mantiene Matemática compatible con las versiones anteriores.
