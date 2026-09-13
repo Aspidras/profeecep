@@ -3,7 +3,7 @@
   'use strict';
   const content = window.PE22_CONTENT && window.PE22_CONTENT[window.PE_ACTIVE_SPECIALTY];
   if (!content) return;
-  const escape = s => String(s ?? '').replace(/[&<>\"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#039;'}[m]));
+  const escape = s => String(s ?? '').replace(/[&<>\"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#039;'}[m]));
   const question = () => { const r = window.PE22_RUNTIME ? window.PE22_RUNTIME() : {}; return r.quiz && r.quiz[r.pos]; };
   function enrichStudy() {
     const box = document.querySelector('#study .studyHead');
