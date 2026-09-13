@@ -2,7 +2,7 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
-## Versión 0.4
+## Versión 0.5
 
 Piloto actual: **Educación Básica Matemática 2026**.
 
@@ -26,5 +26,12 @@ Piloto actual: **Educación Básica Matemática 2026**.
 ## Fuente del temario
 La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, ejemplos, errores frecuentes, recomendaciones pedagógicas y preguntas son contenido propio de ProfeECEP.
 
+### Nuevo en 0.5
+- Historial local de respuestas.
+- Precisión de las últimas 10 respuestas.
+- Racha de días con práctica registrada.
+- Detección de fortaleza y prioridad según rendimiento acumulado.
+- Recomendación directa para reforzar el dominio más débil.
+
 ## Próximo avance
-0.5: estadísticas de aprendizaje más profundas y seguimiento temporal del progreso.
+0.6: ampliar el banco de preguntas y crear simulacros más cercanos a una sesión ECEP.
