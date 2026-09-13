@@ -66,8 +66,9 @@ PE20.close=function(){document.querySelector(".specialtyOverlay")?.remove()};
 
 PE20.header=function(){
  const h=document.querySelector("header");if(!h)return;
- let b=h.querySelector(".specialtyBtn");
  const active=PE20.active();
+ const sub=h.querySelector("small");if(sub)sub.textContent=active.short+" · ECEP "+(active.year||"2026");
+ let b=h.querySelector(".specialtyBtn");
  if(!b){
    b=document.createElement("button");b.className="specialtyBtn";b.onclick=PE20.open;
    const account=h.querySelector(".accountBtn");if(account)h.insertBefore(b,account);else h.appendChild(b);
