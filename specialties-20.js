@@ -46,8 +46,7 @@ PE20.switch=function(id){
  }
  PE20.persist(id);
  PE20.close();
- render();
- PE20.inject();
+ window.location.reload();
 };
 
 PE20.notice=function(text){
@@ -93,7 +92,7 @@ PE20.home=function(){
 PE20.architecture=function(){
  const progress=el("progress");if(!progress||progress.querySelector(".specialty20arch"))return;
  const c=document.createElement("div");c.className="card specialty20arch";
- c.innerHTML='<span class="pill">Arquitectura 2.0</span><h3>Paquete de especialidad</h3><p class="muted">Cada futura ECEP podrá cargar de forma independiente:</p><div class="specialtyModules"><span>Temario</span><span>Banco</span><span>Guías</span><span>Diagnóstico</span><span>Simulador</span><span>Analítica</span><span>Plan</span><span>Tutor</span></div><p class="tiny">Actualmente solo Educación Básica Matemática está habilitada con contenido real.</p>';
+ c.innerHTML='<span class="pill">Arquitectura 2.0</span><h3>Paquete de especialidad</h3><p class="muted">Cada futura ECEP podrá cargar de forma independiente:</p><div class="specialtyModules"><span>Temario</span><span>Banco</span><span>Guías</span><span>Diagnóstico</span><span>Simulador</span><span>Analítica</span><span>Plan</span><span>Tutor</span></div><p class="tiny">Los temarios oficiales 2026 cargados se muestran según la especialidad seleccionada; los bancos y materiales de estudio se incorporan por separado.</p>';
  progress.prepend(c);
 };
 
