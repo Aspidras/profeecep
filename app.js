@@ -20,7 +20,7 @@ function render(){
  const studyPct=pct(S.done.length,flat.length),priorities=priorityDomains();
  const diagCard=S.diagnosis?'<div class="card"><div class="row"><div><span class="pill">Diagnóstico completado</span><h3>Tu prioridad actual</h3><div class="muted">'+(priorities[0]?priorities[0].name:"—")+'</div></div><button class="btn ghost" onclick="showDiagnosisResult()">Ver resultado</button></div></div>':'<div class="card emphasis"><span class="pill">Diagnóstico</span><h3>Descubre por dónde empezar</h3><p>10 preguntas equilibradas entre los cinco dominios.</p><button class="btn full" onclick="startDiagnosis()">Comenzar diagnóstico</button></div>';
  const continueStudy=S.lastStudy?'<div class="card emphasis"><span class="pill">Centro de estudio</span><h3>Continuar estudiando</h3><p>'+((flat.find(x=>x.id===S.lastStudy)||{}).t||"")+'</p><button class="btn full" onclick="openStudy(\''+S.lastStudy+'\')">Continuar</button></div>':'';
- homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 0.8</span><h1>Tu práctica ahora se adapta a tu rendimiento.</h1><p>El plan y tus errores deciden qué conviene entrenar a continuación.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
+ homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 0.9</span><h1>Ahora también sabe qué debes repasar y cuándo.</h1><p>Revisión inteligente, dominio por contenido y repetición espaciada sobre tu plan adaptativo.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
 
  mapEl.innerHTML='<h2>Mapa ECEP 2026</h2><p class="muted">Abre un indicador para estudiarlo o márcalo como revisado.</p>'+D.map((d,di)=>'<div class="domain"><div class="row"><h3>'+d[0]+'</h3><button class="btn ghost" onclick="startQuiz(\''+d[0]+'\',5)">Practicar</button></div>'+d[1].map((s,si)=>'<div class="sub"><b>'+s[0]+'</b>'+s[1].map((t,ii)=>{let id=di+"-"+si+"-"+ii;return '<div class="indicator"><div class="indicatorText" onclick="openStudy(\''+id+'\')"><span class="studyIcon">📚</span><span>'+t+'</span></div><div class="indicatorActions"><button class="mini ghost2" onclick="openStudy(\''+id+'\')">Estudiar</button><button class="mini '+(S.done.includes(id)?"done":"")+'" onclick="toggle(\''+id+'\')">'+(S.done.includes(id)?"✓":"○")+'</button></div></div>'}).join("")+'</div>').join("")+'</div>').join("");
 
@@ -100,3 +100,63 @@ function startAdaptive(){
  Q.forEach(q=>{let w=1+(weak.includes(q.d)?3:0)+(wrong.has(q.id)?5:0)+(S.history.some(h=>h.id===q.id)?0:2);while(w--)pool.push(q)});
  quiz=[];const used=new Set();for(const q of shuffle(pool)){if(!used.has(q.id)){used.add(q.id);quiz.push(q)}if(quiz.length===5)break}pos=0;answers=[];showQ();
 }
+
+function reviewMeta(q){
+ const h=S.history.filter(x=>x.id===q.id);
+ if(!h.length)return{q,attempts:0,correct:0,mastery:0,streak:0,due:true,dueText:"Nueva"};
+ const correct=h.filter(x=>x.ok).length;
+ let streak=0;
+ for(let i=h.length-1;i>=0;i--){if(h[i].ok)streak++;else break}
+ const last=h[h.length-1],interval=last.ok?[1,3,7,14,30][Math.min(streak-1,4)]:0;
+ const dueDate=new Date(last.date+"T12:00:00");dueDate.setDate(dueDate.getDate()+interval);
+ const today=new Date();today.setHours(0,0,0,0);
+ const due=dueDate<=today;
+ const mastery=Math.min(100,Math.round((correct/h.length)*70+Math.min(streak,4)*7.5));
+ const days=Math.max(0,Math.ceil((dueDate-today)/86400000));
+ return{q,attempts:h.length,correct,mastery,streak,due,dueText:due?"Hoy":"En "+days+" día(s)"};
+}
+function reviewQueue(){
+ return Q.map(reviewMeta).sort((a,b)=>(a.due===b.due?a.mastery-b.mastery:(a.due?-1:1)));
+}
+function subMastery(){
+ const names=[...new Set(Q.map(q=>q.i))];
+ return names.map(name=>{
+  const rows=Q.filter(q=>q.i===name).map(reviewMeta);
+  const practiced=rows.filter(x=>x.attempts);
+  const mastery=practiced.length?Math.round(practiced.reduce((s,x)=>s+x.mastery,0)/practiced.length):0;
+  const due=rows.filter(x=>x.due).length;
+  return{name,mastery,due,questions:rows.length,practiced:practiced.length};
+ }).sort((a,b)=>a.mastery-b.mastery);
+}
+function startSmartReview(){
+ mode="practice";
+ const queue=reviewQueue(),selected=[],used=new Set();
+ for(const x of queue){if((x.due||x.mastery<65)&&!used.has(x.q.id)){selected.push(x.q);used.add(x.q.id)}if(selected.length===5)break}
+ if(selected.length<5){for(const x of queue){if(!used.has(x.q.id)){selected.push(x.q);used.add(x.q.id)}if(selected.length===5)break}}
+ quiz=selected;pos=0;answers=[];showQ();
+}
+function injectReview09(){
+ const practice=el("practice"),progress=el("progress"),home=el("home");
+ const queue=reviewQueue(),due=queue.filter(x=>x.due),subs=subMastery(),weak=subs[0],strong=[...subs].sort((a,b)=>b.mastery-a.mastery)[0];
+
+ if(home&&!home.querySelector(".reviewHome09")){
+  const c=document.createElement("div");c.className="card reviewHome09";
+  c.innerHTML='<span class="pill">Revisión 0.9</span><h3>'+due.length+' contenido(s) para revisar</h3><p>'+(weak?'<b>Prioridad:</b> '+weak.name+' · '+weak.mastery+'% estimado':'Empieza a practicar para generar tu cola de revisión.')+'</p><button class="btn full" onclick="startSmartReview()">Revisar ahora</button>';
+  const a=home.querySelector(".adaptiveHome08")||home.querySelector(".plan07");if(a)a.after(c);else home.appendChild(c);
+ }
+
+ if(practice&&!practice.querySelector(".review09")){
+  const c=document.createElement("div");c.className="card review09";
+  c.innerHTML='<span class="pill">Repetición espaciada 0.9</span><h3>Cola inteligente de repaso</h3><p>'+due.length+' de '+Q.length+' preguntas están disponibles para repasar hoy.</p><button class="btn full" onclick="startSmartReview()">Comenzar revisión</button>';
+  practice.prepend(c);
+ }
+
+ if(progress&&!progress.querySelector(".mastery09")){
+  const box=document.createElement("div");box.className="mastery09";
+  box.innerHTML='<h3>Dominio por contenido</h3>'+(weak?'<div class="grid2"><div class="card bad"><span class="muted">Necesita refuerzo</span><b class="masteryTitle">'+weak.name+'</b><strong class="big">'+weak.mastery+'%</strong></div><div class="card good"><span class="muted">Mejor desempeño</span><b class="masteryTitle">'+strong.name+'</b><strong class="big">'+strong.mastery+'%</strong></div></div>':'')+subs.slice(0,8).map(x=>'<div class="card masteryRow"><div class="row"><div><b>'+x.name+'</b><div class="tiny">'+x.practiced+'/'+x.questions+' preguntas practicadas · '+x.due+' para revisar</div></div><b>'+x.mastery+'%</b></div><div class="bar"><i style="width:'+x.mastery+'%"></i></div></div>').join("");
+  const anchor=progress.querySelector(".plan07detail");if(anchor)anchor.after(box);else progress.prepend(box);
+ }
+}
+const render09=render;
+render=function(){render09();setTimeout(injectReview09,0)};
+injectReview09();
