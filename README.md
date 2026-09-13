@@ -34,3 +34,8 @@ Los temarios cargados corresponden a la estructura de los documentos ECEP 2026 e
 Los bancos iniciales de las cinco especialidades no matemáticas pasan de 5 a 10 preguntas propias por especialidad. Cada pregunta se asocia a un indicador del temario, incorpora dificultad, habilidad, explicación y retroalimentación de alternativas.
 
 La aplicación conserva el progreso separado por especialidad y mantiene Matemática compatible con las versiones anteriores.
+
+
+## Banco ampliado 2.8
+
+La expansión 2.8 incorpora 20 preguntas propias adicionales por especialidad. El banco queda con 80 preguntas para Educación Básica Matemática y 30 para cada una de las otras cinco especialidades. Cada pregunta incluye indicador, habilidad, dificultad y explicación de la alternativa correcta; se identifica como contenido propio y no como pregunta oficial.
