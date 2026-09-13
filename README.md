@@ -39,3 +39,8 @@ La aplicación conserva el progreso separado por especialidad y mantiene Matemá
 ## Banco ampliado 2.8
 
 La expansión 2.8 incorpora 20 preguntas propias adicionales por especialidad. El banco queda con 80 preguntas para Educación Básica Matemática y 30 para cada una de las otras cinco especialidades. Cada pregunta incluye indicador, habilidad, dificultad y explicación de la alternativa correcta; se identifica como contenido propio y no como pregunta oficial.
+
+
+## Cobertura 2.8.1
+
+La fase 2.8.1 asegura al menos dos oportunidades de trabajo por cada indicador del temario activo. El banco resultante contiene 178 preguntas para Matemática, 86 para Ciencias Naturales, 80 para Historia y Geografía, 82 para Inglés, 60 para Lenguaje básico y 77 para Lengua y Literatura media. Las preguntas generadas para cubrir indicadores se identifican como contenido propio de cobertura y quedan disponibles para una revisión editorial posterior.
