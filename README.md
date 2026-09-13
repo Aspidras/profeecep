@@ -62,3 +62,9 @@ La expansión se diseñó a partir de los temarios ECEP 2026 y del formato descr
 ## Ajuste de calendario 2.8.8
 
 Se mantiene la información de las fechas ECEP, pero se oculta la cuenta regresiva de días para evitar presión visual y dejar el calendario como referencia informativa.
+
+## Versión 3.0 — Cierre de lanzamiento
+
+La versión 3.0 incorpora un panel de estado que comprueba en el navegador las seis especialidades, la estructura de sus preguntas, la ausencia de identificadores o enunciados duplicados, el sistema de progreso, el manifiesto instalable y el soporte offline.
+
+También renueva la caché de la aplicación para que los celulares reciban el build final y elimina automáticamente cachés anteriores. El contador de días para la ECEP permanece oculto. Las preguntas siguen identificadas según su procedencia: el contenido propio de ProfeECEP no se presenta como pregunta oficial.
