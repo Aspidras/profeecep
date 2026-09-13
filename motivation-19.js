@@ -81,3 +81,4 @@ PE19.inject=function(){
 const pe19Render=render;
 render=function(){pe19Render();setTimeout(PE19.inject,0)};
 setTimeout(PE19.inject,0);
+import("./specialties-20.js");
