@@ -2,36 +2,40 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
-## Versión 1.9
+## Versión 2.0
 
-Piloto actual: **Educación Básica Matemática 2026**.
+Especialidad activa: **Educación Básica Matemática 2026**.
 
 ### Funciones principales
 - Cuentas reales y progreso sincronizado con Supabase.
-- Temario organizado por dominio, subdominio e indicador.
-- Diagnóstico inicial.
-- Banco de 60 preguntas propias.
-- Simulador completo.
-- Analítica avanzada.
+- Diagnóstico, banco de preguntas, simulador y analítica.
 - Motor adaptativo 2.0.
 - Planificador ECEP 2.0.
 - Centro de estudio por microlecciones.
-- Tutor contextual ProfeECEP.
+- Tutor contextual.
 - Entrenador de errores.
+- Motivación, constancia e índice interno de preparación.
 
-### Nuevo en 1.9 — Motivación y constancia
-- Racha actual de estudio.
-- Meta semanal visible.
-- Hitos de progreso basados en actividad real.
-- Índice interno de preparación.
-- Desglose del índice por cobertura, precisión, rendimiento reciente, simulacros y constancia.
-- Próximo hito recomendado.
-- Visualización del avance sin convertir la preparación en una experiencia infantil.
+### Nuevo en 2.0 — Arquitectura multiespecialidad
+ProfeECEP deja de asumir una única ECEP y pasa a trabajar con un sistema de especialidades.
 
-El porcentaje de preparación es una estimación interna de ProfeECEP y no representa ni predice un puntaje oficial de la ECEP.
+Cada especialidad podrá tener de forma independiente:
+- temario;
+- banco de preguntas;
+- guías de estudio;
+- diagnóstico;
+- simulador;
+- analítica;
+- planificador;
+- tutor;
+- historial y progreso.
 
-## Fuente del temario
-La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de ProfeECEP.
+Actualmente solo **Educación Básica Matemática 2026** está habilitada con contenido real. Las demás opciones visibles en el selector se muestran como próximas especialidades y no cargan contenido inventado.
+
+La especialidad elegida queda persistida en el estado del usuario y la interfaz permite cambiarla desde la cabecera.
+
+## Fuente del contenido
+La estructura del temario de Educación Básica Matemática se basa en el documento oficial ECEP 2026 correspondiente. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de ProfeECEP.
 
 ## Próximo avance
-2.0: arquitectura multiespecialidad para extender ProfeECEP más allá de Educación Básica Matemática.
+2.1: generador inteligente de simulacros por cantidad, dificultad, dominio y debilidades.
