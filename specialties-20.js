@@ -3,7 +3,7 @@ window.PE20={};
 
 PE20.registry=[
  {id:"basica-matematica",name:"Educación Básica Matemática",short:"Matemática",status:"active",year:"2026"},
- {id:"basica-general",name:"Educación Básica Generalista",short:"Básica Generalista",status:"coming"},
+ {id:"basica-general",name:"Educación Básica Generalista",short:"Básica Generalista",status:"active"},
  {id:"media-matematica",name:"Educación Media Matemática",short:"Media Matemática",status:"coming"},
  {id:"media-lengua",name:"Educación Media Lengua y Literatura",short:"Lengua y Literatura",status:"coming"},
  {id:"media-ciencias",name:"Educación Media Ciencias",short:"Ciencias",status:"coming"}
