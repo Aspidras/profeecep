@@ -40,3 +40,5 @@ La estructura del temario se basa en el documento oficial ECEP 2026 de Educació
 
 ## Próximo avance
 1.3: analítica avanzada con evolución histórica, rendimiento por indicador, velocidad de respuesta y comparación entre simulacros.
+
+<!-- sync-check-13 -->
