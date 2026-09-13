@@ -103,3 +103,4 @@ PE20.inject=function(){
 const pe20Render=render;
 render=function(){pe20Render();setTimeout(PE20.inject,0)};
 setTimeout(PE20.inject,0);
+import("./simulator-21.js");
