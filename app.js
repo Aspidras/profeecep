@@ -20,7 +20,7 @@ function render(){
  const studyPct=pct(S.done.length,flat.length),priorities=priorityDomains();
  const diagCard=S.diagnosis?'<div class="card"><div class="row"><div><span class="pill">Diagnóstico completado</span><h3>Tu prioridad actual</h3><div class="muted">'+(priorities[0]?priorities[0].name:"—")+'</div></div><button class="btn ghost" onclick="showDiagnosisResult()">Ver resultado</button></div></div>':'<div class="card emphasis"><span class="pill">Diagnóstico</span><h3>Descubre por dónde empezar</h3><p>10 preguntas equilibradas entre los cinco dominios.</p><button class="btn full" onclick="startDiagnosis()">Comenzar diagnóstico</button></div>';
  const continueStudy=S.lastStudy?'<div class="card emphasis"><span class="pill">Centro de estudio</span><h3>Continuar estudiando</h3><p>'+((flat.find(x=>x.id===S.lastStudy)||{}).t||"")+'</p><button class="btn full" onclick="openStudy(\''+S.lastStudy+'\')">Continuar</button></div>':'';
- homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 1.1</span><h1>Ahora tienes un banco de práctica mucho más amplio y clasificable.</h1><p>60 preguntas propias clasificadas por dificultad y tipo de razonamiento, manteniendo cuentas y sincronización.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
+ homeEl.innerHTML='<div class="hero"><span class="pill">ProfeECEP 1.2</span><h1>Ahora puedes entrenar en un simulador completo.</h1><p>Simulador de 30 preguntas con tiempo, navegación, marcado para revisión y análisis final.</p></div>'+diagCard+continueStudy+'<div class="grid2"><div class="card"><span class="muted">Temario estudiado</span><strong class="big">'+studyPct+'%</strong><div class="bar"><i style="width:'+studyPct+'%"></i></div></div><div class="card"><span class="muted">Precisión práctica</span><strong class="big">'+pct(S.right,S.total)+'%</strong><div class="bar"><i style="width:'+pct(S.right,S.total)+'%"></i></div></div></div>'+(priorities.length?'<h3>Recomendación de estudio</h3>'+priorities.slice(0,3).map((x,i)=>'<div class="card priority"><div class="row"><div><span class="rank">'+(i+1)+'</span><b>'+x.name+'</b></div><b>'+x.p+'%</b></div><p class="muted">'+(i===0?"Comienza por este dominio.":"Refuérzalo después.")+'</p></div>').join(""):"");
 
  mapEl.innerHTML='<h2>Mapa ECEP 2026</h2><p class="muted">Abre un indicador para estudiarlo o márcalo como revisado.</p>'+D.map((d,di)=>'<div class="domain"><div class="row"><h3>'+d[0]+'</h3><button class="btn ghost" onclick="startQuiz(\''+d[0]+'\',5)">Practicar</button></div>'+d[1].map((s,si)=>'<div class="sub"><b>'+s[0]+'</b>'+s[1].map((t,ii)=>{let id=di+"-"+si+"-"+ii;return '<div class="indicator"><div class="indicatorText" onclick="openStudy(\''+id+'\')"><span class="studyIcon">📚</span><span>'+t+'</span></div><div class="indicatorActions"><button class="mini ghost2" onclick="openStudy(\''+id+'\')">Estudiar</button><button class="mini '+(S.done.includes(id)?"done":"")+'" onclick="toggle(\''+id+'\')">'+(S.done.includes(id)?"✓":"○")+'</button></div></div>'}).join("")+'</div>').join("")+'</div>').join("");
 
@@ -187,3 +187,122 @@ window.startLevel=startLevel;
 const render11=render;
 render=function(){render11();setTimeout(injectBank11,0)};
 injectBank11();
+
+let SIM12=null,SIM12_TIMER=null;
+
+function buildSimulation12(){
+ const selected=[];
+ D.forEach(d=>{
+   selected.push(...shuffle(Q.filter(q=>q.d===d[0])).slice(0,6));
+ });
+ return shuffle(selected).slice(0,30);
+}
+startSimulation=function(){
+ mode="simulation";
+ clearInterval(SIM12_TIMER);
+ quiz=buildSimulation12();
+ SIM12={
+   index:0,
+   answers:{},
+   marked:{},
+   seconds:45*60,
+   startedAt:new Date().toISOString()
+ };
+ renderSimulation12();
+ SIM12_TIMER=setInterval(()=>{
+   if(!SIM12)return clearInterval(SIM12_TIMER);
+   SIM12.seconds--;
+   const t=document.getElementById("sim12time");
+   if(t)t.textContent=formatSim12Time(SIM12.seconds);
+   if(SIM12.seconds<=0){clearInterval(SIM12_TIMER);finishSimulation12(true)}
+ },1000);
+};
+function formatSim12Time(s){
+ const m=Math.max(0,Math.floor(s/60)),sec=Math.max(0,s%60);
+ return String(m).padStart(2,"0")+":"+String(sec).padStart(2,"0");
+}
+function renderSimulation12(){
+ if(!SIM12)return;
+ const x=quiz[SIM12.index],selected=SIM12.answers[x.id];
+ const answered=Object.keys(SIM12.answers).length,marked=Object.keys(SIM12.marked).filter(k=>SIM12.marked[k]).length;
+ const target=el("simulation");
+ target.innerHTML=
+ '<div class="sim12Top"><div><span class="pill">Simulador 1.2</span><div class="muted">30 preguntas · simulación propia ProfeECEP</div></div><div class="sim12Clock"><span>Tiempo</span><b id="sim12time">'+formatSim12Time(SIM12.seconds)+'</b></div></div>'+
+ '<div class="sim12Stats"><span>'+answered+' respondidas</span><span>'+marked+' marcadas</span><span>'+(SIM12.index+1)+' / '+quiz.length+'</span></div>'+
+ '<div class="card sim12Question"><div class="muted">'+x.d+' · '+x.i+'</div><h2>'+x.q+'</h2>'+
+ x.o.map((o,i)=>'<button class="opt '+(selected===i?"sel":"")+'" onclick="sim12Choose('+i+')">'+String.fromCharCode(65+i)+'. '+o+'</button>').join("")+
+ '<div class="sim12Actions"><button class="btn ghost" onclick="sim12Mark()">'+(SIM12.marked[x.id]?"★ Marcada":"☆ Marcar para revisar")+'</button><button class="btn" onclick="sim12Next()">'+(SIM12.index===quiz.length-1?"Ir al resumen":"Siguiente")+'</button></div></div>'+
+ '<div class="card"><div class="row"><b>Navegación</b><button class="mini ghost2" onclick="sim12ShowSummary()">Resumen</button></div><div class="sim12Grid">'+
+ quiz.map((q,i)=>'<button class="sim12Nav '+(i===SIM12.index?"current":"")+' '+(SIM12.answers[q.id]!==undefined?"answered":"")+' '+(SIM12.marked[q.id]?"marked":"")+'" onclick="sim12Go('+i+')">'+(i+1)+'</button>').join("")+
+ '</div></div>';
+ go("simulation");
+}
+function sim12Choose(i){
+ const q=quiz[SIM12.index];SIM12.answers[q.id]=i;renderSimulation12();
+}
+function sim12Mark(){
+ const q=quiz[SIM12.index];SIM12.marked[q.id]=!SIM12.marked[q.id];renderSimulation12();
+}
+function sim12Go(i){SIM12.index=Math.max(0,Math.min(quiz.length-1,i));renderSimulation12()}
+function sim12Next(){
+ if(SIM12.index<quiz.length-1){SIM12.index++;renderSimulation12()}
+ else sim12ShowSummary();
+}
+function sim12ShowSummary(){
+ const answered=Object.keys(SIM12.answers).length;
+ const marked=Object.keys(SIM12.marked).filter(k=>SIM12.marked[k]).length;
+ el("simulation").innerHTML=
+ '<span class="pill">Resumen antes de entregar</span><h2>Revisa tu simulacro</h2>'+
+ '<div class="grid2"><div class="card"><span class="muted">Respondidas</span><strong class="big">'+answered+' / '+quiz.length+'</strong></div><div class="card"><span class="muted">Marcadas</span><strong class="big">'+marked+'</strong></div></div>'+
+ '<div class="card"><div class="sim12Grid">'+quiz.map((q,i)=>'<button class="sim12Nav '+(SIM12.answers[q.id]!==undefined?"answered":"")+' '+(SIM12.marked[q.id]?"marked":"")+'" onclick="sim12Go('+i+')">'+(i+1)+'</button>').join("")+'</div></div>'+
+ (answered<quiz.length?'<div class="card warning"><b>Te faltan '+(quiz.length-answered)+' pregunta(s).</b><p class="muted">Puedes volver y responderlas antes de entregar.</p></div>':"")+
+ '<button class="btn ghost full" onclick="sim12Go('+SIM12.index+')">Volver a preguntas</button>'+
+ '<button class="btn full sim12Finish" onclick="sim12ConfirmFinish()">Finalizar simulacro</button>';
+ go("simulation");
+}
+function sim12ConfirmFinish(){
+ const unanswered=quiz.length-Object.keys(SIM12.answers).length;
+ if(unanswered&& !confirm("Aún tienes "+unanswered+" pregunta(s) sin responder. ¿Finalizar de todas formas?"))return;
+ finishSimulation12(false);
+}
+function finishSimulation12(auto=false){
+ if(!SIM12)return;
+ clearInterval(SIM12_TIMER);
+ const rows=quiz.map(q=>{
+   const selected=SIM12.answers[q.id];
+   return{id:q.id,d:q.d,ok:selected===q.a,selected,unanswered:selected===undefined,marked:!!SIM12.marked[q.id]};
+ });
+ const correct=rows.filter(x=>x.ok).length,unanswered=rows.filter(x=>x.unanswered).length,p=pct(correct,quiz.length),by={};
+ rows.forEach(a=>{
+   if(!by[a.d])by[a.d]={right:0,total:0};
+   by[a.d].total++;if(a.ok)by[a.d].right++;
+   if(!a.unanswered){
+     S.history.push({date:new Date().toISOString().slice(0,10),domain:a.d,id:a.id,ok:a.ok});
+     if(!a.ok&&!S.wrong.includes(a.id))S.wrong.push(a.id);
+     if(a.ok)S.wrong=S.wrong.filter(id=>id!==a.id);
+   }
+ });
+ if(S.history.length>300)S.history=S.history.slice(-300);
+ S.simulations.push({date:new Date().toISOString(),right:correct,total:quiz.length,byDomain:by,durationSeconds:45*60-SIM12.seconds,unanswered,version:"1.2"});
+ if(S.simulations.length>20)S.simulations=S.simulations.slice(-20);
+ saveState();
+ el("simulation").innerHTML=
+ '<span class="pill">Simulador 1.2 completado</span><h2>'+(auto?"Tiempo finalizado":"Resultado del simulacro")+'</h2>'+
+ '<div class="grid2"><div class="card"><span class="muted">Resultado</span><strong class="score">'+correct+' / '+quiz.length+'</strong><div class="bar"><i style="width:'+p+'%"></i></div><p>'+p+'% correctas</p></div><div class="card"><span class="muted">Sin responder</span><strong class="score">'+unanswered+'</strong><p>Tiempo usado: '+formatSim12Time(45*60-SIM12.seconds)+'</p></div></div>'+
+ '<h3>Rendimiento por dominio</h3>'+Object.entries(by).map(([name,v])=>'<div class="card"><div class="row"><b>'+name+'</b><b>'+pct(v.right,v.total)+'%</b></div><div class="bar"><i style="width:'+pct(v.right,v.total)+'%"></i></div><div class="tiny">'+v.right+' de '+v.total+' correctas</div></div>').join("")+
+ '<h3>Revisión de respuestas</h3>'+rows.filter(a=>!a.ok).map(a=>{const q=Q.find(x=>x.id===a.id);return '<div class="card bad"><b>'+q.i+'</b><p>'+q.q+'</p><div class="muted">'+(a.unanswered?"Sin respuesta. ":"Tu respuesta: "+String.fromCharCode(65+a.selected)+". "+q.o[a.selected]+". ")+'Correcta: '+String.fromCharCode(65+q.a)+'. '+q.o[q.a]+'</div></div>'}).join("")+
+ '<button class="btn full" onclick="SIM12=null;render();go(\'practice\')">Volver a práctica</button>';
+ SIM12=null;render();
+}
+function injectSimulator12(){
+ const practice=el("practice");if(!practice)return;
+ const cards=[...practice.querySelectorAll(".card")];
+ const old=cards.find(c=>c.textContent.includes("Simulacro breve"));
+ if(old){
+   old.classList.add("simulator12Card");
+   old.innerHTML='<span class="pill">Simulador 1.2</span><h3>Simulador completo</h3><p>30 preguntas, 45 minutos, navegación libre, marcado para revisión y análisis final.</p><button class="btn full" onclick="startSimulation()">Iniciar simulador</button>';
+ }
+}
+const render12=render;
+render=function(){render12();setTimeout(injectSimulator12,0)};
+injectSimulator12();
