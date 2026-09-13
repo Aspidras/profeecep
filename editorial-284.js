@@ -1,0 +1,23 @@
+// ProfeECEP 2.8.4 — revisión editorial y calibración avanzada
+(function(){
+ 'use strict';
+ const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+ const statuses=['pendiente','revisada','validada'];
+ function status(q){return S.questionReviews?.[q.id]?.status||'pendiente'}
+ function inspect(q){
+  const h=(S.history||[]).filter(x=>x.id===q.id),n=h.length,p=n?pct(h.filter(x=>x.ok).length,n):null,selected={};h.forEach(x=>{if(Number.isInteger(x.selected))selected[x.selected]=(selected[x.selected]||0)+1});
+  let signal='Sin datos suficientes';if(n>=5){if(p<25)signal='Muy difícil';else if(p>90)signal='Muy fácil';else if(Object.keys(selected).length<Math.min(3,q.o.length))signal='Distractores poco utilizados';else signal='Comportamiento estable'}
+  return{n,p,selected,signal};
+ }
+ function report(){
+  const rows=Q.map(q=>{const i=inspect(q),s=status(q);return{q,i,status:s,alert:i.n>=5&&i.signal!=='Comportamiento estable'||S.flaggedQuestions?.[q.id]}});
+  return{rows,validated:rows.filter(x=>x.status==='validada').length,reviewed:rows.filter(x=>x.status==='revisada').length,pending:rows.filter(x=>x.status==='pendiente').length,alerts:rows.filter(x=>x.alert).length,observed:rows.filter(x=>x.i.n>=5).length};
+ }
+ function setStatus(id,value){if(!statuses.includes(value))return;S.questionReviews=S.questionReviews||{};S.questionReviews[id]={status:value,date:new Date().toISOString()};saveState();open()}
+ function filterRows(mode){const r=report().rows;if(mode==='alerts')return r.filter(x=>x.alert);if(mode==='pending')return r.filter(x=>x.status==='pendiente');if(mode==='observed')return r.filter(x=>x.i.n>=5);return r}
+ function open(mode='alerts'){const r=report();document.querySelector('.editorial284Overlay')?.remove();const o=document.createElement('div');o.className='editorial284Overlay';const rows=filterRows(mode).slice(0,50);o.innerHTML='<div class="editorial284Modal"><button class="close" onclick="PE284.close()">×</button><span class="pill">Editorial 2.8.4</span><h2>Revisión de preguntas</h2><p class="muted">Cambia el estado de cada pregunta después de revisarla. La calibración usa respuestas reales y no reemplaza una revisión experta.</p><div class="editorial284Filters"><button class="mini" onclick="PE284.open(\'alerts\')">Alertas '+r.alerts+'</button><button class="mini" onclick="PE284.open(\'pending\')">Pendientes '+r.pending+'</button><button class="mini" onclick="PE284.open(\'observed\')">Con datos '+r.observed+'</button><button class="mini" onclick="PE284.open(\'all\')">Todas '+r.rows.length+'</button></div>'+(rows.length?rows.map(x=>'<div class="editorial284Row"><div class="row"><b>'+esc(x.q.i||x.q.id)+'</b><span class="pill editorialStatus">'+x.status+'</span></div><small>'+esc(x.q.q)+'</small><div class="editorial284Meta">'+(x.i.n?x.i.p+'% acierto · '+x.i.n+' respuestas · '+x.i.signal:'Sin respuestas registradas')+(S.flaggedQuestions?.[x.q.id]?' · marcada por usuario':'')+'</div><div class="editorial284Buttons">'+statuses.map(v=>'<button class="mini '+(x.status===v?'selected':'')+'" onclick="PE284.setStatus(\''+x.q.id+'\',\''+v+'\')">'+v+'</button>').join('')+'</div></div>').join(''):'<div class="card good"><b>No hay preguntas en este filtro.</b><p>El banco activo no presenta alertas automáticas en esta vista.</p></div>')+'<button class="btn ghost full" onclick="PE284.close()">Cerrar</button></div>';document.body.appendChild(o)}
+ function close(){document.querySelector('.editorial284Overlay')?.remove()}
+ function inject(){const r=report(),progress=el('progress');if(progress&&!progress.querySelector('.editorial284')){const c=document.createElement('div');c.className='card editorial284';c.innerHTML='<span class="pill">Editorial 2.8.4</span><h3>Estado del banco</h3><p class="muted">Control editorial y calibración con las respuestas acumuladas.</p><div class="editorial284Stats"><span><b>'+r.validated+'</b> validadas</span><span><b>'+r.reviewed+'</b> revisadas</span><span><b>'+r.pending+'</b> pendientes</span></div><div class="bank282Checks"><div>✓ Preguntas observadas con al menos 5 respuestas: '+r.observed+'</div><div>✓ Señales de dificultad o distractores: '+r.alerts+'</div></div><button class="btn ghost full" onclick="PE284.open(\'alerts\')">Abrir revisión editorial</button></div>';const a=progress.querySelector('.bank282');if(a)a.after(c);else progress.prepend(c)}}
+ window.PE284={report,inspect,status,setStatus,open,close,inject};
+ const old=window.render;if(old&&!window.__pe284){window.render=function(){const r=old();setTimeout(inject,0);return r};window.__pe284=true}setTimeout(inject,0);
+}());
