@@ -2,35 +2,35 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
-## Versión 1.5
+## Versión 1.7
 
 Piloto actual: **Educación Básica Matemática 2026**.
 
 ### Funciones principales
 - Cuentas reales y progreso sincronizado con Supabase.
 - Temario organizado por dominio, subdominio e indicador.
-- Centro de estudio.
 - Diagnóstico inicial.
-- Banco de 60 preguntas propias clasificadas por dificultad y razonamiento.
+- Banco de 60 preguntas propias.
 - Simulador completo.
 - Analítica avanzada.
 - Motor adaptativo 2.0.
+- Planificador ECEP 2.0.
+- Centro de estudio por microlecciones.
 
-### Nuevo en 1.5 — Planificador ECEP 2.0
-- Meta semanal basada en días de estudio y minutos por sesión.
-- Calendario automático para la semana actual.
-- Detección de sesiones ya realizadas.
-- Conteo de sesiones pendientes.
-- Detección de atraso respecto de la meta semanal.
-- Redistribución automática de las sesiones pendientes en los días disponibles.
-- Priorización de dominios según el motor adaptativo 2.0.
-- Acceso directo desde el calendario a una sesión recomendada.
-- Reajuste automático al modificar fecha objetivo, minutos o días por semana.
+### Nuevo en 1.7 — Tutor ProfeECEP
+El tutor contextual trabaja con el contenido ya cargado en ProfeECEP y puede:
+- explicar un contenido de forma más simple;
+- explicar por qué una respuesta es correcta;
+- revisar alternativas sin inventar justificaciones no almacenadas;
+- resumir qué conviene recordar;
+- proponer otra práctica relacionada;
+- abrirse desde una microlección;
+- abrirse después de responder una pregunta.
 
-El planificador utiliza el historial real del usuario. Si una semana no se cumple exactamente según lo esperado, ProfeECEP redistribuye lo pendiente sin borrar el progreso anterior.
+Esta primera versión no depende de una API externa de IA, por lo que no añade costos de uso ni expone datos del usuario a un proveedor adicional. Está preparada para evolucionar posteriormente hacia un tutor con IA real y contexto ECEP.
 
 ## Fuente del temario
 La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de ProfeECEP.
 
 ## Próximo avance
-1.6: centro de estudio completo por indicador, con microlecciones, ejemplos, errores frecuentes, ejercicios y resúmenes.
+1.8: entrenador de errores, con detección de patrones y sesiones específicas de corrección.
