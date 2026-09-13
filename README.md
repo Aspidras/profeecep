@@ -26,9 +26,10 @@ Piloto actual: **Educación Básica Matemática 2026**.
 - Vercel: despliegue.
 - Supabase: autenticación y progreso sincronizado.
 - Las variables `SUPABASE_URL` y `SUPABASE_PUBLISHABLE_KEY` se configuran en Vercel.
+- Vercel Git deployment enabled.
 
 ## Fuente del temario
-La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de ProfeECEP.
+La estructura del temario se basa en el documento oficial ECEP 2026 de Educación Básica Matemática. Las explicaciones, preguntas, recomendaciones, simulacros y planes son contenido propio de Pr[...]
 
 ## Próximo avance
 1.1: ampliar de forma importante el banco de preguntas y clasificarlo por indicador, dificultad y tipo de razonamiento.
