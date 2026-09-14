@@ -13,7 +13,7 @@ for (const [specialty, count] of Object.entries(specialties)) {
 
   test(`${specialty}: el panel cuenta el banco activo y distingue los bancos no cargados`, () => {
     const app = runtime(specialty), report = app.context.PE30.status();
-    assert.equal(report.version, '3.0.1');
+    assert.equal(report.version, '3.0.2');
     assert.equal(report.activeQuestions, count);
     assert.equal(report.partial, specialty !== 'basica-matematica');
     assert.equal(report.totalQuestions, specialty === 'basica-matematica' ? 714 : 487);

@@ -2,6 +2,22 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.2 — Experiencia móvil y accesibilidad
+
+- Inicio con una acción principal según el progreso, accesos a estudio, práctica y simulacros, y un resumen de la especialidad activa.
+- Las herramientas anteriores conservan sus controles dentro de tres secciones desplegables: plan y constancia, herramientas de estudio, e información y aplicación.
+- Cabecera compacta, navegación inferior con sección activa y espacio seguro; controles táctiles y tipografía escalable.
+- Ajustes de lectura accesibles desde la cabecera: tamaños de texto, modo oscuro, alto contraste y movimiento reducido. Se reutilizan las preferencias guardadas.
+- Ventanas con nombre accesible, foco contenido, cierre con Escape y retorno al control que las abrió. Altura y scroll se ajustan al espacio disponible.
+- Enlace para saltar al contenido, indicadores operables con teclado, etiquetas en formularios y estados anunciables en opciones y navegación.
+- Caché 3.0.2 con los nuevos recursos. No modifica preguntas, identificadores, progreso, autenticación ni configuración de nube.
+
+### Próximos avances
+
+1. **3.0.3:** pruebas de recorridos completos, sesiones, sincronización entre dispositivos y continuidad sin conexión.
+2. **3.0.4:** consistencia de contadores y etiquetas anteriores, mensajes y optimización.
+3. **3.1 (alcance propuesto):** revisión editorial del banco y desarrollo de microlecciones pendientes.
+
 ## Versión 3.0.1 — Corrección de simulacros y microlecciones
 
 - El simulacro largo selecciona hasta 60 preguntas **sin repetir identificadores**, redistribuye cupos si un dominio tiene pocas preguntas y conserva las respuestas del banco. El equilibrio entre dominios es una regla interna de práctica, no una ponderación oficial.
