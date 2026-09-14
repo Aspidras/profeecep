@@ -39,7 +39,7 @@ function openStudy(id){
 }
 function toggle(id){S.done=S.done.includes(id)?S.done.filter(x=>x!==id):S.done.concat(id);saveState();render();go("map")}
 function toggleFromStudy(id){S.done=S.done.includes(id)?S.done.filter(x=>x!==id):S.done.concat(id);saveState();render();openStudy(id)}
-function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function shuffle(a){const out=[...a];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]]}return out}
 function diagnosticPool(){const out=[];D.forEach(d=>{const qs=Q.filter(q=>q.d===d[0]);out.push(...qs.slice(0,2))});return out}
 function startDiagnosis(){mode="diagnosis";quiz=diagnosticPool();pos=0;answers=[];showQ()}
 function startQuiz(domain="all",count=5){mode="practice";const pool=domain==="all"?Q:Q.filter(q=>q.d===domain);quiz=shuffle(pool).slice(0,Math.min(count,pool.length));pos=0;answers=[];showQ()}

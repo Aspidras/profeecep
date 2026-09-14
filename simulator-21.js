@@ -60,8 +60,9 @@ PE21.start=function(){
  SIM12={
    index:0,answers:{},marked:{},timeSpent:{},enteredAt:Date.now(),
    seconds:Math.max(90,built.length*90),
+   maxSeconds:Math.max(90,built.length*90),
    startedAt:new Date().toISOString(),
-   generatedBy:"2.2",
+   generatedBy:"3.0.1",
    filters
  };
  clearInterval(SIM12_TIMER);

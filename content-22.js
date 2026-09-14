@@ -364,9 +364,18 @@
     }
     window.PE22_CONTENT[specialtyId] = {id: specialtyId, questions, guides};
   }
-  const active = window.PE22_CONTENT[window.PE_ACTIVE_SPECIALTY];
-  if (active) {
+  window.PE22_ACTIVATE = function () {
+    const active = window.PE22_CONTENT[window.PE_ACTIVE_SPECIALTY];
+    if (!active) return;
+    const guides = Object.fromEntries(Object.entries(active.guides).filter(([, guide]) => guide && guide.status !== 'draft'));
+    // Exact indicator keys are authoritative. Keep subdomain aliases only for
+    // legacy consumers; bank-only questions must never erase an existing guide.
+    for (const q of active.questions) {
+      const guide = guides[q.indicatorId];
+      if (guide && !guides[q.i]) guides[q.i] = guide;
+    }
     window.QBANK = active.questions;
-    window.STUDY_GUIDES = Object.fromEntries(active.questions.map(q => [q.i, active.guides[q.indicatorId]]));
-  }
+    window.STUDY_GUIDES = guides;
+  };
+  window.PE22_ACTIVATE();
 }());

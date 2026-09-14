@@ -10,12 +10,11 @@
     if (!box || box.querySelector('.phase22Badge')) return;
     const x = flat && flat.find(v => v.id === S.lastStudy);
     if (!x) return;
-    const item = content.questions.find(q => q.i === x.sub);
-    const guide = item && content.guides[item.indicatorId];
+    const guide = PE16.guide(x);
     if (!guide) return;
     const badge = document.createElement('span');
     badge.className = 'pill phase22Badge';
-    badge.textContent = 'Centro 2.2 · contenido propio';
+    badge.textContent = 'Centro 3.0.1 · contenido propio';
     box.appendChild(badge);
     const indicator = document.createElement('div');
     indicator.className = 'card phase22Indicator';

@@ -1,5 +1,81 @@
-const CACHE='profeecep-3.0';
-const ASSETS=['./','./index.html','./styles.css','./manifest.json','./sw.js','./progress-22.js','./data.js','./content-22.js','./content-23.js','./bank-28.js','./bank-281.js','./classify-285.js','./app.js','./auth.js','./analytics-13.js','./adaptive-14.js','./planner-15.js','./study-16.js','./tutor-17.js','./errors-18.js','./motivation-19.js','./specialties-20.js','./simulator-21.js','./experience-22.js','./experience-23.js','./diagnosis-24.js','./plan-25.js','./tutor-26.js','./mobile-27.js','./complete-28.js','./bank-review-282.js','./exam-283.js','./editorial-284.js','./tutor-285.js','./bank-287.js','./access-report-286.js','./release-30.js'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('profeecep-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==location.origin)return;e.respondWith(caches.match(e.request).then(cached=>cached||fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r}).catch(()=>caches.match('./index.html'))))});
+const CACHE = 'profeecep-3.0.1';
+const ASSETS = [
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./styles.css?v=3.0.1",
+  "./progress-22.js?v=3.0.1",
+  "./data.js?v=3.0.1",
+  "./content-22.js?v=3.0.1",
+  "./content-23.js?v=3.0.1",
+  "./bank-28.js?v=3.0.1",
+  "./bank-281.js?v=3.0.1",
+  "./classify-285.js?v=3.0.1",
+  "./app.js?v=3.0.1",
+  "./auth.js?v=3.0.1",
+  "./analytics-13.js?v=3.0.1",
+  "./adaptive-14.js?v=3.0.1",
+  "./planner-15.js?v=3.0.1",
+  "./study-16.js?v=3.0.1",
+  "./tutor-17.js?v=3.0.1",
+  "./errors-18.js?v=3.0.1",
+  "./motivation-19.js?v=3.0.1",
+  "./specialties-20.js?v=3.0.1",
+  "./simulator-21.js?v=3.0.1",
+  "./experience-22.js?v=3.0.1",
+  "./experience-23.js?v=3.0.1",
+  "./diagnosis-24.js?v=3.0.1",
+  "./plan-25.js?v=3.0.1",
+  "./tutor-26.js?v=3.0.1",
+  "./mobile-27.js?v=3.0.1",
+  "./complete-28.js?v=3.0.1",
+  "./bank-review-282.js?v=3.0.1",
+  "./exam-283.js?v=3.0.1",
+  "./editorial-284.js?v=3.0.1",
+  "./tutor-285.js?v=3.0.1",
+  "./bank-287.js?v=3.0.1",
+  "./access-report-286.js?v=3.0.1",
+  "./release-30.js?v=3.0.1"
+];
+const assetURLs = new Set(ASSETS.map(path => new URL(path, self.location.href).href));
+
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(
+    keys.filter(key => key.startsWith('profeecep-') && key !== CACHE).map(key => caches.delete(key))
+  )).then(() => self.clients.claim()));
+});
+
+self.addEventListener('fetch', event => {
+  const request = event.request, url = new URL(request.url);
+  if (request.method !== 'GET' || url.origin !== self.location.origin) return;
+  // Configuration, APIs and unknown resources are never cached or replaced by HTML.
+  if (request.mode !== 'navigate' && !assetURLs.has(url.href)) return;
+
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE);
+    if (request.mode === 'navigate') {
+      try {
+        const response = await fetch(request);
+        if (response.ok && response.headers.get('content-type')?.includes('text/html')) {
+          await cache.put('./index.html', response.clone()).catch(() => {});
+        }
+        return response;
+      } catch (_) {
+        return (await cache.match('./index.html')) || Response.error();
+      }
+    }
+    const cached = await cache.match(request);
+    if (cached) return cached;
+    try {
+      const response = await fetch(request);
+      if (response.ok) await cache.put(request, response.clone()).catch(() => {});
+      return response;
+    } catch (_) {
+      return Response.error();
+    }
+  })());
+});

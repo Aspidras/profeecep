@@ -2,6 +2,29 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.1 — Corrección de simulacros y microlecciones
+
+- El simulacro largo selecciona hasta 60 preguntas **sin repetir identificadores**, redistribuye cupos si un dominio tiene pocas preguntas y conserva las respuestas del banco. El equilibrio entre dominios es una regla interna de práctica, no una ponderación oficial.
+- Los simulacros configurables y de cobertura registran su duración real. Cambiar una respuesta no crea un segundo registro.
+- Las guías se recuperan por indicador exacto y las ampliaciones del banco ya no las sobrescriben. Se conservan las 25 guías específicas iniciales de las cinco especialidades no matemáticas; las plantillas genéricas quedan como borradores y se muestra «Microlección específica pendiente» cuando corresponde.
+- Matemática conserva sus guías históricas de subdominio con ese alcance visible. Los ejercicios y la práctica de una microlección se limitan al indicador elegido.
+- El panel muestra la cantidad del banco activo y distingue los bancos completos no cargados. Sus comprobaciones son estructurales, no una certificación editorial o de instalación.
+- La caché incluye las mismas URLs versionadas que la página. El documento HTML de respaldo se utiliza solo para navegación, nunca como respuesta a un script o llamada API.
+
+Se mantienen las 714 preguntas, sus identificadores, la separación de progreso por especialidad y el contador de días oculto. Esta actualización no reescribe las preguntas de cobertura ni sus explicaciones: la revisión editorial continúa pendiente.
+
+### Pruebas de regresión
+
+Requieren Node.js 22 o posterior, sin instalar dependencias:
+
+```sh
+npm test
+```
+
+Las pruebas cargan los scripts reales en el orden de `index.html`, generan 100 simulacros por especialidad y verifican selección, puntajes, omisiones, duración, guías, práctica por indicador y persistencia aislada. También comprueban las rutas de caché y la sintaxis de los scripts.
+
+Son pruebas automatizadas de lógica con almacenamiento, red y DOM simulados. **No sustituyen una prueba visual en celular, la autenticación real ni la verificación de la URL pública en Vercel.** Subir a `work` puede crear una vista previa protegida; no equivale a actualizar producción.
+
 ## Versión 2.1
 
 Especialidades oficiales 2026 cargadas:

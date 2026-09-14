@@ -149,6 +149,6 @@
   });
  }
  Object.entries(packs).forEach(([sid,items])=>{if(sid===math && window.PE_ACTIVE_SPECIALTY!==math)return;add(sid,items)});
- const active=window.PE22_CONTENT&&window.PE22_CONTENT[window.PE_ACTIVE_SPECIALTY];if(active){window.QBANK=active.questions;window.STUDY_GUIDES=Object.fromEntries(active.questions.map(q=>[q.i,active.guides[q.indicatorId]]));}
+ window.PE22_ACTIVATE();
  window.PE28_BANK={counts:Object.fromEntries(Object.entries(packs).map(([id])=>[id,(id===math?window.QBANK.length:(window.PE22_CONTENT[id]?.questions.length||0))]))};
 }());

@@ -56,6 +56,6 @@
  let added=0;
  if(window.PE_ACTIVE_SPECIALTY===math)added+=append(math,window.ECEP_DATA,true)||0;
  if(window.PE_SYLLABUS_2026)Object.entries(window.PE_SYLLABUS_2026).forEach(([sid,domains])=>{if(sid!==math)added+=append(sid,domains,false)||0});
- const active=window.PE22_CONTENT&&window.PE22_CONTENT[window.PE_ACTIVE_SPECIALTY];if(active){window.QBANK=active.questions;window.STUDY_GUIDES=Object.fromEntries(active.questions.map(q=>[q.i,active.guides[q.indicatorId]]));}
+ window.PE22_ACTIVATE();
  window.PE281={added,coverage:function(){const domains=window.ECEP_DATA||[];let indicators=0,complete=0;domains.forEach(d=>d[1].forEach(s=>s[1].forEach((_,ii)=>{indicators++;const id=[domains.indexOf(d),d[1].indexOf(s),ii].join('-'),n=(window.QBANK||[]).filter(q=>q.indicatorId===id).length;if(n>=2)complete++})));return{indicators,complete,questions:(window.QBANK||[]).length}}};
 }());

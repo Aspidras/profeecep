@@ -49,12 +49,10 @@
       const indicatorId = [di, si, ii].join('-'), id = specialtyId + '-23-' + String(n + 1).padStart(2, '0');
       const guide = {title: skill, learn: 'Este indicador exige identificar las relaciones relevantes, justificar la respuesta y distinguir alternativas plausibles de aquellas que no cuentan con evidencia suficiente.', example: 'Lee la situación, subraya la evidencia y explica por qué tu elección se conecta con el indicador. Después revisa qué dato haría cambiar tu conclusión.', error: 'Elegir una alternativa por una palabra conocida, sin analizar la relación entre la situación y el concepto, produce errores de interpretación.', pedagogy: 'Pide verbalizar la evidencia antes de seleccionar una respuesta y utiliza los distractores para discutir concepciones alternativas.', summary: 'Relaciona evidencia, concepto y justificación.', indicatorId, indicator, minutes: 5, questionIds: [id]};
       const question = {id, d: domain[0], i: sub[0], q, o, a, e: qExplanation(o, a)[a], explanations: qExplanation(o, a), diff: n % 2 ? 'media' : 'básica', skill, specialtyId, indicatorId, indicator, origin: 'Contenido propio ProfeECEP', version: '2.3'};
-      pack.questions.push(question); pack.guides[indicatorId] = guide;
+      pack.questions.push(question);
+      if (!pack.guides[indicatorId]) pack.guides[indicatorId] = {...guide, status: 'draft'};
+      else if (!pack.guides[indicatorId].questionIds.includes(id)) pack.guides[indicatorId].questionIds.push(id);
     });
   }
-  const active = window.PE22_CONTENT[window.PE_ACTIVE_SPECIALTY];
-  if (active) {
-    window.QBANK = active.questions;
-    window.STUDY_GUIDES = Object.fromEntries(active.questions.map(q => [q.i, active.guides[q.indicatorId]]));
-  }
+  window.PE22_ACTIVATE();
 }());

@@ -8,15 +8,17 @@ PE17.escape=function(s){
 PE17.contextFromStudy=function(){
  const id=S.lastStudy, x=flat.find(v=>v.id===id);
  if(!x)return null;
- const guide=G[x.sub]||null;
- const qs=Q.filter(q=>q.i===x.sub||q.d===x.domain);
+ const guide=PE16.guide(x);
+ const qs=PE16.related(x);
  return{type:"study",indicator:x,guide,questions:qs};
 };
 
 PE17.contextFromQuestion=function(q){
  if(!q)return null;
- const guide=G[q.i]||null;
- return{type:"question",question:q,guide,indicator:{domain:q.d,sub:q.i,t:q.i}};
+ const indicator=flat.find(x=>x.id===q.indicatorId)||{domain:q.d,sub:q.i,t:q.i};
+ const guide=PE16.guide(indicator);
+ const questions=PE16.related(indicator).filter(x=>x.id!==q.id);
+ return{type:"question",question:q,guide,indicator,questions};
 };
 
 PE17.simple=function(ctx){
