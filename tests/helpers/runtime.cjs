@@ -41,6 +41,9 @@ function element(id = '') {
 }
 
 function runtime(specialty = 'basica-matematica', options = {}) {
+  const events = new Map(), timers = new Map(), intervals = new Map();
+  let timerId = 0;
+  const listen = (name, handler) => { if (!events.has(name)) events.set(name, []); events.get(name).push(handler); };
   const storage = options.storage || new Map();
   storage.set('pe_specialty_id', specialty);
   const elements = new Map([...html.matchAll(/id="([^"]+)"/g)].map(match => [match[1], element(match[1])]));
@@ -48,7 +51,7 @@ function runtime(specialty = 'basica-matematica', options = {}) {
   const document = {
     readyState: 'complete', body: element(), documentElement: element(),
     getElementById: id => elements.get(id) || null,
-    createElement: () => element(), addEventListener() {},
+    createElement: () => element(), addEventListener: (name, handler) => listen('document:' + name, handler),
     querySelector: selector => selector === 'link[rel="manifest"]' ? element() :
       /^#[\w-]+$/.test(selector) ? elements.get(selector.slice(1)) || null : selectors.get(selector) || null,
     querySelectorAll: selector => selector === '.screen' ? [...elements.values()] : selectors.get(selector) || []
@@ -57,17 +60,21 @@ function runtime(specialty = 'basica-matematica', options = {}) {
   const math = Object.create(Math);
   math.random = () => ((seed = (1664525 * seed + 1013904223) >>> 0) / 4294967296);
   const context = vm.createContext({
-    console, URL, URLSearchParams, Blob, Math: math, document,
+    console, URL, URLSearchParams, Blob, AbortController, crypto: require('node:crypto').webcrypto, Math: math, document,
+    Date: options.clock ? class extends Date { constructor(...args) { super(...(args.length ? args : [options.clock.now])); } static now() { return options.clock.now; } } : Date,
     location: {origin: 'https://profeecep.test', href: 'https://profeecep.test/', reload() {}},
-    navigator: {onLine: true, serviceWorker: {register: async () => ({})}},
+    navigator: {onLine: options.online ?? true, serviceWorker: {register: async () => ({})}},
     localStorage: {
       getItem: key => storage.get(key) ?? null,
       setItem: (key, value) => storage.set(key, String(value)),
       removeItem: key => storage.delete(key)
     },
-    fetch: async () => ({ok: true, json: async () => ({})}),
-    setTimeout: () => 1, clearTimeout() {}, setInterval: () => 1, clearInterval() {},
-    addEventListener() {}, scrollTo() {}, alert() {}, confirm: () => true
+    fetch: options.fetch || (async () => ({ok: true, json: async () => ({})})),
+    setTimeout: (fn, delay) => { const id = ++timerId; timers.set(id, {fn, delay}); return id; },
+    clearTimeout: id => timers.delete(id),
+    setInterval: (fn, delay) => { const id = ++timerId; intervals.set(id, {fn, delay}); return id; },
+    clearInterval: id => intervals.delete(id),
+    addEventListener: listen, scrollTo() {}, alert: options.alert || (() => {}), confirm: options.confirm || (() => true)
   });
   context.window = context;
   const readSource = options.readSource || (file => fs.readFileSync(path.join(root, file), 'utf8'));
@@ -75,7 +82,9 @@ function runtime(specialty = 'basica-matematica', options = {}) {
     vm.runInContext(readSource(script), context, {filename: script});
     options.afterScript?.(script, context);
   }
-  return {context, document, elements, selectors, storage, run: code => vm.runInContext(code, context)};
+  return {context, document, elements, selectors, storage, timers, intervals,
+    emit: (name, event = {}) => Promise.all((events.get(name) || []).map(fn => fn(event))),
+    run: code => vm.runInContext(code, context)};
 }
 
 module.exports = {runtime, root, html, scripts, specialties, element};

@@ -2,6 +2,22 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.3 — Continuidad y sincronización
+
+- Sesión recuperable sin conexión, renovación de tokens al vencer y reintento al volver internet o a la aplicación. Estado visible de los cambios pendientes y de los errores.
+- Recuperación del respaldo local de cada cuenta al entrar nuevamente; el cierre en línea intenta guardar y revoca la sesión de este dispositivo. Los cambios sin conexión se conservan para el próximo inicio de sesión.
+- Sincronización serializada y actualización condicional por `updated_at`: no sobrescribe una escritura concurrente. Se compara cada especialidad con la última copia confirmada; cambios divergentes detienen el envío y ofrecen descargar ambas copias y elegir cuál conservar. No se suman estadísticas potencialmente duplicadas.
+- Simulacros guardados localmente por cuenta y especialidad. Se recuperan preguntas, respuestas, marcas e índice al recargar. El tiempo continúa fuera de la pantalla; una sesión vencida se evalúa una sola vez al recuperarla.
+- Doble toque en Responder protegido; comenzar una práctica conserva el simulacro pendiente sin evaluar las preguntas de la nueva práctica como parte de ese simulacro.
+- Respaldos validados antes de reemplazar datos; una copia parcial conserva las demás especialidades. Se guarda una copia local anterior a la importación.
+- Caché 3.0.3 con recursos nuevos y documento offline compatible. Las rutas API no reciben HTML de respaldo.
+
+### Verificación 3.0.3
+
+81 pruebas automatizadas: las 48 anteriores y 33 nuevas de cuenta, sincronización, carreras de escritura, recuperación, diagnóstico, respaldo y actualización offline. La red, los usuarios y los dispositivos de las pruebas automatizadas son simulados y no escriben datos de usuarios reales. La base remota conserva RLS por usuario; esta versión no requiere migraciones ni nuevas credenciales.
+
+La recuperación del simulacro es local al dispositivo. El progreso finalizado se sincroniza; un simulacro en curso no se traslada a otro teléfono. La autenticación real con una cuenta y la sincronización entre dos dispositivos físicos requieren una prueba con credenciales del usuario; no se incluyen como verificadas por la suite simulada.
+
 ## Versión 3.0.2 — Experiencia móvil y accesibilidad
 
 - Inicio con una acción principal según el progreso, accesos a estudio, práctica y simulacros, y un resumen de la especialidad activa.
@@ -14,9 +30,8 @@ Plataforma web para preparar la Evaluación de Conocimientos Específicos y Peda
 
 ### Próximos avances
 
-1. **3.0.3:** pruebas de recorridos completos, sesiones, sincronización entre dispositivos y continuidad sin conexión.
-2. **3.0.4:** consistencia de contadores y etiquetas anteriores, mensajes y optimización.
-3. **3.1 (alcance propuesto):** revisión editorial del banco y desarrollo de microlecciones pendientes.
+1. **3.0.4:** consistencia de contadores y etiquetas anteriores, mensajes y optimización.
+2. **3.1 (alcance propuesto):** revisión editorial del banco y desarrollo de microlecciones pendientes.
 
 ## Versión 3.0.1 — Corrección de simulacros y microlecciones
 
