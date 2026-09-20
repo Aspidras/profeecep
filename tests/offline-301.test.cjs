@@ -16,7 +16,7 @@ function worker() {
     const file = url.pathname === '/' ? 'index.html' : url.pathname.slice(1);
     const type = file.endsWith('.js') ? 'text/javascript' : file.endsWith('.html') ? 'text/html' : 'text/plain';
     let body = fs.readFileSync(path.join(root, file), 'utf8');
-    if (type === 'text/html' && state.htmlVersion) body = body.replaceAll('3.0.3', state.htmlVersion);
+    if (type === 'text/html' && state.htmlVersion) body = body.replaceAll('3.0.4', state.htmlVersion);
     return new Response(body, {headers: {'content-type': type}});
   };
   const caches = {
@@ -55,7 +55,7 @@ function worker() {
   return {state, stores, caches, request, lifecycle, key, run: code => vm.runInContext(code, context)};
 }
 
-test('3.0.3: precaché coincide exactamente con los scripts y estilos versionados', async () => {
+test('3.0.4: precaché coincide exactamente con los scripts y estilos versionados', async () => {
   const sw = worker();
   await sw.lifecycle('install');
   assert.equal(sw.state.installed, true);
@@ -63,24 +63,24 @@ test('3.0.3: precaché coincide exactamente con los scripts y estilos versionado
   for (const [, url] of html.matchAll(/(?:src|href)="([^"]+\.(?:js|css)(?:\?[^"]+)?)"/g)) {
     assert.ok(assets.has(sw.key(url)), url + ' debe estar disponible sin conexión');
   }
-  assert.equal(sw.run('CACHE'), 'profeecep-3.0.3');
-  assert.match(html, /name="profeecep-version" content="3.0.3"/);
+  assert.equal(sw.run('CACHE'), 'profeecep-3.0.4');
+  assert.match(html, /name="profeecep-version" content="3.0.4"/);
 });
 
-test('3.0.3: todos los scripts cargan desde caché sin devolver HTML', async () => {
+test('3.0.4: todos los scripts cargan desde caché sin devolver HTML', async () => {
   const sw = worker();
   await sw.lifecycle('install');
   sw.state.offline = true;
   const calls = sw.state.networkCalls;
   for (const file of scripts) {
-    const response = await sw.request(file + '?v=3.0.3');
+    const response = await sw.request(file + '?v=3.0.4');
     assert.match(response.headers.get('content-type'), /javascript/);
     assert.equal(await response.text(), fs.readFileSync(path.join(root, file), 'utf8'));
   }
   assert.equal(sw.state.networkCalls, calls);
 });
 
-test('3.0.3: HTML offline se limita a navegaciones; no intercepta API ni recursos desconocidos', async () => {
+test('3.0.4: HTML offline se limita a navegaciones; no intercepta API ni recursos desconocidos', async () => {
   const sw = worker();
   await sw.lifecycle('install');
   sw.state.offline = true;
@@ -88,22 +88,22 @@ test('3.0.3: HTML offline se limita a navegaciones; no intercepta API ni recurso
   assert.equal(sw.request('/api/config'), undefined);
   assert.equal(sw.request('/api/config', {method: 'POST'}), undefined);
   assert.equal(sw.request('/missing.js'), undefined);
-  assert.equal(sw.request('https://another.test/data.js?v=3.0.3'), undefined);
-  sw.stores.get(sw.run('CACHE')).delete(sw.key('release-30.js?v=3.0.3'));
-  assert.equal((await sw.request('release-30.js?v=3.0.3')).type, 'error');
+  assert.equal(sw.request('https://another.test/data.js?v=3.0.4'), undefined);
+  sw.stores.get(sw.run('CACHE')).delete(sw.key('release-30.js?v=3.0.4'));
+  assert.equal((await sw.request('release-30.js?v=3.0.4')).type, 'error');
 });
 
-test('3.0.3: activa su caché y conserva recursos de otras aplicaciones', async () => {
+test('3.0.4: activa su caché y conserva recursos de otras aplicaciones', async () => {
   const sw = worker();
   await sw.caches.open('profeecep-3.0');
   await sw.caches.open('another-app');
   await sw.lifecycle('install');
   await sw.lifecycle('activate');
-  assert.deepEqual(await sw.caches.keys(), ['another-app', 'profeecep-3.0.3']);
+  assert.deepEqual(await sw.caches.keys(), ['another-app', 'profeecep-3.0.4']);
   assert.equal(sw.state.claimed, true);
 });
 
-test('3.0.3: todos los scripts clásicos tienen sintaxis válida', () => {
+test('3.0.4: todos los scripts clásicos tienen sintaxis válida', () => {
   for (const file of [...scripts, 'sw.js']) {
     assert.doesNotThrow(() => new vm.Script(fs.readFileSync(path.join(root, file), 'utf8'), {filename: file}));
   }
@@ -111,10 +111,10 @@ test('3.0.3: todos los scripts clásicos tienen sintaxis válida', () => {
 
 
 test('actualización interrumpida conserva HTML compatible con sus recursos offline', async () => {
-  const sw = worker(); await sw.lifecycle('install'); sw.state.htmlVersion = '3.0.4';
-  assert.match(await (await sw.request('/', {mode: 'navigate'})).text(), /content="3.0.4"/);
+  const sw = worker(); await sw.lifecycle('install'); sw.state.htmlVersion = '3.0.5';
+  assert.match(await (await sw.request('/', {mode: 'navigate'})).text(), /content="3.0.5"/);
   sw.state.offline = true;
-  assert.match(await (await sw.request('/', {mode: 'navigate'})).text(), /content="3.0.3"/);
+  assert.match(await (await sw.request('/', {mode: 'navigate'})).text(), /content="3.0.4"/);
   assert.equal(sw.request('/api/config', {mode: 'navigate'}), undefined);
   assert.equal(sw.request('/not-an-app-page', {mode: 'navigate'}), undefined);
 });

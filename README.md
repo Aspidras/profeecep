@@ -2,6 +2,27 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.4 — Explicaciones para aprender de cada alternativa
+
+- El tutor responde con la explicación de la pregunta activa. Ya no sustituye la solución por una guía general del subdominio ni omite las razones guardadas.
+- 714 preguntas y 2.856 razones por alternativa: 356 ítems con distractores editados por pregunta, 333 preguntas de cobertura con razones vinculadas al desempeño del indicador y 25 ítems que conservan sus explicaciones originales. El contenido se distribuye con la aplicación y funciona sin una consulta externa al tutor.
+- Al responder se explica primero el error de la opción elegida y después la respuesta correcta. Las cuatro alternativas tienen secciones desplegables con etiquetas de correcta, incorrecta y elección del estudiante.
+- La revisión final de práctica y simulacro permite consultar todas las respuestas, incluidas correctas y omitidas. Los ejercicios de microlección y los dos tutores usan las mismas razones. El tutor guiado no aparece durante el simulacro evaluativo.
+- Ajustes editoriales: orden explícito de operaciones en tres traducciones algebraicas, seis ejes del hexágono, leyes federales de 1826, haber impersonal, ejemplo de rima, enunciados de variables experimentales, fuerza y gas, y organización problema–causas–soluciones.
+- Se conservan los 714 IDs, las posiciones de respuestas correctas, las seis especialidades y el progreso. Las mejoras de sesión y recuperación de 3.0.3 se mantienen.
+- La comprobación del banco detecta alternativas sin razones, textos de relleno conocidos y explicaciones idénticas dentro del ítem. Esta comprobación no equivale a una certificación pedagógica: las preguntas de cobertura siguen siendo tareas de alineación didáctica y las microlecciones pendientes siguen identificadas.
+
+### Verificación 3.0.4
+
+96 pruebas automatizadas: 81 anteriores y 15 nuevas. Cubren las seis especialidades, el caso reportado sin microlección, selección equivocada, diagnóstico, revisión del simulacro, coherencia entre tutores, conservación de IDs y claves, texto seguro y el control de contenido incompleto. La prueba offline conserva un documento de 3.0.4 aunque falle una actualización a otra versión. Las pruebas de autenticación mantienen las limitaciones descritas para 3.0.3.
+
+### Referencias de las correcciones puntuales
+
+- La distinción entre constituciones y leyes federales se contrastó con [Historia Política de la BCN](https://www.bcn.cl/historiapolitica/constituciones/index.html).
+- El uso de haber existencial en singular se contrastó con [RAE y ASALE: haber](https://www.rae.es/dpd/haber).
+- La coordinación hormonal y el pico de LH se contrastaron con [OpenStax: sistema reproductor ovárico](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system).
+- Las funciones de barreras y fagocitos se contrastaron con [OpenStax: respuesta inmunitaria innata](https://openstax.org/books/anatomy-and-physiology-2e/pages/21-2-barrier-defenses-and-the-innate-immune-response).
+
 ## Versión 3.0.3 — Continuidad y sincronización
 
 - Sesión recuperable sin conexión, renovación de tokens al vencer y reintento al volver internet o a la aplicación. Estado visible de los cambios pendientes y de los errores.
@@ -30,7 +51,7 @@ La recuperación del simulacro es local al dispositivo. El progreso finalizado s
 
 ### Próximos avances
 
-1. **3.0.4:** consistencia de contadores y etiquetas anteriores, mensajes y optimización.
+1. **Siguiente mantenimiento:** consistencia de contadores y etiquetas anteriores, mensajes y optimización.
 2. **3.1 (alcance propuesto):** revisión editorial del banco y desarrollo de microlecciones pendientes.
 
 ## Versión 3.0.1 — Corrección de simulacros y microlecciones

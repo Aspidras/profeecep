@@ -29,24 +29,7 @@
     badge.textContent = 'Contenido propio ProfeECEP 2.2 · ' + (x.skill || 'razonamiento aplicado');
     card.insertBefore(badge, card.firstChild);
   }
-  function explainCurrent() {
-    const x = question(), target = document.querySelector('#practice');
-    if (!x || !target || target.querySelector('.phase22Tutor')) return;
-    const b = document.createElement('button');
-    b.className = 'btn ghost full phase22Tutor';
-    b.textContent = 'Ver por qué cada alternativa es correcta o incorrecta';
-    b.onclick = () => {
-      const rows = (x.explanations || []).map((e, i) => '<div class=\"phase22Explanation\"><b>' + String.fromCharCode(65 + i) + '. ' + escape(x.o[i]) + '</b><p>' + escape(e) + '</p></div>').join('');
-      const old = target.querySelector('.phase22Explanations');
-      if (old) old.remove();
-      const wrap = document.createElement('div');
-      wrap.className = 'card phase22Explanations';
-      wrap.innerHTML = '<span class=\"pill\">Análisis 2.2</span><h3>Razonamiento de las alternativas</h3>' + rows;
-      target.appendChild(wrap);
-    };
-    target.appendChild(b);
-  }
-  function inject() { enrichStudy(); enrichQuestion(); explainCurrent(); }
+  function inject() { enrichStudy(); enrichQuestion(); }
   const oldOpen = window.openStudy;
   if (oldOpen && !window.__pe22OpenWrapped) {
     window.openStudy = function (id) { const r = oldOpen(id); setTimeout(inject, 0); return r; };

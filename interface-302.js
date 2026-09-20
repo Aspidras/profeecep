@@ -1,4 +1,4 @@
-// ProfeECEP 3.0.3 — presentation only; progress and question storage stay in their existing modules.
+// ProfeECEP 3.0.4 — presentation only; progress and question storage stay in their existing modules.
 (function () {
   'use strict';
 
@@ -69,7 +69,7 @@
         '<div><dt>Precisión en práctica</dt><dd>' + next.precision + '</dd></div>' +
         '<div><dt>Preguntas disponibles</dt><dd>' + next.questions + '</dd></div></dl></section>' +
         '<div class="pe302-groups">' + groups.map(group => '<details class="pe302-group" data-pe302-group="' + group.id + '"' + (openGroups.has(group.id) ? ' open' : '') + '><summary><span><b>' + group.title + '</b><small>' + group.description + '</small></span><span class="pe302-chevron" aria-hidden="true">⌄</span></summary><div class="pe302-group-body"></div></details>').join('') + '</div>' +
-        '<footer class="pe302-footer"><span>ProfeECEP 3.0.3</span><button class="mini ghost2" data-pe302-action="access">Lectura y accesibilidad</button></footer>';
+        '<footer class="pe302-footer"><span>ProfeECEP 3.0.4</span><button class="mini ghost2" data-pe302-action="access">Lectura y accesibilidad</button></footer>';
       dashboard.querySelectorAll('details').forEach(details => details.addEventListener('toggle', () => {
         if (details.open) openGroups.add(details.dataset.pe302Group); else openGroups.delete(details.dataset.pe302Group);
       }));

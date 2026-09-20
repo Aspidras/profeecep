@@ -1,4 +1,4 @@
-// ProfeECEP 3.0.3 — comprobaciones estructurales, no certificación editorial
+// ProfeECEP 3.0.4 — comprobaciones estructurales, no certificación editorial
 (function () {
   'use strict';
 
@@ -33,6 +33,7 @@
       if (!question || !Number.isInteger(question.a) || question.a < 0 || !Array.isArray(question.o) || question.a >= question.o.length) issues.push(label + ': respuesta correcta inválida');
       if (!question || typeof question.e !== 'string' || !question.e.trim()) issues.push(label + ': falta la explicación');
       if (!question || !question.id) issues.push(label + ': falta el identificador');
+      if (!window.PE304?.complete(question)) issues.push(label + ': faltan razones específicas por alternativa');
       if (question && question.id) {
         const id = String(question.id).trim();
         if (ids.has(id)) issues.push(label + ': identificador duplicado (' + id + ')');
@@ -64,7 +65,7 @@
       {label: 'Motor de navegación cargado', ok: typeof window.render === 'function'}
     ];
     return {
-      version: '3.0.3',
+      version: '3.0.4',
       specialties,
       checks,
       totalQuestions: loaded.reduce((sum, item) => sum + item.count, 0),
@@ -98,7 +99,7 @@
     const header = node('header');
     const heading = node('div');
     const pill = node('span', 'release30badge' + (report.ready ? '' : ' warn'), report.ready ? 'Estructura comprobada' : 'Revisar estructura');
-    const title = node('b', '', 'Estado de ProfeECEP 3.0.3');
+    const title = node('b', '', 'Estado de ProfeECEP 3.0.4');
     title.id = 'pe30-title';
     heading.append(pill, title);
     const close = node('button', 'pe30-close', '×');
@@ -137,11 +138,11 @@
     const home = document.getElementById('home');
     if (!home) return;
     const pill = home.querySelector('.hero .pill');
-    if (pill) pill.textContent = 'ProfeECEP 3.0.3';
+    if (pill) pill.textContent = 'ProfeECEP 3.0.4';
     if (home.querySelector('.release30home')) return;
     const report = status(), card = node('div', 'card release30home');
     const hero = node('div', 'release30hero'), copy = node('div');
-    copy.append(node('h3', '', 'ProfeECEP 3.0.3'), node('p', 'muted', 'Recuperación de simulacros, reconexión automática y protección de avances entre dispositivos.'));
+    copy.append(node('h3', '', 'ProfeECEP 3.0.4'), node('p', 'muted', 'Explicaciones de cada alternativa, tutor centrado en la pregunta y revisión de respuestas para aprender del error.'));
     hero.append(copy, node('span', 'release30badge' + (report.ready ? '' : ' warn'), report.ready ? 'Estructura válida' : 'Revisar'));
     const stats = node('div', 'release30stats');
     [[report.specialties.length, 'especialidades'], [report.activeQuestions, 'preguntas en tu especialidad'], [report.issueCount, 'observaciones estructurales']].forEach(value => {

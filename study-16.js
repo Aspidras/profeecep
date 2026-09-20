@@ -39,7 +39,7 @@ PE16.summary=function(x,g){
 PE16.exercise=function(q){
  if(!q)return '<div class="studyCard exercise"><div class="studyLabel">Práctica pendiente</div><p>Aún no hay una pregunta clasificada para este indicador.</p></div>';
  const esc=PE16.escape;
- return '<div class="studyCard exercise"><div class="studyLabel">✍️ Ejercicio del indicador</div><p><b>'+esc(q.q)+'</b></p><details><summary>Ver alternativas y solución</summary><div class="guidedOptions">'+q.o.map((o,i)=>'<div>'+String.fromCharCode(65+i)+'. '+esc(o)+'</div>').join("")+'</div><p><b>Respuesta:</b> '+String.fromCharCode(65+q.a)+'. '+esc(q.o[q.a])+'</p><p class="muted">'+esc(q.e)+'</p></details></div>';
+ return '<div class="studyCard exercise"><div class="studyLabel">✍️ Ejercicio del indicador</div><p><b>'+esc(q.q)+'</b></p><details><summary>Ver alternativas y solución</summary><div class="guidedOptions">'+q.o.map((o,i)=>'<div>'+String.fromCharCode(65+i)+'. '+esc(o)+'</div>').join("")+'</div><p><b>Respuesta:</b> '+String.fromCharCode(65+q.a)+'. '+esc(q.o[q.a])+'</p><p class="muted">'+esc(q.e)+'</p>'+PE304.alternatives(q)+'</details></div>';
 };
 
 PE16.open=function(id){

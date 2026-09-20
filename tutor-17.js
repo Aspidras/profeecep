@@ -1,4 +1,4 @@
-// ProfeECEP 1.7 — Tutor contextual
+// Tutor contextual — explicaciones de la pregunta activa (3.0.4)
 window.PE17={current:null};
 
 PE17.escape=function(s){
@@ -17,48 +17,38 @@ PE17.contextFromQuestion=function(q){
  if(!q)return null;
  const indicator=flat.find(x=>x.id===q.indicatorId)||{domain:q.d,sub:q.i,t:q.i};
  const guide=PE16.guide(indicator);
- const questions=PE16.related(indicator).filter(x=>x.id!==q.id);
- return{type:"question",question:q,guide,indicator,questions};
+ const questions=PE16.related(indicator,Q.length).filter(x=>x.id!==q.id);
+ return{type:"question",question:q,guide,indicator,questions,selected:window.PE304?.selected(q)};
 };
 
 PE17.simple=function(ctx){
- if(!ctx)return "Abre una microlección o responde una pregunta para que pueda ayudarte con ese contenido.";
- const g=ctx.guide;
- if(g&&g.learn)return g.learn;
- return "Este contenido forma parte del temario de ProfeECEP. Revisa el indicador y practica con las preguntas relacionadas para consolidarlo.";
+ if(!ctx)return 'Abre una microlección o responde una pregunta para consultar su explicación.';
+ if(ctx.question)return '<b>La idea de esta pregunta</b><p>'+PE17.escape(PE304.reason(ctx.question,ctx.question.a))+'</p>';
+ if(ctx.guide?.learn)return PE17.escape(ctx.guide.learn);
+ const q=ctx.questions?.[0];
+ if(q)return '<b>Veamos una pregunta de este indicador</b><p>'+PE17.escape(q.q)+'</p><p>'+PE17.escape(PE304.reason(q,q.a))+'</p>';
+ return 'La microlección de este indicador todavía está pendiente.';
 };
-
 PE17.whyCorrect=function(ctx){
- const q=ctx&&ctx.question;
- if(!q)return "Selecciona una pregunta para revisar su respuesta.";
- return q.e+" La alternativa correcta es "+String.fromCharCode(65+q.a)+". "+q.o[q.a]+".";
+ const q=ctx?.question;if(!q)return 'Selecciona una pregunta para revisar su respuesta.';
+ return '<b>'+PE17.escape(String.fromCharCode(65+q.a)+'. '+q.o[q.a])+'</b><p>'+PE17.escape(PE304.reason(q,q.a))+'</p>';
 };
-
 PE17.whyOthers=function(ctx){
- const q=ctx&&ctx.question;
- if(!q)return "Selecciona una pregunta para analizar sus alternativas.";
- const items=q.o.map((o,i)=>{
-   if(i===q.a)return "<li><b>"+String.fromCharCode(65+i)+". "+PE17.escape(o)+"</b>: es la alternativa correcta según la explicación disponible.</li>";
-   return "<li><b>"+String.fromCharCode(65+i)+". "+PE17.escape(o)+"</b>: ProfeECEP no tiene todavía una explicación específica almacenada para esta alternativa. Compárala con la solución correcta y el concepto de la microlección.</li>";
- }).join("");
- return "<ul>"+items+"</ul>";
+ const q=ctx?.question;if(!q)return 'Selecciona una pregunta para analizar sus alternativas.';
+ return PE304.alternatives(q,ctx.selected);
 };
-
 PE17.remember=function(ctx){
- if(!ctx)return "Abre un contenido para generar un recordatorio.";
+ if(!ctx)return 'Abre un contenido para consultar su recordatorio.';
+ if(ctx.question)return '<b>Para recordar en esta pregunta</b><p>'+PE17.escape(ctx.question.feedbackApproach||PE304.reason(ctx.question,ctx.question.a))+'</p>';
  const g=ctx.guide;
- const bits=[];
- if(g&&g.learn)bits.push(g.learn.split(".")[0]+".");
- if(g&&g.error)bits.push("Evita: "+g.error.split(".")[0].toLowerCase()+".");
- if(g&&g.pedagogy)bits.push("Mirada pedagógica: "+g.pedagogy.split(".")[0]+".");
- return bits.join(" ")||"Resume con tus propias palabras qué representa el procedimiento y qué error frecuente debes evitar.";
+ if(g)return PE17.escape(g.summary||g.learn||'')+(g.error?'<p><b>Error que conviene evitar:</b> '+PE17.escape(g.error)+'</p>':'');
+ return PE17.simple(ctx);
 };
-
 PE17.practice=function(ctx){
- const pool=(ctx&&ctx.questions)||((ctx&&ctx.question)?Q.filter(x=>x.i===ctx.question.i&&x.id!==ctx.question.id):[]);
- if(!pool.length)return "No hay otra pregunta relacionada disponible todavía.";
+ const pool=ctx?.questions||[];
+ if(!pool.length)return 'No hay otra pregunta relacionada disponible todavía.';
  const q=pool[Math.floor(Math.random()*pool.length)];
- return '<div class="tutorPractice"><div class="muted">'+PE17.escape(q.i)+'</div><b>'+PE17.escape(q.q)+'</b>'+q.o.map((o,i)=>'<div>'+String.fromCharCode(65+i)+'. '+PE17.escape(o)+'</div>').join("")+'<details><summary>Ver solución</summary><p><b>'+String.fromCharCode(65+q.a)+'. '+PE17.escape(q.o[q.a])+'</b></p><p>'+PE17.escape(q.e)+'</p></details></div>';
+ return '<div class="tutorPractice"><div class="muted">'+PE17.escape(q.i)+'</div><b>'+PE17.escape(q.q)+'</b>'+q.o.map((o,i)=>'<div>'+String.fromCharCode(65+i)+'. '+PE17.escape(o)+'</div>').join('')+'<details><summary>Ver solución y alternativas</summary>'+PE304.feedback(q)+'</details></div>';
 };
 
 PE17.respond=function(kind,ctx){
@@ -74,7 +64,7 @@ PE17.open=function(ctx){
  PE17.current=ctx||PE17.contextFromStudy();
  let old=document.querySelector(".tutorOverlay");if(old)old.remove();
  const overlay=document.createElement("div");overlay.className="tutorOverlay";
- overlay.innerHTML='<div class="tutorModal"><button class="close" onclick="PE17.close()">×</button><span class="pill">Tutor ProfeECEP 1.7</span><h2>¿Cómo quieres que te ayude?</h2><div class="tutorActions"><button onclick="PE17.ask(\'simple\')">Explícamelo más simple</button><button onclick="PE17.ask(\'correct\')">¿Por qué es correcta?</button><button onclick="PE17.ask(\'others\')">Revisar alternativas</button><button onclick="PE17.ask(\'remember\')">¿Qué debo recordar?</button><button onclick="PE17.ask(\'practice\')">Dame otra práctica</button></div><div id="tutorAnswer" class="tutorAnswer"><p class="muted">El tutor usa únicamente el contenido y las preguntas cargadas en ProfeECEP.</p></div></div>';
+ overlay.innerHTML='<div class="tutorModal"><div class="pe304-tutor-head"><button class="close" aria-label="Cerrar tutor" onclick="PE17.close()">×</button><span class="pill">Tutor ProfeECEP</span><h2>Entiende el razonamiento</h2></div>'+(PE17.current?.question?'<p class="pe304-question">'+PE17.escape(PE17.current.question.q)+'</p>':'')+'<div class="tutorActions"><button onclick="PE17.ask(\'simple\')">Explícamelo más simple</button><button onclick="PE17.ask(\'correct\')">¿Por qué es correcta?</button><button onclick="PE17.ask(\'others\')">Revisar alternativas</button><button onclick="PE17.ask(\'remember\')">¿Qué debo recordar?</button><button onclick="PE17.ask(\'practice\')">Dame otra práctica</button></div><div id="tutorAnswer" class="tutorAnswer" tabindex="-1" aria-live="polite"><p class="muted">Elige qué parte quieres comprender.</p></div></div>';
  document.body.appendChild(overlay);
 };
 
@@ -83,6 +73,7 @@ PE17.close=function(){document.querySelector(".tutorOverlay")?.remove()};
 PE17.ask=function(kind){
  const box=document.getElementById("tutorAnswer");if(!box)return;
  box.innerHTML=PE17.respond(kind,PE17.current);
+ box.focus?.({preventScroll:true});box.scrollIntoView?.({block:"nearest"});
 };
 
 PE17.studyButton=function(){
