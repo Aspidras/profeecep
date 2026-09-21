@@ -149,3 +149,20 @@ test('pautas abarcan 146 ítems; la selección publicada contiene 90, sin simula
   assert.ok(app.context.PE305_ITEMS.every(q=>q.sourceNote.includes('no es una pregunta oficial')));
   assert.equal(new Set(app.context.PE305_ITEMS.map(q=>q.id)).size,90);
 });
+
+test('la recomendación adaptativa sigue funcionando después de responder y distingue repasos vencidos', () => {
+  const now = Date.parse('2026-09-21T12:00:00');
+  const app = runtime('basica-lenguaje', {clock: {now}});
+  const q = app.context.PE305.pool()[0];
+  app.context.testQuestion = q;
+  app.run("S.history=[{id:testQuestion.id,domain:testQuestion.d,ok:true,date:'2026-09-19'}]");
+  const due = app.context.PE14.questionScore(q, app.context.PE14.profile());
+  assert.ok(due.reasons.includes('repaso vencido'));
+  assert.ok(Number.isFinite(due.score));
+  assert.equal(app.context.PE14.select(5).length, 5);
+  app.run("S.history[0].date='2026-09-21'");
+  const recent = app.context.PE14.questionScore(q, app.context.PE14.profile());
+  assert.ok(!recent.reasons.includes('repaso vencido'));
+  assert.equal(due.score - recent.score, 25);
+  assert.equal(app.context.PE14.summary().length, 5);
+});

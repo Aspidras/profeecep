@@ -32,7 +32,7 @@ PE14.questionScore=function(q,p){
 
  if(last){
    const day=86400000, lastDate=Date.parse((last.date||"")+"T12:00:00");
-   const days=Math.max(0,Math.floor((now-lastDate)/day));
+   const days=Math.max(0,Math.floor((p.now-lastDate)/day));
    const streak=(()=>{
      let n=0;
      for(let i=attempts.length-1;i>=0;i--){if(attempts[i].ok)n++;else break}
