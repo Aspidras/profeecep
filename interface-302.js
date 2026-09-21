@@ -214,7 +214,7 @@
   function refresh() {
     refreshPending = false;
     if (!document.querySelector('.app')) return;
-    composeHome(); updateNavigation(); updatePreferenceButtons(); decorate(document);
+    composeHome(); window.PE305?.inject(); updateNavigation(); updatePreferenceButtons(); decorate(document);
   }
 
   function scheduleRefresh() {

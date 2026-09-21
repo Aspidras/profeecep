@@ -60,7 +60,7 @@ for (const sid of newSpecialties) {
       assert.ok(!exam.includes('Respuesta correcta'), q.id);
       assert.ok(!exam.includes(app.context.PE304.esc(q.source.adaptation)), q.id);
       const feedback = app.context.PE304.feedback(q, (q.a+1)%4);
-      assert.ok(feedback.includes(expected), q.id);
+      assert.equal(feedback.split(expected).length - 1, 1, q.id + ': un solo estímulo en la explicación');
       assert.ok(feedback.includes(app.context.PE304.esc(q.source.adaptation)), q.id);
       assert.ok(app.context.PE304.review(q).includes(expected), q.id);
       assert.ok(app.context.PE16.exercise(q).includes(expected), q.id);

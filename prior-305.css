@@ -25,3 +25,5 @@
 .pe305-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .pe305-stimuli :focus-visible, .pe305-practice :focus-visible { outline: 3px solid #277b66; outline-offset: 3px; }
 @media (max-width: 420px) { .pe305-figure { padding: .65rem; } .pe305-reading { padding: .85rem; } .pe305-table th, .pe305-table td { padding: .6rem .45rem; } }
+
+.pe305-home { grid-column: 1 / -1; }
