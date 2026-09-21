@@ -1,4 +1,4 @@
-// ProfeECEP 3.0.4 — comprobaciones estructurales, no certificación editorial
+// ProfeECEP 3.0.5 — comprobaciones estructurales, no certificación editorial
 (function () {
   'use strict';
 
@@ -65,7 +65,7 @@
       {label: 'Motor de navegación cargado', ok: typeof window.render === 'function'}
     ];
     return {
-      version: '3.0.4',
+      version: '3.0.5',
       specialties,
       checks,
       totalQuestions: loaded.reduce((sum, item) => sum + item.count, 0),
@@ -99,7 +99,7 @@
     const header = node('header');
     const heading = node('div');
     const pill = node('span', 'release30badge' + (report.ready ? '' : ' warn'), report.ready ? 'Estructura comprobada' : 'Revisar estructura');
-    const title = node('b', '', 'Estado de ProfeECEP 3.0.4');
+    const title = node('b', '', 'Estado de ProfeECEP 3.0.5');
     title.id = 'pe30-title';
     heading.append(pill, title);
     const close = node('button', 'pe30-close', '×');
@@ -138,11 +138,11 @@
     const home = document.getElementById('home');
     if (!home) return;
     const pill = home.querySelector('.hero .pill');
-    if (pill) pill.textContent = 'ProfeECEP 3.0.4';
+    if (pill) pill.textContent = 'ProfeECEP 3.0.5';
     if (home.querySelector('.release30home')) return;
     const report = status(), card = node('div', 'card release30home');
     const hero = node('div', 'release30hero'), copy = node('div');
-    copy.append(node('h3', '', 'ProfeECEP 3.0.4'), node('p', 'muted', 'Explicaciones de cada alternativa, tutor centrado en la pregunta y revisión de respuestas para aprender del error.'));
+    copy.append(node('h3', '', 'ProfeECEP 3.0.5'), node('p', 'muted', '90 preguntas adaptadas de cuadernillos 2023, nuevos gráficos, tablas y textos, con explicación de cada alternativa.'));
     hero.append(copy, node('span', 'release30badge' + (report.ready ? '' : ' warn'), report.ready ? 'Estructura válida' : 'Revisar'));
     const stats = node('div', 'release30stats');
     [[report.specialties.length, 'especialidades'], [report.activeQuestions, 'preguntas en tu especialidad'], [report.issueCount, 'observaciones estructurales']].forEach(value => {

@@ -6,11 +6,11 @@ const root = path.resolve(__dirname, '../..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const scripts = [...html.matchAll(/<script src="([^"]+)"/g)].map(match => match[1].split('?')[0]);
 const specialties = {
-  'basica-matematica': 227,
-  'basica-ciencias': 108,
+  'basica-matematica': 257,
+  'basica-ciencias': 138,
   'basica-historia': 100,
   'basica-ingles': 102,
-  'basica-lenguaje': 80,
+  'basica-lenguaje': 110,
   'media-lengua': 97
 };
 

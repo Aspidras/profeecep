@@ -1,0 +1,1323 @@
+{
+  "reviewDate": "2026-09-21",
+  "sourceItems": 146,
+  "publishedAdaptations": 90,
+  "unchangedOldItems": 714,
+  "editorialReview": "Revisión asistida; no certificación externa ni calibración psicométrica.",
+  "items": [
+    {
+      "file": "PC-M(23).pdf",
+      "number": 1,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-01",
+      "indicatorId": "4-0-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 2,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-02",
+      "indicatorId": "4-0-1",
+      "note": "Se cambia radio por diámetro para estimar directamente π mediante C/d, sin omitir el factor 2 de C/r."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 3,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 4,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 5,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-05",
+      "indicatorId": "4-0-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 6,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-06",
+      "indicatorId": "4-0-5",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 7,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-07",
+      "indicatorId": "4-0-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 8,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 9,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-09",
+      "indicatorId": "4-1-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 10,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 11,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-11",
+      "indicatorId": "4-2-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 12,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-12",
+      "indicatorId": "4-2-1",
+      "note": "Se reemplaza una formulación ambigua sobre la mitad de un número por una secuencia explícita de operaciones."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 13,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-13",
+      "indicatorId": "0-0-1",
+      "note": "Las barras de período del escaneo se sustituyen por decimales expandidos para conservar el sentido en pantalla y lector de voz."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 14,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-14",
+      "indicatorId": "0-0-2",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 15,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 16,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-16",
+      "indicatorId": "0-1-0",
+      "note": "Se declara explícitamente el supuesto de proporcionalidad inversa; no se presenta como una ley real de las filas de atención."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 17,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-17",
+      "indicatorId": "0-1-2",
+      "note": "Se usa un concentrado genérico y se explicita aditividad de volúmenes; se conserva el problema matemático."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 18,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-18",
+      "indicatorId": "0-2-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 19,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 20,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-20",
+      "indicatorId": "0-2-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 21,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-21",
+      "indicatorId": "1-0-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 22,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-22",
+      "indicatorId": "1-0-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 23,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-23",
+      "indicatorId": "1-1-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 24,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-24",
+      "indicatorId": "1-1-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 25,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-25",
+      "indicatorId": "1-2-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 26,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 27,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-27",
+      "indicatorId": "1-2-2",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 28,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-28",
+      "indicatorId": "1-2-3",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 29,
+      "sourceKey": "B",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "Duplicado conceptual directo del ítem basica-matematica-287-22: seis ejes del hexágono regular. No se agrega otra copia."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 30,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 31,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 32,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-32",
+      "indicatorId": "2-0-3",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 33,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-33",
+      "indicatorId": "2-1-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 34,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 35,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-35",
+      "indicatorId": "2-1-3",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 36,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-36",
+      "indicatorId": "2-0-2",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 37,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 38,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 39,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 40,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-40",
+      "indicatorId": "3-0-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 41,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 42,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-42",
+      "indicatorId": "3-0-1",
+      "note": "Se reformula la variable como kilometraje para evitar unidades confusas; se mantienen tamaños de grupo y medias."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 43,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 44,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-44",
+      "indicatorId": "3-0-3",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 45,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 46,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-46",
+      "indicatorId": "3-1-1",
+      "note": "Se corrige 0,3490 con 500 giros, incompatible con un conteo entero, por 174/500 = 0,3480. Se elimina la predicción garantizada de futuros giros."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 47,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "PC-M(23).pdf",
+      "number": 48,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-matematica-305-2023-48",
+      "indicatorId": "3-1-2",
+      "note": "Se hace explícito que se cuentan registros ordenados. Sin distinguir posiciones, la pauta 3 840 no sería justificable para combinaciones sin orden."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 1,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-01",
+      "indicatorId": "6-0-0",
+      "note": "Se corrige el diseño para controlar energía transferida, masa, temperatura inicial y pérdidas; se pregunta por ΔT, no por distinto calor absorbido con igual aporte."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 2,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 3,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-03",
+      "indicatorId": "6-0-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 4,
+      "sourceKey": "B",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "El pan con levadura combina producción de gas y expansión térmica. El ejemplo requiere controlar cantidad de gas para aislar la relación volumen-temperatura."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 5,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-05",
+      "indicatorId": "6-0-3",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 6,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-06",
+      "indicatorId": "6-0-0",
+      "note": "Se reemplaza la inferencia sobre hielo por una sobre volumen del agua líquida, consistente con las variables y el rango del gráfico."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 7,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 8,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-08",
+      "indicatorId": "6-0-1",
+      "note": "Los cuatro modelos dibujados se adaptan a secuencias verbales accesibles; se conserva la distinción entre digestión y absorción."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 9,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 10,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 11,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 12,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-12",
+      "indicatorId": "6-1-1",
+      "note": "Se explicita la negación de memoria inmunológica y se evita atribuir una confusión innata/adaptativa que el texto original no demostraba con claridad."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 13,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-13",
+      "indicatorId": "6-1-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 14,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 15,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 16,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-16",
+      "indicatorId": "6-2-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 17,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-17",
+      "indicatorId": "6-2-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 18,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-18",
+      "indicatorId": "5-0-0",
+      "note": "Se distingue predictor en estudio observacional de variable manipulada y se evita inferir causalidad de una asociación."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 19,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-19",
+      "indicatorId": "5-0-1",
+      "note": "Se añaden control de intensidad, edad y réplicas; se reemplaza el diseño con celofán, que también puede cambiar intensidad y temperatura."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 20,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-20",
+      "indicatorId": "5-0-1",
+      "note": "Se conserva la comparación experimental y se informa la identificación del gas sin describir pruebas con llama."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 21,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 22,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-22",
+      "indicatorId": "2-0-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 23,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-23",
+      "indicatorId": "5-0-2",
+      "note": "Nueva situación de plantas que conserva la estructura del control faltante del estudio original; no se reproduce el protocolo animal."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 24,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 25,
+      "sourceKey": "C",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "Se reserva para revisión conceptual de las funciones atribuidas a proteínas periféricas frente a integrales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 26,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-26",
+      "indicatorId": "0-0-0",
+      "note": "Se agregan dirección del gradiente e inhibición de bomba; una correlación ATP-flujo aislada no bastaría para identificar el mecanismo."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 27,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 28,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-28",
+      "indicatorId": "0-1-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 29,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-29",
+      "indicatorId": "0-1-3",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 30,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-30",
+      "indicatorId": "0-1-2",
+      "note": "Se elimina la afirmación absoluta de que la respuesta siempre es idéntica, y se precisa reconocimiento de patrones."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 31,
+      "sourceKey": "C",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "La pauta no resuelve de manera consistente la reposición de glicógeno pedida en el enunciado. No se publica ni se justifica esa clave."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 32,
+      "sourceKey": "A",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "La formulación sobre componente adictivo de heroína requiere revisión conceptual; no se incorpora tal asociación como hecho."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 33,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 34,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 35,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 36,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-36",
+      "indicatorId": "1-0-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 37,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-37",
+      "indicatorId": "1-1-1",
+      "note": "Se pregunta por el efecto directo sobre las presas y se explicitan los demás factores constantes, para evitar confundir efectos indirectos y temporales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 38,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-38",
+      "indicatorId": "1-1-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 39,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 40,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-40",
+      "indicatorId": "2-0-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 41,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 42,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-42",
+      "indicatorId": "3-0-2",
+      "note": "Se reemplaza la silla con ruedas por una caja que desliza para identificar sin ambigüedad el roce cinético y el equilibrio de fuerzas."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 43,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-43",
+      "indicatorId": "3-0-0",
+      "note": "Se reemplaza la supuesta superficie de Saturno por la Tierra y se proporciona g. El peso no se deduce únicamente de la masa del planeta."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 44,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-44",
+      "indicatorId": "3-0-1",
+      "note": "Se hacen explícitos igual coeficiente de arrastre y orientación; área y masa solas no bastan para comparar cuerpos reales de formas distintas."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 45,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-45",
+      "indicatorId": "3-1-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 46,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 47,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-47",
+      "indicatorId": "3-1-5",
+      "note": "Se añade cálculo con unidades y se distingue magnitud de corriente del sentido convencional y del movimiento de electrones."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 48,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-48",
+      "indicatorId": "3-1-6",
+      "note": "Se especifica tensión nominal de las lámparas y fuente ideal; se fundamenta por independencia de ramas y tensión, no por brillo máximo sin condiciones."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 49,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 50,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-50",
+      "indicatorId": "4-0-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 51,
+      "sourceKey": "B",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "La distinción entre parámetros físicos y fisicoquímicos necesita aclaración para asegurar una única respuesta."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 52,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-CN(23).pdf",
+      "number": 53,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-ciencias-305-2023-53",
+      "indicatorId": "4-0-2",
+      "note": "Se conserva la lectura espacial mediante un esquema propio de vista superior y alternativas que nombran tipos de límite."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 1,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-01",
+      "indicatorId": "2-0-4",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 2,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-02",
+      "indicatorId": "2-0-4",
+      "note": "Se sustituyen claridad y tecnicismo como garantías de fiabilidad por autoría, pertinencia, evidencia y contraste."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 3,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-03",
+      "indicatorId": "2-0-1",
+      "note": "Poema original de práctica que conserva el formato de selección de estrategia con apoyo en imágenes del texto."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 4,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 5,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 6,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-06",
+      "indicatorId": "2-0-7",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 7,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 8,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-08",
+      "indicatorId": "2-0-2",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 9,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-09",
+      "indicatorId": "2-0-5",
+      "note": "Afiche original sin cifra de consumo que requiera validación; el enunciado y las alternativas se ajustan al dato cualitativo."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 10,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-10",
+      "indicatorId": "2-1-1",
+      "note": "Borrador original; se evita afirmar que toda acotación narrativa está prohibida y se focaliza la explicación interior que requiere trabajo escénico."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 11,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-11",
+      "indicatorId": "2-1-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 12,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-12",
+      "indicatorId": "2-2-0",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 13,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-13",
+      "indicatorId": "2-2-2",
+      "note": "Nueva situación equivalente: carta sobre residuos en un parque; se mantiene la distinción entre deseo del personaje y efecto del mensaje."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 14,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-14",
+      "indicatorId": "2-2-2",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 15,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-15",
+      "indicatorId": "0-0-0",
+      "note": "Fragmento narrativo original que conserva la evaluación del grado de conocimiento del narrador."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 16,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-16",
+      "indicatorId": "0-0-4",
+      "note": "Texto original que evalúa sentido de la metáfora sin reproducir el fragmento literario de la prueba."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 17,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-17",
+      "indicatorId": "0-0-0",
+      "note": "Se usa analepsis breve y se eliminan alternativas sinónimas o distinciones basadas solo en extensión entre racconto y flashback."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 18,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 19,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-19",
+      "indicatorId": "0-0-1",
+      "note": "Verso original de práctica que evita el solapamiento interpretativo entre personificación e hipérbole del fragmento fuente."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 20,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 21,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-21",
+      "indicatorId": "0-0-2",
+      "note": "Se conserva el poema aportado con su autor y se explicitan medida y esquema de rima para evaluar reconocimiento de la forma estrófica."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 22,
+      "sourceKey": "B",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 23,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 24,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-24",
+      "indicatorId": "2-2-0",
+      "note": "Fragmento original y criterio convencional explícito; se evita presentar esta división como regla absoluta para toda dramaturgia."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 25,
+      "sourceKey": "D",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "La acotación combina acción, postura y emoción. Se reserva para reformulación que precise la dimensión solicitada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 26,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-26",
+      "indicatorId": "0-1-0",
+      "note": "Texto informativo original; evita reproducir la confusión entre frecuencia y longitud de onda del fragmento sobre color."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 27,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-27",
+      "indicatorId": "0-0-5",
+      "note": "Cómic original que mantiene lectura de secuencia visual y determinación del tema, sin reutilizar la ilustración ni generalizar sobre la vejez."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 28,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-28",
+      "indicatorId": "0-1-5",
+      "note": "Columna breve original centrada en la función de preguntas retóricas."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 29,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-29",
+      "indicatorId": "0-1-4",
+      "note": "Texto ficticio explícitamente identificado. Se adapta el análisis del respaldo argumentativo a la distinción entre opinión y afirmación verificable del temario cargado, sin inventar una cita atribuida a una institución real."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 30,
+      "sourceKey": "A",
+      "status": "reservada-con-observacion",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "Se reserva la generalización ortográfica de la terminación -ción para revisión específica; no se traslada automáticamente la regla de la pauta."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 31,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-31",
+      "indicatorId": "0-1-4",
+      "note": "Columna original que distingue opinión principal de datos o razones complementarias."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 32,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 33,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-33",
+      "indicatorId": "1-0-0",
+      "note": "Fragmentos originales y propósito causal explícito para reducir la dependencia de contextos implícitos."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 34,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-34",
+      "indicatorId": "1-0-0",
+      "note": "Nuevo caso que hace explícito el referente deseado y evalúa la ambigüedad pronominal."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 35,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-35",
+      "indicatorId": "0-1-4",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 36,
+      "sourceKey": "C",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-36",
+      "indicatorId": "0-1-2",
+      "note": "Infografía original de práctica que conserva relación entre palabras destacadas, imagen y significado; comparte recurso con el ítem 37."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 37,
+      "sourceKey": "A",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-37",
+      "indicatorId": "0-1-2",
+      "note": "Segunda pregunta de una infografía original compartida, centrada en la relación temporal entre sus elementos."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 38,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 39,
+      "sourceKey": "D",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 40,
+      "sourceKey": "D",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-40",
+      "indicatorId": "1-1-0",
+      "note": "Se sustituye la formulación «acento prosódico» de la fuente por la distinción ortográfica precisa entre relativo átono e interrogativo tónico."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 41,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 42,
+      "sourceKey": "C",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 43,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-43",
+      "indicatorId": "1-1-2",
+      "note": "Situación de exposición original; se conserva análisis de progresión temática sin reproducir la conferencia."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 44,
+      "sourceKey": "A",
+      "status": "no-seleccionada",
+      "questionId": null,
+      "indicatorId": null,
+      "note": "No incluida en la selección de 30 preguntas por especialidad. Permanece como referencia; no se afirma que sea inadecuada."
+    },
+    {
+      "file": "SC-L(23).pdf",
+      "number": 45,
+      "sourceKey": "B",
+      "status": "adaptada",
+      "questionId": "basica-lenguaje-305-2023-45",
+      "indicatorId": "1-1-1",
+      "note": "Enunciado abreviado, alternativas revisadas y explicaciones originales."
+    }
+  ]
+}

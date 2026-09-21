@@ -2,6 +2,15 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.5 — Pruebas anteriores y nuevos formatos
+
+- 90 preguntas adaptadas de los cuadernillos aportados de 2023: 30 de Matemática, 30 de Ciencias Naturales y 30 de Lenguaje básico. Banco total: 804 preguntas.
+- 360 explicaciones nuevas, una para cada alternativa, y 13 recursos visuales propios. Las preguntas conservan referencia a fuente, página, número y cambios de adaptación.
+- Acceso «Pruebas anteriores», filtro por formatos y catálogo para elegir una pregunta. Los estímulos se muestran en práctica, diagnóstico, simulacros, revisión, estudio y tutores.
+- Los 714 ítems anteriores y el progreso se conservan. Las otras tres especialidades mantienen sus bancos.
+- 115 pruebas automatizadas: las 96 anteriores y 19 nuevas. Incluyen conservación completa de los ítems previos, claves extraídas de PDF, estímulos en cada modo, ausencia de soluciones anticipadas, cálculos, selección por formato y figuras sin conexión.
+- [Análisis, límites y trazabilidad](docs/pruebas-2023.md). Son adaptaciones de práctica relacionadas con el temario cargado; no preguntas oficiales de 2026 ni una reproducción íntegra de los cuadernillos.
+
 ## Versión 3.0.4 — Explicaciones para aprender de cada alternativa
 
 - El tutor responde con la explicación de la pregunta activa. Ya no sustituye la solución por una guía general del subdominio ni omite las razones guardadas.

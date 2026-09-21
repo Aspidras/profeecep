@@ -26,7 +26,7 @@ PE17.simple=function(ctx){
  if(ctx.question)return '<b>La idea de esta pregunta</b><p>'+PE17.escape(PE304.reason(ctx.question,ctx.question.a))+'</p>';
  if(ctx.guide?.learn)return PE17.escape(ctx.guide.learn);
  const q=ctx.questions?.[0];
- if(q)return '<b>Veamos una pregunta de este indicador</b><p>'+PE17.escape(q.q)+'</p><p>'+PE17.escape(PE304.reason(q,q.a))+'</p>';
+ if(q)return '<b>Veamos una pregunta de este indicador</b><p>'+PE17.escape(q.q)+'</p>'+(window.PE305?PE305.stimulus(q):'')+'<p>'+PE17.escape(PE304.reason(q,q.a))+'</p>';
  return 'La microlección de este indicador todavía está pendiente.';
 };
 PE17.whyCorrect=function(ctx){
@@ -48,7 +48,7 @@ PE17.practice=function(ctx){
  const pool=ctx?.questions||[];
  if(!pool.length)return 'No hay otra pregunta relacionada disponible todavía.';
  const q=pool[Math.floor(Math.random()*pool.length)];
- return '<div class="tutorPractice"><div class="muted">'+PE17.escape(q.i)+'</div><b>'+PE17.escape(q.q)+'</b>'+q.o.map((o,i)=>'<div>'+String.fromCharCode(65+i)+'. '+PE17.escape(o)+'</div>').join('')+'<details><summary>Ver solución y alternativas</summary>'+PE304.feedback(q)+'</details></div>';
+ return '<div class="tutorPractice"><div class="muted">'+PE17.escape(q.i)+'</div><b>'+PE17.escape(q.q)+'</b>'+(window.PE305?PE305.stimulus(q):'')+q.o.map((o,i)=>'<div>'+String.fromCharCode(65+i)+'. '+PE17.escape(o)+'</div>').join('')+'<details><summary>Ver solución y alternativas</summary>'+PE304.feedback(q)+'</details></div>';
 };
 
 PE17.respond=function(kind,ctx){
@@ -64,7 +64,7 @@ PE17.open=function(ctx){
  PE17.current=ctx||PE17.contextFromStudy();
  let old=document.querySelector(".tutorOverlay");if(old)old.remove();
  const overlay=document.createElement("div");overlay.className="tutorOverlay";
- overlay.innerHTML='<div class="tutorModal"><div class="pe304-tutor-head"><button class="close" aria-label="Cerrar tutor" onclick="PE17.close()">×</button><span class="pill">Tutor ProfeECEP</span><h2>Entiende el razonamiento</h2></div>'+(PE17.current?.question?'<p class="pe304-question">'+PE17.escape(PE17.current.question.q)+'</p>':'')+'<div class="tutorActions"><button onclick="PE17.ask(\'simple\')">Explícamelo más simple</button><button onclick="PE17.ask(\'correct\')">¿Por qué es correcta?</button><button onclick="PE17.ask(\'others\')">Revisar alternativas</button><button onclick="PE17.ask(\'remember\')">¿Qué debo recordar?</button><button onclick="PE17.ask(\'practice\')">Dame otra práctica</button></div><div id="tutorAnswer" class="tutorAnswer" tabindex="-1" aria-live="polite"><p class="muted">Elige qué parte quieres comprender.</p></div></div>';
+ overlay.innerHTML='<div class="tutorModal"><div class="pe304-tutor-head"><button class="close" aria-label="Cerrar tutor" onclick="PE17.close()">×</button><span class="pill">Tutor ProfeECEP</span><h2>Entiende el razonamiento</h2></div>'+(PE17.current?.question?'<p class="pe304-question">'+PE17.escape(PE17.current.question.q)+'</p>'+(window.PE305?PE305.stimulus(PE17.current.question):''):'')+'<div class="tutorActions"><button onclick="PE17.ask(\'simple\')">Explícamelo más simple</button><button onclick="PE17.ask(\'correct\')">¿Por qué es correcta?</button><button onclick="PE17.ask(\'others\')">Revisar alternativas</button><button onclick="PE17.ask(\'remember\')">¿Qué debo recordar?</button><button onclick="PE17.ask(\'practice\')">Dame otra práctica</button></div><div id="tutorAnswer" class="tutorAnswer" tabindex="-1" aria-live="polite"><p class="muted">Elige qué parte quieres comprender.</p></div></div>';
  document.body.appendChild(overlay);
 };
 

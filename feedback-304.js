@@ -110,10 +110,10 @@
     if (!q) return '';
     const answered = Number.isInteger(selected) && selected >= 0 && selected < q.o.length;
     const wrong = answered && selected !== q.a;
-    return '<section class="pe304-feedback" aria-label="Explicación de la pregunta"><p class="pe304-question">' + esc(q.q) + '</p>' +
+    return '<section class="pe304-feedback" aria-label="Explicación de la pregunta"><p class="pe304-question">' + esc(q.q) + '</p>' + (window.PE305 ? PE305.stimulus(q) : '') + (window.PE305 ? PE305.stimulus(q) : '') +
       (wrong ? '<div class="pe304-selected"><b>Por qué tu respuesta no corresponde</b><p>' + esc(String.fromCharCode(65 + selected) + '. ' + q.o[selected]) + '</p><p>' + esc(reason(q, selected)) + '</p></div>' : '') +
       '<div class="answerKey">Respuesta correcta: <b>' + esc(String.fromCharCode(65 + q.a) + '. ' + q.o[q.a]) + '</b></div>' +
-      '<p>' + esc(reason(q, q.a)) + '</p><details class="pe304-all"><summary>Entender las cuatro alternativas</summary>' + alternatives(q, selected) + '</details></section>';
+      '<p>' + esc(reason(q, q.a)) + '</p><details class="pe304-all"><summary>Entender las cuatro alternativas</summary>' + alternatives(q, selected) + '</details>' + (window.PE305 ? PE305.source(q) : '') + '</section>';
   }
   function review(q, selected) {
     if (!q) return '';
