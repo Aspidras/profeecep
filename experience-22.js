@@ -26,7 +26,7 @@
     if (!x || !card || card.querySelector('.phase22Origin')) return;
     const badge = document.createElement('div');
     badge.className = 'phase22Origin tiny';
-    badge.textContent = 'Contenido propio ProfeECEP 2.2 · ' + (x.skill || 'razonamiento aplicado');
+    badge.textContent = (x.source?.year === 2023 ? 'Práctica adaptada · referencia 2023 · ' : 'Contenido propio ProfeECEP · ') + (x.skill || 'razonamiento aplicado');
     card.insertBefore(badge, card.firstChild);
   }
   function inject() { enrichStudy(); enrichQuestion(); }
