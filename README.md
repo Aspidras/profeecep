@@ -2,6 +2,15 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.6 — Historia e Inglés
+
+- 60 nuevas adaptaciones de los cuadernillos 2023: 30 de Historia, Geografía y Ciencias Sociales, y 30 de Inglés. Banco total: 864 preguntas; 150 adaptaciones de pruebas anteriores en cinco especialidades.
+- 240 explicaciones nuevas, una por alternativa, con evidencia del texto, los datos o la regla correspondiente. Textos originales en inglés y explicaciones en español.
+- Climograma, perfil topográfico y mapas comparados accesibles. Filtros de lecturas y casos de aula ajustados para ambas especialidades. Recursos incluidos en el funcionamiento sin conexión.
+- Revisión de las 110 preguntas fuente: 60 adaptadas, 33 en reserva editorial y 17 de comprensión auditiva pendientes de siete audios. Sigue faltando el cuadernillo y la pauta de Lengua y Literatura de Educación Media.
+- Las 804 preguntas anteriores se conservan exactamente, comprobadas por huellas de contenido. La clasificación utiliza el temario 2026 cargado; no supone preguntas oficiales ni una nueva certificación completa de los documentos oficiales.
+- [Inventario y decisiones por pregunta](docs/pruebas-anteriores-306.md), [registro de revisión](docs/revision-fuentes-306.json).
+
 ## Versión 3.0.5 — Pruebas anteriores y nuevos formatos
 
 - 90 preguntas adaptadas de los cuadernillos aportados de 2023: 30 de Matemática, 30 de Ciencias Naturales y 30 de Lenguaje básico. Banco total: 804 preguntas.

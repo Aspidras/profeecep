@@ -13,10 +13,10 @@ for (const [specialty, count] of Object.entries(specialties)) {
 
   test(`${specialty}: el panel cuenta el banco activo y distingue los bancos no cargados`, () => {
     const app = runtime(specialty), report = app.context.PE30.status();
-    assert.equal(report.version, '3.0.5');
+    assert.equal(report.version, '3.0.6');
     assert.equal(report.activeQuestions, count);
     assert.equal(report.partial, specialty !== 'basica-matematica');
-    assert.equal(report.totalQuestions, specialty === 'basica-matematica' ? 804 : 547);
+    assert.equal(report.totalQuestions, specialty === 'basica-matematica' ? 864 : 607);
     if (report.partial) {
       const math = report.specialties.find(item => item.id === 'basica-matematica');
       assert.equal(math.count, null);

@@ -1,0 +1,1196 @@
+{
+  "version": "3.0.6",
+  "reviewDate": "2026-09-21",
+  "sourceKeys": {
+    "SC-CS(23).pdf": {
+      "count": 50,
+      "keys": {
+        "1": "D",
+        "31": "D",
+        "2": "B",
+        "32": "C",
+        "3": "B",
+        "33": "B",
+        "4": "D",
+        "34": "C",
+        "5": "C",
+        "35": "A",
+        "6": "C",
+        "36": "D",
+        "7": "A",
+        "37": "B",
+        "8": "C",
+        "38": "D",
+        "9": "D",
+        "39": "B",
+        "10": "D",
+        "40": "D",
+        "11": "D",
+        "41": "C",
+        "12": "B",
+        "42": "B",
+        "13": "B",
+        "43": "A",
+        "14": "A",
+        "44": "A",
+        "15": "C",
+        "45": "A",
+        "16": "B",
+        "46": "D",
+        "17": "C",
+        "47": "B",
+        "18": "D",
+        "48": "D",
+        "19": "A",
+        "49": "A",
+        "20": "C",
+        "50": "A",
+        "21": "A",
+        "22": "B",
+        "23": "D",
+        "24": "A",
+        "25": "A",
+        "26": "A",
+        "27": "A",
+        "28": "B",
+        "29": "C",
+        "30": "D"
+      },
+      "paperSha256": "3ca08a369842c76d9897d51658fa2ddda705d4001ac3b2d14552b63076038c5a",
+      "keySha256": "65eef3a208ed7bb2a06f3bc94af8f15600788eb599230cad922e0d39b9cabf71"
+    },
+    "SC-I(23).pdf": {
+      "count": 60,
+      "keys": {
+        "1": "A",
+        "31": "B",
+        "2": "D",
+        "32": "D",
+        "3": "C",
+        "33": "B",
+        "4": "B",
+        "34": "B",
+        "5": "C",
+        "35": "A",
+        "6": "C",
+        "36": "B",
+        "7": "B",
+        "37": "A",
+        "8": "C",
+        "38": "C",
+        "9": "A",
+        "39": "A",
+        "10": "A",
+        "40": "A",
+        "11": "C",
+        "41": "C",
+        "12": "B",
+        "42": "C",
+        "13": "D",
+        "43": "C",
+        "14": "A",
+        "44": "D",
+        "15": "D",
+        "45": "C",
+        "16": "A",
+        "46": "D",
+        "17": "A",
+        "47": "D",
+        "18": "D",
+        "48": "B",
+        "19": "B",
+        "49": "C",
+        "20": "B",
+        "50": "B",
+        "21": "A",
+        "51": "D",
+        "22": "D",
+        "52": "B",
+        "23": "A",
+        "53": "D",
+        "24": "D",
+        "54": "C",
+        "25": "B",
+        "55": "D",
+        "26": "C",
+        "56": "B",
+        "27": "C",
+        "57": "C",
+        "28": "A",
+        "58": "B",
+        "29": "C",
+        "59": "D",
+        "30": "A",
+        "60": "B"
+      },
+      "paperSha256": "82b74219583a6105fcd055c3d402e6206f86db79e51729878f3ebc8362ae3c84",
+      "keySha256": "0c9e653c4c381417ffc08e4f78688e4535843962b7c6d6a0806f89fa26242a24"
+    }
+  },
+  "audioTracks": [
+    {
+      "title": "Happiness",
+      "questions": [
+        1,
+        2
+      ]
+    },
+    {
+      "title": "Going to Mars",
+      "questions": [
+        3,
+        4
+      ]
+    },
+    {
+      "title": "Agriculture",
+      "questions": [
+        5,
+        6
+      ]
+    },
+    {
+      "title": "Plastic Trash",
+      "questions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "title": "The Song of My Life",
+      "questions": [
+        10,
+        11
+      ]
+    },
+    {
+      "title": "Passenger",
+      "questions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "title": "Certificate of Citizenship",
+      "questions": [
+        15,
+        16,
+        17
+      ]
+    }
+  ],
+  "items": [
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 1,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-01",
+      "page": 2,
+      "indicatorId": "3-0-4",
+      "format": "caso pedagógico",
+      "reason": "Se conserva la decisión de alineación entre objetivo y actividad; se explicitan cuatro criterios y se eliminan productos que podían cumplir parcialmente el mismo objetivo."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 2,
+      "key": "B",
+      "status": "reserva",
+      "reason": "Selección didáctica de imágenes de cactus: se priorizan otros casos de retroalimentación geográfica."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 3,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-03",
+      "page": 4,
+      "indicatorId": "3-1-1",
+      "format": "climograma y retroalimentación",
+      "reason": "Se reemplaza el climograma de Calama por datos didácticos explícitos y se evalúa la lectura de ejes; se evita inferir el clima solo por latitud o temperatura."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 4,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-04",
+      "page": 5,
+      "indicatorId": "3-0-5",
+      "format": "análisis de error",
+      "reason": "Se conserva el error sobre recursos renovables y se explicita la relación entre tasa de extracción y recuperación, sin introducir normativa pesquera variable."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 5,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-05",
+      "page": 6,
+      "indicatorId": "3-0-3",
+      "format": "comparación de fuentes",
+      "reason": "Se sustituyen las tres citas del cuadernillo por síntesis didácticas identificadas como tales. No se atribuyen frases nuevas a sus autores; se conserva la comparación de perspectivas."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 6,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-06",
+      "page": 7,
+      "indicatorId": "1-1-11",
+      "format": "ciudadanía e historia",
+      "reason": "Se reemplaza el fragmento de Caffarena por una contextualización del sufragio nacional de 1949 y se distingue ciudadanía política de igualdad social completa."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 7,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Migraciones de homínidos: requiere justificar mejor su vínculo con un indicador disciplinar del temario cargado."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 8,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-08",
+      "page": 8,
+      "indicatorId": "3-0-0",
+      "format": "investigación histórica",
+      "reason": "Se contextualiza la selección de fuentes con una pregunta sobre un barrio; se conserva la prioridad de pertinencia y se incorpora examen de autoría y contexto."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 9,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Indicadores sobre ciudadanía ateniense: pendiente de adaptación; se priorizan casos con evidencia más explícita."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 10,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-10",
+      "page": 10,
+      "indicatorId": "3-0-3",
+      "format": "selección de mapas",
+      "reason": "Se expresan mediante descripciones los cuatro tipos de mapas, para seleccionar escala y extensión sin depender de miniaturas ilegibles del cuadernillo."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 11,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Línea de tiempo de Grecia y Roma: pendiente de una representación accesible y revisión específica."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 12,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-12",
+      "page": 12,
+      "indicatorId": "3-0-5",
+      "format": "perspectiva histórica",
+      "reason": "Se conserva el problema de presentismo y se precisan la diversidad interna de los grupos y la diferencia entre comprender y justificar acciones históricas."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 13,
+      "key": "B",
+      "status": "reserva",
+      "reason": "La escultura mitológica no permite concluir por sí sola ausencia de religiosidad renacentista; requiere reformulación."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 14,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Ejemplos de programas públicos requieren revisión de alcance y vigencia antes de reutilizarlos."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 15,
+      "key": "C",
+      "status": "reserva",
+      "reason": "La formulación sobre latitudes medias y desiertos cálidos requiere precisión geográfica."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 16,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-16",
+      "page": 15,
+      "indicatorId": "0-0-2",
+      "format": "perfil topográfico",
+      "reason": "El perfil original se reemplaza por un esquema didáctico con alturas explícitas, sin atribuirle precisión de un transecto real a 41° S."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 17,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-17",
+      "page": 15,
+      "indicatorId": "0-1-1",
+      "format": "relaciones geográficas",
+      "reason": "Se explicita que la formación de humedales también depende de relieve y drenaje, evitando tratar la precipitación como causa suficiente en cualquier lugar."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 18,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Morfología de la cordillera de la Costa: reserva para una ampliación con localización y representación precisas."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 19,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-19",
+      "page": 16,
+      "indicatorId": "0-1-3",
+      "format": "tabla geográfica",
+      "reason": "Se conservan cuatro filas y sus porcentajes verificados visualmente. Se cambia la inferencia causal sobre desertificación por una comparación respaldada por los datos; las filas son una selección, no el total."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 20,
+      "key": "C",
+      "status": "reserva",
+      "reason": "Gráficos de mortalidad de 2016: necesitan conservar fecha y contexto estadístico; no incorporados en esta selección."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 21,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-21",
+      "page": 18,
+      "indicatorId": "0-2-0",
+      "format": "problema ambiental",
+      "reason": "Se aporta el mecanismo físico que relaciona sequía, pérdida de cobertura y erosión, sin afirmar que toda sequía produzca inevitablemente el mismo daño."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 22,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-22",
+      "page": 18,
+      "indicatorId": "0-2-1",
+      "format": "mapas comparados",
+      "reason": "Los mapas de 1986 y 2011 se reemplazan por una cuadrícula didáctica de igual superficie con leyenda redundante en letras. Los valores sintéticos están declarados y no se presentan como datos de Chile."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 23,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Transición demográfica: pendiente de añadir series y límites para inferir causas de cambios poblacionales."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 24,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-24",
+      "page": 19,
+      "indicatorId": "0-1-2",
+      "format": "caso urbano",
+      "reason": "Se sustituye la noticia de Coquimbo por un caso ficticio que incluye desplazamiento explícito. Un aumento de precios por sí solo no basta para concluir gentrificación."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 25,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-25",
+      "page": 20,
+      "indicatorId": "1-1-1",
+      "format": "organización económica",
+      "reason": "Se conserva el mecanismo redistributivo y se precisa el tributo en trabajo, sin equiparar redistribución con igualdad económica ni negar otras formas de intercambio."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 26,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-26",
+      "page": 20,
+      "indicatorId": "1-1-2",
+      "format": "organización política",
+      "reason": "Se delimita el periodo Clásico y se reconoce la variedad de relaciones entre ciudades mayas, evitando presentarlas como unidades siempre aisladas o iguales."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 27,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-27",
+      "page": 21,
+      "indicatorId": "1-1-3",
+      "format": "contexto de exploración",
+      "reason": "Se mantiene el factor de consolidación monárquica, expresándolo como una condición entre varias, sin atribuir los viajes a una causa única."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 28,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-28",
+      "page": 22,
+      "indicatorId": "1-1-4",
+      "format": "contraste de interpretaciones",
+      "reason": "Se reemplazan los extractos por síntesis didácticas sin comillas ni atribuciones literales. Se evita reducir toda evangelización a una única función o postura."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 29,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-29",
+      "page": 23,
+      "indicatorId": "1-1-5",
+      "format": "economía colonial",
+      "reason": "Se conserva la relación entre monopolio y contrabando, reemplazando formulaciones sobre competencia perfecta por una explicación de incentivos y límites del abastecimiento."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 30,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-30",
+      "page": 24,
+      "indicatorId": "1-1-6",
+      "format": "argumento político histórico",
+      "reason": "Se parafrasea el argumento del fragmento de 1810 sin presentarlo como cita literal; se distingue legitimación juntista de proclamación inmediata de independencia."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 31,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Interpretación historiográfica de la independencia: se prioriza el argumento juntista de la pregunta 30."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 32,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-32",
+      "page": 25,
+      "indicatorId": "1-1-14",
+      "format": "continuidad y cambio",
+      "reason": "Se reformula la comparación sugerida por la carta de Portales y se evita insinuar que la Colonia carecía de leyes o que la república eliminó todas las continuidades."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 33,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-33",
+      "page": 26,
+      "indicatorId": "1-1-7",
+      "format": "organización de la república",
+      "reason": "Se utiliza la denominación leyes federales de 1826; se aclara que no se promulgó una constitución federal. Contraste con la ficha histórica de la Biblioteca del Congreso Nacional."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 34,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-34",
+      "page": 26,
+      "indicatorId": "1-1-9",
+      "format": "perspectiva sobre un conflicto",
+      "reason": "Se explicita que se pregunta por el argumento diplomático chileno de la época, no por una explicación única ni neutral de todas las responsabilidades del conflicto."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 35,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Focalización de políticas durante la dictadura: pendiente de contextualización y contraste de alcances."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 36,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-36",
+      "page": 27,
+      "indicatorId": "1-1-13",
+      "format": "secuencia de democratización",
+      "reason": "Se distingue el plebiscito de 1988 de las elecciones de 1989 y del cambio de mando de 1990, evitando identificar los tres acontecimientos como simultáneos."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 37,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-37",
+      "page": 28,
+      "indicatorId": "1-1-10",
+      "format": "régimen parlamentario",
+      "reason": "La caricatura se sustituye por una situación histórica sobre rotativa ministerial. Se conserva el análisis de poder presidencial y parlamentario sin requerir leer detalles pequeños de la imagen."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 38,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Sociabilidad de homínidos: requiere justificar mejor el vínculo con un indicador del temario cargado."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 39,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-39",
+      "page": 29,
+      "indicatorId": "1-1-12",
+      "format": "transformación económica",
+      "reason": "Se conserva la identificación de liberalización de precios como medida económica; se distingue descripción de la política de una valoración de sus resultados."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 40,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Concepto aristotélico de aristocracia: pendiente de contextualizar polis y no confundir con usos actuales."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 41,
+      "key": "C",
+      "status": "reserva",
+      "reason": "Economía feudal: sin correspondencia disciplinar directa suficientemente precisa en esta selección."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 42,
+      "key": "B",
+      "status": "reserva",
+      "reason": "La etiqueta tradición inglesa reúne autores con posturas diferentes; requiere acotar autor y argumento."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 43,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Mercantilismo: pendiente de un caso que delimite periodo, metrópoli y mecanismo de restricción."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 44,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Relación entre calvinismo y capitalismo requiere evitar una explicación causal única o determinista."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 45,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Soberanía popular frente al absolutismo: se prioriza el concepto de soberanía de la pregunta 47."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 46,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-46",
+      "page": 33,
+      "indicatorId": "1-0-0",
+      "format": "concepto de hito histórico",
+      "reason": "Se corrige el año 1783 impreso en el cuadernillo por 1789. Se mantiene la clave D y se diferencia el significado simbólico del acontecimiento de la posterior abolición de la monarquía."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 47,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-47",
+      "page": 33,
+      "indicatorId": "2-0-2",
+      "format": "concepto político",
+      "reason": "Se precisa la diferencia entre soberanía, autonomía y jurisdicción, aclarando que supremacía estatal no equivale a poder personal ilimitado de sus autoridades."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 48,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-48",
+      "page": 34,
+      "indicatorId": "2-0-0",
+      "format": "caso de Estado de derecho",
+      "reason": "Se sustituye la mera crítica pública de una sentencia por una orden de alterarla. Así se evita afirmar que toda crítica vulnera separación de poderes. Contraste con el artículo 76 de la Constitución."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 49,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Caso de inaplicabilidad e isapres: requiere contexto jurídico preciso y revisión separada de vigencia."
+    },
+    {
+      "file": "SC-CS(23).pdf",
+      "number": 50,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-historia-306-2023-50",
+      "page": 35,
+      "indicatorId": "2-0-1",
+      "format": "funciones del Estado",
+      "reason": "Se reemplaza la noticia por un caso institucional sin nombres ni acusaciones. Se distinguen fiscalización administrativa e investigación penal; contraste con el artículo 98 de la Constitución."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 1,
+      "key": "A",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Happiness. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 2,
+      "key": "D",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Happiness. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 3,
+      "key": "C",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Going to Mars. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 4,
+      "key": "B",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Going to Mars. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 5,
+      "key": "C",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Agriculture. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 6,
+      "key": "C",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Agriculture. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 7,
+      "key": "B",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Plastic Trash. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 8,
+      "key": "C",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Plastic Trash. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 9,
+      "key": "A",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Plastic Trash. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 10,
+      "key": "A",
+      "status": "requiere-audio",
+      "reason": "Falta la pista The Song of My Life. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 11,
+      "key": "C",
+      "status": "requiere-audio",
+      "reason": "Falta la pista The Song of My Life. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 12,
+      "key": "B",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Passenger. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 13,
+      "key": "D",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Passenger. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 14,
+      "key": "A",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Passenger. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 15,
+      "key": "D",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Certificate of Citizenship. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 16,
+      "key": "A",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Certificate of Citizenship. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 17,
+      "key": "A",
+      "status": "requiere-audio",
+      "reason": "Falta la pista Certificate of Citizenship. La clave no permite reconstruir ni verificar lo escuchado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 18,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Rasgos de Jonathan insuficientemente delimitados por las alternativas; no se reutiliza la inferencia ambigua."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 19,
+      "key": "B",
+      "status": "reserva",
+      "reason": "Relación entre personajes se trabaja mediante la pregunta 21, con pistas explícitas en un relato original."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 20,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-20",
+      "page": 11,
+      "indicatorId": "0-0-8",
+      "format": "texto narrativo",
+      "reason": "Se reemplaza el fragmento literario por un relato original de práctica con evidencia explícita del cambio de actitud. No se atribuye este texto a la autora del cuadernillo."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 21,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-21",
+      "page": 11,
+      "indicatorId": "0-0-7",
+      "format": "inferencia en un relato",
+      "reason": "Se conserva la inferencia sobre relación entre personajes, usando pistas suficientes en un relato nuevo y evitando depender de información externa."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 22,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-22",
+      "page": 11,
+      "indicatorId": "0-0-1",
+      "format": "detalle de un relato",
+      "reason": "La pregunta identifica una razón expresada en el relato original de práctica. Se evita inferir una falla laboral que el texto no sostiene."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 23,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-23",
+      "page": 13,
+      "indicatorId": "0-0-1",
+      "format": "noticia y detalle",
+      "reason": "Se reemplaza el artículo con cifras regionales de 2016 por una noticia ficticia autocontenida. Se conserva localización de información explícita sin presentar cifras antiguas como actuales."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 24,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-24",
+      "page": 13,
+      "indicatorId": "0-0-2",
+      "format": "síntesis de una noticia",
+      "reason": "La síntesis corresponde a una noticia original compartida con la pregunta 23; incluye causas y respuestas, no un solo detalle."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 25,
+      "key": "B",
+      "status": "reserva",
+      "reason": "Artículo con afirmaciones de salud controvertidas; no se reproduce ni se presenta como información médica."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 26,
+      "key": "C",
+      "status": "reserva",
+      "reason": "Comparte el artículo de salud: pendiente de reemplazo por un texto neutral y revisión de inferencias."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 27,
+      "key": "C",
+      "status": "reserva",
+      "reason": "Comparte el artículo de salud: referencias externas no se consideran evidencia clínica validada."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 28,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-28",
+      "page": 18,
+      "indicatorId": "0-0-8",
+      "format": "punto de vista en opinión",
+      "reason": "Se sustituye el artículo de 2018 por una columna original sin rankings empresariales ni datos desactualizados; se conserva identificación de la postura y sus matices."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 29,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-29",
+      "page": 18,
+      "indicatorId": "0-0-0",
+      "format": "idea global",
+      "reason": "Se conserva la selección de un título representativo mediante una columna nueva, diferenciando tesis global de ejemplos secundarios."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 30,
+      "key": "A",
+      "status": "reserva",
+      "reason": "Idea global trabajada en la pregunta 29; se evita duplicar el objetivo sobre el mismo texto."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 31,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-31",
+      "page": 18,
+      "indicatorId": "0-1-1",
+      "format": "referencia pronominal",
+      "reason": "Se conserva el análisis de correferencia y se formula una cadena explícita companies → They, sin depender de nombres de empresas."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 32,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-32",
+      "page": 18,
+      "indicatorId": "0-1-0",
+      "format": "vocabulario en contexto",
+      "reason": "Se conserva el significado contextual de detrimental, en una columna original que aporta una consecuencia concreta para inferirlo."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 33,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-33",
+      "page": 20,
+      "indicatorId": "0-0-3",
+      "format": "destinatario de un aviso",
+      "reason": "Se reemplaza la noticia de atentados de 2019 por un aviso de viaje ficticio. Se conserva identificación del público objetivo sin ofrecer recomendaciones reales de viaje."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 34,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-34",
+      "page": 20,
+      "indicatorId": "0-1-0",
+      "format": "vocabulario en un aviso",
+      "reason": "Se precisa waive como eximir del pago en este contexto, en vez de confundirlo con posponer temporalmente el cobro."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 35,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-35",
+      "page": 20,
+      "indicatorId": "2-0-3",
+      "format": "discurso referido",
+      "reason": "Se usa una situación original de préstamo para evaluar if, orden enunciativo, cambio de modal y referencia de pronombres en una pregunta indirecta."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 36,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-36",
+      "page": 21,
+      "indicatorId": "2-0-6",
+      "format": "verbo compuesto",
+      "reason": "Se sustituye la noticia sobre una aplicación de citas por una escena original de aula, conservando el sentido contextual del phrasal verb."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 37,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-37",
+      "page": 21,
+      "indicatorId": "2-0-1",
+      "format": "infinitivo en contexto",
+      "reason": "Se reemplaza el contexto por una compra escolar y se conserva el patrón afford + to-infinitive."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 38,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-38",
+      "page": 22,
+      "indicatorId": "2-0-2",
+      "format": "modo verbal",
+      "reason": "Se corrige la clasificación imprecisa del original como mero deseo: se usa subjuntivo mandativo tras insist y se distingue exigencia de hecho confirmado. Alternativas reescritas; la letra C se conserva."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 39,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-39",
+      "page": 22,
+      "indicatorId": "2-0-4",
+      "format": "construcción causativa",
+      "reason": "Se simplifica el contexto a un encargo escolar conservando have + object + past participle; se evita inferir horarios no codificados por la construcción."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 40,
+      "key": "A",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-40",
+      "page": 23,
+      "indicatorId": "2-0-0",
+      "format": "modalidad y obligación",
+      "reason": "Se reemplaza el contexto regulatorio agrícola por reglas de un laboratorio ficticio y se explicita obligatoriedad en ambos casos, sin depender de normativa vigente."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 41,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-41",
+      "page": 23,
+      "indicatorId": "2-0-5",
+      "format": "conectores y cohesión",
+      "reason": "Se acota la pregunta al par correlativo de adición enfática; preguntar solo por oración compuesta podía admitir más de una alternativa del original."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 42,
+      "key": "C",
+      "status": "reserva",
+      "reason": "Función de un segmento gramatical destacado requiere una reformulación inequívoca; no incorporado."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 43,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-43",
+      "page": 24,
+      "indicatorId": "3-0-0",
+      "format": "caso pedagógico",
+      "reason": "Se explicita el objetivo de fluidez y que los errores no bloquean la comprensión; la respuesta incluye retroalimentación posterior en lugar de omitirla."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 44,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-44",
+      "page": 25,
+      "indicatorId": "3-1-2",
+      "format": "indicador de evaluación",
+      "reason": "Se conserva alineación objetivo-evidencia y se hace explícita la secuencia narrativa que debe evaluarse."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 45,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-45",
+      "page": 25,
+      "indicatorId": "3-1-2",
+      "format": "propósito de evaluación",
+      "reason": "Se precisa la distinción entre logro, ubicación, competencia general y aptitud, sin tratar formativa y logro como categorías necesariamente excluyentes."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 46,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-46",
+      "page": 26,
+      "indicatorId": "3-0-3",
+      "format": "proceso de escritura",
+      "reason": "Se conserva la función del organizador gráfico en preescritura, con una carta de propuestas y sus componentes explícitos."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 47,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-47",
+      "page": 26,
+      "indicatorId": "3-1-0",
+      "format": "portafolio de aprendizaje",
+      "reason": "Se explicita la finalidad longitudinal y reflexiva del portafolio, distinguiéndolo de una mera carpeta de productos finales."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 48,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-48",
+      "page": 27,
+      "indicatorId": "3-0-3",
+      "format": "análisis de error",
+      "reason": "Se formula el foco observable de enseñanza, sin diagnosticar automáticamente una única causa cognitiva o de transferencia a partir de dos ejemplos."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 49,
+      "key": "C",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-49",
+      "page": 27,
+      "indicatorId": "3-0-1",
+      "format": "aprendizaje mediante tareas",
+      "reason": "Se añade un resultado comunicativo concreto a la entrevista: producir un itinerario a partir de respuestas reales. Escribir preguntas, por sí solo, no garantiza enfoque por tareas."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 50,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-50",
+      "page": 28,
+      "indicatorId": "3-1-3",
+      "format": "retroalimentación formativa",
+      "reason": "Se hace observable el error must/mustn’t y se diferencia la devolución específica de una recomendación genérica, evitando distractores igualmente formativos."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 51,
+      "key": "D",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-51",
+      "page": 29,
+      "indicatorId": "3-0-3",
+      "format": "análisis de error",
+      "reason": "Se conserva la sobregeneralización del plural y se propone contraste contextualizado y revisión, en lugar de limitar la intervención a memorizar una lista."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 52,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-52",
+      "page": 30,
+      "indicatorId": "3-1-2",
+      "format": "evaluación de comprensión oral",
+      "reason": "Este ítem evalúa una decisión docente sobre comprensión oral; se responde leyendo el caso y no requiere reproducir un audio. No se presenta como ejercicio de listening del estudiante."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 53,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Producción guiada de opiniones: reserva para ampliar variedad de secuencias didácticas."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 54,
+      "key": "C",
+      "status": "reserva",
+      "reason": "Cartel de obligaciones y prohibiciones: contenido ya representado en las preguntas 40 y 50."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 55,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Carta al alcalde: se prioriza planificación de una carta en la pregunta 46."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 56,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-56",
+      "page": 33,
+      "indicatorId": "3-1-3",
+      "format": "calidad de la retroalimentación",
+      "reason": "Se conserva el análisis de una devolución inespecífica y se explicitan evidencia, foco y siguiente paso como criterios de utilidad."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 57,
+      "key": "C",
+      "status": "reserva",
+      "reason": "Apoyos durante la escucha: reserva para ampliar decisiones didácticas; no corresponde a uno de los 17 ítems sin audio."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 58,
+      "key": "B",
+      "status": "publicada",
+      "id": "basica-ingles-306-2023-58",
+      "page": 34,
+      "indicatorId": "3-0-3",
+      "format": "uso del artículo",
+      "reason": "Se delimita expresamente la referencia genérica. “Save the water” no es siempre incorrecto: puede referirse a agua identificada; tampoco se atribuye automáticamente el error a la lengua materna."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 59,
+      "key": "D",
+      "status": "reserva",
+      "reason": "Rúbrica de producción escrita: pendiente de adaptación completa y criterios observables."
+    },
+    {
+      "file": "SC-I(23).pdf",
+      "number": 60,
+      "key": "B",
+      "status": "reserva",
+      "reason": "Opiniones sobre folletos turísticos: reserva para ampliar estrategias de producción oral."
+    }
+  ]
+}

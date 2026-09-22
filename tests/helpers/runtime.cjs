@@ -8,8 +8,8 @@ const scripts = [...html.matchAll(/<script src="([^"]+)"/g)].map(match => match[
 const specialties = {
   'basica-matematica': 257,
   'basica-ciencias': 138,
-  'basica-historia': 100,
-  'basica-ingles': 102,
+  'basica-historia': 130,
+  'basica-ingles': 132,
   'basica-lenguaje': 110,
   'media-lengua': 97
 };

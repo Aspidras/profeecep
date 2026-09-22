@@ -16,7 +16,7 @@ for (const sid of Object.keys(specialties)) {
     }});
     const oldIds = new Set(previous.map(q => q.id));
     assert.deepEqual(plain(app.run('Q')).filter(q => oldIds.has(q.id)), previous);
-    assert.equal(app.context.PE305.pool().length, newSpecialties.includes(sid) ? 30 : 0);
+    assert.equal(app.context.PE305.pool().length, sid === 'media-lengua' ? 0 : 30);
     assert.equal(app.run('S.total'), 0);
     assert.equal(app.run('S.history.length'), 0);
     assert.equal(app.context.PE30.status().ready, true);

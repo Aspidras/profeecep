@@ -10,7 +10,8 @@ for (const [sid, count] of Object.entries(specialties)) {
       if (file === 'bank-287.js') before = plain(context.QBANK.map(q => ({id:q.id,a:q.a,count:q.o.length})));
     }});
     assert.equal(app.run('Q.length'), count);
-    assert.deepEqual(plain(app.run('Q.filter(q=>q.version!=="3.0.5").map(q=>({id:q.id,a:q.a,count:q.o.length}))')), before);
+    const originalIds = new Set(before.map(q => q.id));
+    assert.deepEqual(plain(app.run('Q')).filter(q => originalIds.has(q.id)).map(q => ({id:q.id,a:q.a,count:q.o.length})), before);
     for (const q of app.run('Q')) {
       assert.equal(app.context.PE304.complete(q), true, q.id);
       assert.equal(q.e, q.explanations[q.a], q.id);
