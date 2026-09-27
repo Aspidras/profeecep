@@ -1,0 +1,30 @@
+{
+  "audio-garden": {
+    "kind": "audio",
+    "title": "Community garden",
+    "lang": "en",
+    "asset": "garden.mp3",
+    "transcript": "Hello everyone. This is a message for volunteers at Saturday's community garden event. The forecast says it will rain in the morning, so we are moving the seed workshop into the library. Please arrive at ten, not nine. Bring your own gloves; we will provide the tools. You do not need gardening experience. At the end, you can take a small plant home. If you cannot stay for the whole morning, even half an hour would be a big help."
+  },
+  "audio-station": {
+    "kind": "audio",
+    "title": "station",
+    "lang": "en",
+    "asset": "station.mp3",
+    "transcript": "Attention passengers travelling to Westport. The six fifteen service has been cancelled because of a fault on the train. Your tickets will be accepted on the six forty service, which will leave from platform three instead of platform one. You do not need to visit the ticket office. If you need assistance carrying luggage, please speak to a member of staff near the information desk."
+  },
+  "audio-cycling": {
+    "kind": "audio",
+    "title": "cycling",
+    "lang": "en",
+    "asset": "cycling.mp3",
+    "transcript": "When I first started cycling to work, I thought it would save me lots of time. It didn't, at least during the first week. I kept choosing busy roads and stopping to check my map. Then a colleague showed me a quieter route through the park. The journey still takes about as long as the bus, but I arrive feeling more awake. So, for me, the biggest benefit hasn't been speed."
+  },
+  "audio-museum": {
+    "kind": "audio",
+    "title": "museum",
+    "lang": "en",
+    "asset": "museum.mp3",
+    "transcript": "Before we enter the museum, please put your notebooks in your small bags. You will need them for the sketching activity upstairs. Leave your large backpacks here in the lockers because they are not allowed in the galleries. We will meet our guide at the entrance in five minutes. Keep an eye on the time. If we are late, we will have less time for the workshop. You may take photographs, but please turn off the flash."
+  }
+}
