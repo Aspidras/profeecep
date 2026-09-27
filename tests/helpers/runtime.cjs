@@ -6,12 +6,12 @@ const root = path.resolve(__dirname, '../..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const scripts = [...html.matchAll(/<script src="([^"]+)"/g)].map(match => match[1].split('?')[0]);
 const specialties = {
-  'basica-matematica': 257,
-  'basica-ciencias': 138,
+  'basica-matematica': 209,
+  'basica-ciencias': 132,
   'basica-historia': 130,
-  'basica-ingles': 132,
-  'basica-lenguaje': 110,
-  'media-lengua': 97
+  'basica-ingles': 130,
+  'basica-lenguaje': 130,
+  'media-lengua': 100
 };
 
 // A deliberately small DOM facade for logic/integration tests, NOT a browser or

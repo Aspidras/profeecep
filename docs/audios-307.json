@@ -1,0 +1,22 @@
+{
+  "garden.mp3": {
+    "bytes": 606502,
+    "sha256": "6e51773b6d89f84e40df9db39ecb98c4269b4c2f8265894d20d7b8697a4efb52",
+    "origin": "Guion original y voz sint\u00e9tica para pr\u00e1ctica."
+  },
+  "station.mp3": {
+    "bytes": 410479,
+    "sha256": "142ed652029f1336ae1c01715ad877b1f8bd15955cf9f50f66b54d20efa1be8a",
+    "origin": "Guion original y voz sint\u00e9tica para pr\u00e1ctica."
+  },
+  "museum.mp3": {
+    "bytes": 510790,
+    "sha256": "96e3af5089855ccdb3f0f79d47ff43a9de2b0b8a60ef6d4654ea4c5734a01b85",
+    "origin": "Guion original y voz sint\u00e9tica para pr\u00e1ctica."
+  },
+  "cycling.mp3": {
+    "bytes": 472337,
+    "sha256": "d72985a2fc7fcf189454d50e969c3f87fc23d60eb3b4342789ddc05528202d3b",
+    "origin": "Guion original y voz sint\u00e9tica para pr\u00e1ctica."
+  }
+}

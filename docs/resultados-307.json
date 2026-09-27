@@ -1,0 +1,110 @@
+{
+  "basica-matematica": {
+    "new": 50,
+    "archived": 98,
+    "active": 209,
+    "indicators": 49,
+    "keys": {
+      "0": 13,
+      "1": 13,
+      "2": 12,
+      "3": 12
+    },
+    "gapsCovered": []
+  },
+  "basica-ciencias": {
+    "new": 50,
+    "archived": 56,
+    "active": 132,
+    "indicators": 43,
+    "keys": {
+      "0": 13,
+      "1": 13,
+      "2": 12,
+      "3": 12
+    },
+    "gapsCovered": [
+      "3-1-1",
+      "3-1-2",
+      "3-1-4",
+      "4-0-1"
+    ]
+  },
+  "basica-historia": {
+    "new": 50,
+    "archived": 50,
+    "active": 130,
+    "indicators": 40,
+    "keys": {
+      "0": 13,
+      "1": 13,
+      "2": 12,
+      "3": 12
+    },
+    "gapsCovered": [
+      "0-1-0",
+      "1-1-8"
+    ]
+  },
+  "basica-ingles": {
+    "new": 50,
+    "archived": 52,
+    "active": 130,
+    "indicators": 41,
+    "keys": {
+      "0": 13,
+      "1": 13,
+      "2": 12,
+      "3": 12
+    },
+    "gapsCovered": [
+      "1-0-3",
+      "1-0-4",
+      "1-0-6",
+      "1-0-7",
+      "3-0-5",
+      "3-1-1"
+    ]
+  },
+  "basica-lenguaje": {
+    "new": 50,
+    "archived": 30,
+    "active": 130,
+    "indicators": 30,
+    "keys": {
+      "0": 13,
+      "1": 13,
+      "2": 12,
+      "3": 12
+    },
+    "gapsCovered": [
+      "0-1-3",
+      "2-0-3",
+      "2-0-6"
+    ]
+  },
+  "media-lengua": {
+    "new": 50,
+    "archived": 47,
+    "active": 100,
+    "indicators": 38,
+    "keys": {
+      "0": 13,
+      "1": 13,
+      "2": 12,
+      "3": 12
+    },
+    "gapsCovered": [
+      "0-0-6",
+      "0-1-4",
+      "0-1-5",
+      "0-1-6",
+      "0-1-7",
+      "1-1-1",
+      "2-0-2",
+      "2-0-6",
+      "2-1-0",
+      "2-1-1"
+    ]
+  }
+}

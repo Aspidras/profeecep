@@ -11,7 +11,7 @@ for (const [sid, count] of Object.entries(specialties)) {
     }});
     assert.equal(app.run('Q.length'), count);
     const originalIds = new Set(before.map(q => q.id));
-    assert.deepEqual(plain(app.run('Q')).filter(q => originalIds.has(q.id)).map(q => ({id:q.id,a:q.a,count:q.o.length})), before);
+    assert.deepEqual(plain(app.context.PE307.fullBank()).filter(q => originalIds.has(q.id)).map(q => ({id:q.id,a:q.a,count:q.o.length})), before);
     for (const q of app.run('Q')) {
       assert.equal(app.context.PE304.complete(q), true, q.id);
       assert.equal(q.e, q.explanations[q.a], q.id);
@@ -29,7 +29,7 @@ for (const [sid, count] of Object.entries(specialties)) {
 
 test('captura reportada: punto de vista, sin microlección, explica A, B, C y D', () => {
   const app=runtime('basica-ingles');
-  const q=app.run("Q.find(q=>q.id==='basica-ingles-281-0-0-8-1')");
+  const q=app.run("PE307.fullBank().find(q=>q.id==='basica-ingles-281-0-0-8-1')");
   const ctx=app.context.PE17.contextFromQuestion(q);
   assert.equal(ctx.guide,null);
   assert.match(app.context.PE17.simple(ctx),/qué sostiene o valora el emisor/);

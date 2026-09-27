@@ -17,7 +17,7 @@
     try {
       const data = JSON.parse(localStorage.getItem(key()) || 'null');
       if (!data || data.schema !== 1 || data.specialty !== PE_ACTIVE_SPECIALTY || !Array.isArray(data.questions) || !data.questions.length || new Set(data.questions).size !== data.questions.length) return null;
-      const sim = data.simulation, bank = new Map(Q.map(q => [q.id, q]));
+      const sim = data.simulation, bank = new Map((window.PE307 ? PE307.fullBank() : Q).map(q => [q.id, q]));
       if (!sim || !Number.isFinite(sim.deadline) || !Number.isFinite(sim.maxSeconds) || sim.maxSeconds <= 0 || !Number.isInteger(sim.index) || sim.index < 0 || sim.index >= data.questions.length || !sim.sessionId || !sim.answers || !sim.marked) return null;
       if (data.questions.some(id => !bank.has(id))) return null;
       if (Object.entries(sim.answers).some(([id, option]) => !data.questions.some(qid => String(qid) === id) || !Number.isInteger(option) || option < 0 || option > 3)) return null;
@@ -42,7 +42,7 @@
   function resume() {
     const data = draft(); if (!data) return;
     if (SIM12 && SIM12.sessionId !== data.simulation.sessionId) return;
-    mode = 'simulation'; quiz = data.questions.map(id => Q.find(q => q.id === id));
+    mode = 'simulation'; quiz = data.questions.map(id => (window.PE307 ? PE307.fullBank() : Q).find(q => q.id === id));
     SIM12 = data.simulation; runningKey = key();
     SIM12.seconds = Math.max(0, Math.min(SIM12.maxSeconds, Math.ceil((SIM12.deadline - Date.now()) / 1000)));
     if (SIM12.seconds <= 0) { finishSimulation12(true); return; }

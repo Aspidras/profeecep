@@ -2,6 +2,15 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.7 — Más práctica por indicador
+
+- 300 preguntas originales, 50 por especialidad, con 1.200 explicaciones. Los 241 indicadores cargados reciben práctica nueva; los 25 que dependían de plantillas tienen al menos dos ejercicios específicos.
+- Banco activo: 831 ejercicios (531 conservados + 300 nuevos). Se archivan 333 plantillas repetitivas para conservar historial y sesiones iniciadas sin incluirlas en nuevos simulacros.
+- Cuatro audios originales para 16 preguntas de Inglés, cuatro lecturas y dos cómics accesibles. Transcripción al revisar, con voz sintética y recursos offline. Estos audios no sustituyen los pendientes del cuadernillo 2023.
+- Catálogo de 50 preguntas nuevas por especialidad, con filtros por formato y variedad de estímulos.
+- Preguntas originales de estudio; dificultad estimada, sin calibración psicométrica ni condición de preguntas oficiales de 2026.
+- [Criterios, inventario y alcance](docs/banco-307.md), [auditoría previa](docs/auditoria-307.json), [distribución final](docs/resultados-307.json).
+
 ## Versión 3.0.6 — Historia e Inglés
 
 - 60 nuevas adaptaciones de los cuadernillos 2023: 30 de Historia, Geografía y Ciencias Sociales, y 30 de Inglés. Banco total: 864 preguntas; 150 adaptaciones de pruebas anteriores en cinco especialidades.

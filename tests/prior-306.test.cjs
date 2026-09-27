@@ -16,7 +16,7 @@ for (const sid of Object.keys(specialties)) {
   test(sid+': conserva exactamente las preguntas de 3.0.5 según su huella y mantiene el progreso', () => {
     const app = runtime(sid);
     const ids = new Set(baseline[sid].ids);
-    const old = app.run('Q').filter(q => ids.has(q.id));
+    const old = app.context.PE307.fullBank().filter(q => ids.has(q.id));
     assert.equal(old.length, baseline[sid].count);
     assert.equal(crypto.createHash('sha256').update(JSON.stringify(old)).digest('hex'), baseline[sid].sha256);
     assert.equal(app.run('Q.length'), specialties[sid]);
@@ -136,7 +136,7 @@ test('las representaciones nuevas coinciden con sus datos y usan archivos locale
     assert.match(svg,/<title/);assert.match(svg,/<desc/);
     assert.doesNotMatch(svg,/<script|<foreignObject|(?:href|src)="https?:\/\//i);
     assert.ok(s.alt.length>200);
-    assert.match(app.context.PE305.assetURL(s.asset),/\?v=3\.0\.6$/);
+    assert.match(app.context.PE305.assetURL(s.asset),/\?v=3\.0\.7$/);
   }
   const land=fs.readFileSync(path.join(root,'assets/prior-2023/historia-coberturas.svg'),'utf8');
   // Each map has 100 labelled cells, plus a single legend cell per category.

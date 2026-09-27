@@ -26,5 +26,41 @@
     "lang": "en",
     "asset": "museum.mp3",
     "transcript": "Before we enter the museum, please put your notebooks in your small bags. You will need them for the sketching activity upstairs. Leave your large backpacks here in the lockers because they are not allowed in the galleries. We will meet our guide at the entrance in five minutes. Keep an eye on the time. If we are late, we will have less time for the workshop. You may take photographs, but please turn off the flash."
+  },
+  "english-library": {
+    "kind": "text",
+    "title": "Brookfield Library — temporary changes",
+    "text": "Starting next Monday, Brookfield Library will have some temporary changes. The library will be closed on Tuesday for repairs. On Wednesday, it will stay open until 8 p.m. The outside return box will remain available, including on Tuesday. Saturday storytelling is cancelled this week. Online services will remain available throughout the week.",
+    "lang": "en"
+  },
+  "english-rain": {
+    "kind": "text",
+    "title": "A change of plans",
+    "text": "Anna had packed a picnic before she checked the forecast. Heavy rain was expected that afternoon. She sent her friend a message suggesting the café opposite the park instead, where they could sit indoors. Her friend agreed. At the café, Anna kept the picnic food packed. Later, she brought it home unopened.",
+    "lang": "en"
+  },
+  "english-club": {
+    "kind": "text",
+    "title": "A message from the school club",
+    "text": "Dear families,\nNext week, our gardening club will harvest some vegetables and use them in a cooking session. If your child would like to take part, please return the permission slip by Friday. Tell us about any food allergies before the session so that we can plan the ingredients safely. Thank you for helping us prepare.\nThe club team",
+    "lang": "en"
+  },
+  "english-cycling-opinion": {
+    "kind": "text",
+    "title": "A local resident writes",
+    "text": "The new cycle lanes make it easier to travel across our neighbourhood by bike. They are a useful first step. However, some dangerous junctions still need improvement. I support the new lanes, but the council should also make those crossings safer. A good beginning can still leave work to do.",
+    "lang": "en"
+  },
+  "comic-agua": {
+    "kind": "figure",
+    "title": "Un consejo en el jardín — cómic original",
+    "asset": "comic-agua.svg",
+    "alt": "Tres viñetas. En la primera, una persona junto a una llave de agua dice «¡Ahorremos agua!». En la segunda, la persona se aleja mientras caen gotas de la llave, junto al texto «ploc, ploc». En la tercera, una planta con ojos y boca pregunta «¿Y la llave?». La llave continúa goteando."
+  },
+  "comic-pantallas": {
+    "kind": "figure",
+    "title": "Una tarde en familia — cómic original",
+    "asset": "comic-pantallas.svg",
+    "alt": "Tres viñetas con tres personas sentadas a una mesa. En la primera, una dice «¡Una tarde para conversar!». En la segunda, una cartela indica «Media hora después» y las tres miran sus teléfonos; un globo contiene puntos suspensivos. En la tercera, siguen mirando los teléfonos y una persona dice «¡Qué conectados estamos!»."
   }
 }
