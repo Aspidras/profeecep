@@ -111,5 +111,5 @@ test('correcciones editoriales conservan claves y distinguen cálculos y concept
   const language=runtime('basica-lenguaje');
   assert.match(language.run("Q.find(q=>q.id==='basica-lenguaje-287-19').e"),/impersonal.*singular/);
   const history=runtime('basica-historia');
-  assert.match(history.run("Q.find(q=>q.id==='basica-historia-287-14').q"),/leyes federales de 1826/);
+  assert.match(history.run("PE308.current('basica-historia-287-14').e"),/autonomía.*1826/);
 });

@@ -2,8 +2,8 @@
 (function(){
  'use strict';
  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
- function errorPool(){const wrong=(S.wrong||[]).map(id=>Q.find(q=>q.id===id)).filter(Boolean);if(wrong.length)return wrong;const by={};(S.history||[]).forEach(h=>{if(!by[h.domain])by[h.domain]={n:0,w:0};by[h.domain].n++;if(!h.ok)by[h.domain].w++});const weak=Object.entries(by).sort((a,b)=>(b[1].w/Math.max(1,b[1].n))-(a[1].w/Math.max(1,a[1].n)))[0]?.[0];return Q.filter(q=>!weak||q.d===weak)}
- function question(id){if(id&&typeof id==='object')return id;const runtime=window.PE22_RUNTIME&&PE22_RUNTIME(),current=runtime?.quiz?.[runtime.pos];return Q.find(q=>q.id===id)||current||errorPool()[0]||Q[0]}
+ function errorPool(){const wrong=(S.wrong||[]).map(id=>Q.find(q=>(q.id===id||q.replaces===id))).filter(Boolean);if(wrong.length)return wrong;const by={};(S.history||[]).forEach(h=>{if(!by[h.domain])by[h.domain]={n:0,w:0};by[h.domain].n++;if(!h.ok)by[h.domain].w++});const weak=Object.entries(by).sort((a,b)=>(b[1].w/Math.max(1,b[1].n))-(a[1].w/Math.max(1,a[1].n)))[0]?.[0];return Q.filter(q=>!weak||q.d===weak)}
+ function question(id){if(id&&typeof id==='object')return id;const runtime=window.PE22_RUNTIME&&PE22_RUNTIME(),current=runtime?.quiz?.[runtime.pos];return Q.find(q=>(q.id===id||q.replaces===id))||current||errorPool()[0]||Q[0]}
  function message(step,q){
   if(!q)return 'No hay una pregunta disponible todavía.';
   if(step==='identify')return '<b>Qué tienes que resolver</b><p>'+esc(q.q)+'</p><p>Contenido: '+esc(q.skill||q.i)+'.</p>';

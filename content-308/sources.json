@@ -1,0 +1,44 @@
+[
+  {
+    "specialty": "basica-matematica",
+    "url": "https://www.evaluacionconocimientos.cl/coleccion/7894b2d7-a9b3-4c0a-8f4c-b8503198731a/educacion_basica_matematica",
+    "bytes": 310292,
+    "sha256": "4fc27cc44ad745d2752c3e75dfa1f3a1ebbc311cff3f041b3722cb002cfacd82",
+    "retrieved": "2026-09-28"
+  },
+  {
+    "specialty": "basica-ciencias",
+    "url": "https://www.evaluacionconocimientos.cl/coleccion/151a4b83-44d9-45b6-bc9f-7a21262b3a59/educacion_basica_ciencias_naturales",
+    "bytes": 320269,
+    "sha256": "1f16c328c2b0b8410fc38af44592f596eba3bdbab66b9bd1e652fe9e12b7ec95",
+    "retrieved": "2026-09-28"
+  },
+  {
+    "specialty": "basica-historia",
+    "url": "https://www.evaluacionconocimientos.cl/coleccion/c49c5a49-8bb6-44d7-a3b9-390ceb5f6592/educacion_basica_historia_y_geografia",
+    "bytes": 324962,
+    "sha256": "fb719d9b4ca997d6efa77e04b43c9da28201e80fab1101a9b81e3862bf31e254",
+    "retrieved": "2026-09-28"
+  },
+  {
+    "specialty": "basica-ingles",
+    "url": "https://www.evaluacionconocimientos.cl/coleccion/edd74073-df63-47c1-81d9-9b86358e7af2/educacion_basica_ingles",
+    "bytes": 315997,
+    "sha256": "80c3c76022aec3081674951e67dc891cdaee2e2ff4de8266d2f356aed1c9d49b",
+    "retrieved": "2026-09-28"
+  },
+  {
+    "specialty": "basica-lenguaje",
+    "url": "https://www.evaluacionconocimientos.cl/coleccion/3aadcdd4-87b0-422b-bd18-f783774f3cff/educacion_basica_lenguaje_y_comunicacion",
+    "bytes": 311782,
+    "sha256": "2e420bc86a91e38e30fe028f8f3a071835fd59deaf6e13e3437266e46ba5d24c",
+    "retrieved": "2026-09-28"
+  },
+  {
+    "specialty": "media-lengua",
+    "url": "https://www.evaluacionconocimientos.cl/coleccion/f6da3fd1-b955-45de-8dac-95d092aa660f/educacion_media_lengua_y_literatura",
+    "bytes": 316299,
+    "sha256": "1ed9351fc49e8b78c7b3ff0b08aa3c1634d7d17bdc1c98d8a56abc792fe4ce86",
+    "retrieved": "2026-09-28"
+  }
+]

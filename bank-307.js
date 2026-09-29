@@ -24,7 +24,7 @@
   const assets=new Map(PE307_ITEMS.flatMap(q=>q.stimulus.filter(s=>['audio','figure'].includes(s.kind)).map(s=>[s.asset,s.kind])));
   function assetURL(name){
     const kind=assets.get(name); if(!kind||!/^[a-z0-9-]+\.(?:mp3|svg)$/.test(name)) return null;
-    return 'assets/'+(kind==='audio'?'audio-307/':'original-307/')+name+'?v=3.0.7';
+    return 'assets/'+(kind==='audio'?'audio-307/':'original-307/')+name+'?v=3.0.8';
   }
   const previousStimulus=PE305.stimulus, previousSource=PE305.source;
   PE305.stimulus=function(q){
@@ -49,7 +49,7 @@
   const formats=[['all','Todas las preguntas'],['classroom','Situaciones de aula'],['reading','Lecturas y cómics'],['audio','Comprensión auditiva']];
   const teaching={'basica-matematica':4,'basica-ciencias':6,'basica-historia':3,'basica-ingles':3,'basica-lenguaje':2,'media-lengua':2};
   function pool(format='all'){
-    return Q.filter(q=>ids.has(q.id)&&(format==='all'||format==='classroom'&&q.indicatorId.startsWith(teaching[PE_ACTIVE_SPECIALTY]+'-')||format==='reading'&&q.stimulus.some(s=>['text','figure'].includes(s.kind))||format==='audio'&&q.stimulus.some(s=>s.kind==='audio')));
+    return Q.filter(q=>ids.has(q.replaces || q.id)&&(format==='all'||format==='classroom'&&q.indicatorId.startsWith(teaching[PE_ACTIVE_SPECIALTY]+'-')||format==='reading'&&q.stimulus.some(s=>['text','figure'].includes(s.kind))||format==='audio'&&q.stimulus.some(s=>s.kind==='audio')));
   }
   function choose(rows,count=5){
     const mixed=shuffle(rows),families=new Set(),selected=[];
@@ -64,7 +64,7 @@
   const practiceQuestion=id=>start('all',id);
   function practiceCard(){
     const rows=pool();
-    return '<span class="pill">Nuevo · 3.0.7</span><h2>50 preguntas nuevas para tu especialidad</h2><p>Resuelve casos y problemas concretos. Al revisar, descubre por qué cada alternativa es correcta o incorrecta.</p><label for="pe307-format">Tipo de práctica</label><select id="pe307-format">'+formats.filter(([id])=>pool(id).length).map(([id,label])=>'<option value="'+id+'">'+label+' ('+pool(id).length+')</option>').join('')+'</select><button class="btn full" onclick="PE307.startFromForm()">Practicar preguntas nuevas</button><details class="pe305-catalog"><summary>Explorar las 50 preguntas nuevas</summary><ol>'+rows.map(q=>'<li><button class="pe305-question-link" data-question-id="'+esc(q.id)+'" onclick="PE307.practiceQuestion(this.dataset.questionId)"><small>'+esc(q.questionType)+'</small><span>'+esc(q.q)+'</span></button></li>').join('')+'</ol></details><p class="tiny">Preguntas originales de práctica ProfeECEP. Dificultad estimada; no son preguntas oficiales del examen.</p>';
+    return '<span class="pill">Revisado · 3.0.8</span><h2>50 preguntas nuevas para tu especialidad</h2><p>Resuelve casos y problemas concretos. Al revisar, descubre por qué cada alternativa es correcta o incorrecta.</p><label for="pe307-format">Tipo de práctica</label><select id="pe307-format">'+formats.filter(([id])=>pool(id).length).map(([id,label])=>'<option value="'+id+'">'+label+' ('+pool(id).length+')</option>').join('')+'</select><button class="btn full" onclick="PE307.startFromForm()">Practicar preguntas nuevas</button><details class="pe305-catalog"><summary>Explorar las 50 preguntas nuevas</summary><ol>'+rows.map(q=>'<li><button class="pe305-question-link" data-question-id="'+esc(q.id)+'" onclick="PE307.practiceQuestion(this.dataset.questionId)"><small>'+esc(q.questionType)+'</small><span>'+esc(q.q)+'</span></button></li>').join('')+'</ol></details><p class="tiny">Preguntas originales de práctica ProfeECEP. Dificultad estimada; no son preguntas oficiales del examen.</p>';
   }
   function inject(){
     const target=el('practice'),inQuestion=document.querySelector('.screen.on')?.id==='practice'&&mode==='practice'&&quiz.length&&pos<quiz.length;
@@ -72,7 +72,7 @@
     const dashboard=el('home')?.querySelector('.pe302-dashboard');
     if(dashboard&&!dashboard.querySelector('.pe307-home')){
       const card=document.createElement('section');card.className='card pe307-home';
-      card.innerHTML='<span class="pill">Más práctica · 3.0.7</span><h2>50 preguntas nuevas</h2><p>Tu especialidad tiene ahora '+Q.length+' ejercicios activos. Entrena con explicaciones para las cuatro alternativas.</p><button class="btn full" onclick="PE302.navigate(\'practice\',\'.pe307-practice\')">Explorar las nuevas preguntas</button>';dashboard.prepend(card);
+      card.innerHTML='<span class="pill">Más práctica · 3.0.8</span><h2>50 preguntas nuevas</h2><p>Tu especialidad tiene ahora '+Q.length+' ejercicios activos. Entrena con explicaciones para las cuatro alternativas.</p><button class="btn full" onclick="PE302.navigate(\'practice\',\'.pe307-practice\')">Explorar las nuevas preguntas</button>';dashboard.prepend(card);
     }
   }
   window.PE307={fullBank,archived:(sid=PE_ACTIVE_SPECIALTY)=>[...(archived[sid]||[])],pool,choose,start,startFromForm,practiceQuestion,practiceCard,inject,assetURL};

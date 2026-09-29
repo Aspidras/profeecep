@@ -1,0 +1,1219 @@
+{
+  "basica-matematica": [
+    {
+      "id": "0-0-0",
+      "page": 1,
+      "text": "Identificar propiedades y/o relaciones asociadas a múltiplos, factores y divisibilidad; números primos y compuestos; dividendo, divisor, cociente y resto."
+    },
+    {
+      "id": "0-0-1",
+      "page": 1,
+      "text": "Ordenar y comparar números enteros y/o racionales (usando recta numérica, registro simbólico, contextos, etc.)."
+    },
+    {
+      "id": "0-0-2",
+      "page": 1,
+      "text": "Resolver problemas que requieren interpretar información en contextos y aplicar operaciones con números racionales en sus diversos formatos (enteros, decimales, fracciones propias, fracciones impropias, etc.)."
+    },
+    {
+      "id": "0-1-0",
+      "page": 1,
+      "text": "Representar, a través de diversos registros (tabla de valores, gráficos, etc.), situaciones contextualizadas para inferir información respecto de variables proporcionales (directas o inversas)."
+    },
+    {
+      "id": "0-1-1",
+      "page": 1,
+      "text": "Reconocer la presencia de variables directamente proporcionales, inversamente proporcionales y no proporcionales, en problemas contextualizados."
+    },
+    {
+      "id": "0-1-2",
+      "page": 1,
+      "text": "Resolver problemas rutinarios que involucren proporcionalidad directa o inversa."
+    },
+    {
+      "id": "0-1-3",
+      "page": 1,
+      "text": "Resolver problemas que involucren cálculo con porcentajes e interpretar los resultados en función al contexto de la situación."
+    },
+    {
+      "id": "0-2-0",
+      "page": 1,
+      "text": "Resolver problemas rutinarios de potencias de base real y exponente entero, con o sin uso de contextos (por ejemplo, como una multiplicación iterada, como notación científica, analizando su crecimiento o decrecimiento, etc.)  e interpretar los datos en función del contexto de la situación."
+    },
+    {
+      "id": "0-2-1",
+      "page": 1,
+      "text": "Resolver operaciones que involucren multiplicación y/o división de potencias de base fraccionaria o decimal y exponente natural (o entero)."
+    },
+    {
+      "id": "1-0-0",
+      "page": 2,
+      "text": "Identificar y aplicar reglas de formación en secuencias numéricas (por ejemplo, describiendo el término general, términos faltantes u operaciones entre términos)."
+    },
+    {
+      "id": "1-0-1",
+      "page": 2,
+      "text": "Traducir al lenguaje algebraico expresiones numéricas o en lenguaje natural y viceversa, considerando el uso de operatoria combinada (operaciones básicas, uso de paréntesis, potencias, raíces, etc.)."
+    },
+    {
+      "id": "1-0-2",
+      "page": 2,
+      "text": "Modelar propiedades relativas a proporciones, porcentajes y/o potencias utilizando lenguaje algebraico."
+    },
+    {
+      "id": "1-1-0",
+      "page": 2,
+      "text": "Identificar la ecuación y/o inecuación lineal que modela un problema y viceversa."
+    },
+    {
+      "id": "1-1-1",
+      "page": 2,
+      "text": "Resolver problemas que se modelen mediante la aplicación de ecuaciones e inecuaciones lineales, haciendo uso de sus propiedades."
+    },
+    {
+      "id": "1-1-2",
+      "page": 2,
+      "text": "Resolver ecuaciones e inecuaciones lineales con coeficientes enteros o fraccionarios."
+    },
+    {
+      "id": "1-2-0",
+      "page": 2,
+      "text": "Identificar el dominio y recorrido de una función representada de manera gráfica o tabular."
+    },
+    {
+      "id": "1-2-1",
+      "page": 2,
+      "text": "Identificar variables dependientes e independientes en diversos contextos."
+    },
+    {
+      "id": "1-2-2",
+      "page": 2,
+      "text": "Reconocer e interpretar los parámetros de las funciones lineal y afín, en relación con las características de sus gráficas en el plano cartesiano de coordenadas."
+    },
+    {
+      "id": "1-2-3",
+      "page": 2,
+      "text": "Modelar situaciones a través de funciones lineales o afines."
+    },
+    {
+      "id": "2-0-0",
+      "page": 2,
+      "text": "Determinar la posibilidad de construir triángulos a partir de información respecto de sus lados y ángulos."
+    },
+    {
+      "id": "2-0-1",
+      "page": 2,
+      "text": "Clasificar polígonos y/o cuerpos geométricos según las propiedades de sus elementos, tales como: diagonales, ángulos interiores, ángulos exteriores, lados, aristas y caras."
+    },
+    {
+      "id": "2-0-2",
+      "page": 2,
+      "text": "Reconocer y determinar ejes y/o centros de simetría en diferentes polígonos."
+    },
+    {
+      "id": "2-0-3",
+      "page": 2,
+      "text": "Resolver problemas rutinarios que involucren propiedades de los polígonos y sus elementos."
+    },
+    {
+      "id": "2-0-4",
+      "page": 2,
+      "text": "Resolver problemas rutinarios que involucren propiedades y elementos de la circunferencia."
+    },
+    {
+      "id": "2-1-0",
+      "page": 2,
+      "text": "Resolver problemas rutinarios que involucren cálculo de perímetros y áreas de figuras planas utilizando sus propiedades."
+    },
+    {
+      "id": "2-1-1",
+      "page": 3,
+      "text": "Resolver problemas que involucren el cálculo de perímetros, áreas y volúmenes de figuras y cuerpos geométricos."
+    },
+    {
+      "id": "2-1-2",
+      "page": 3,
+      "text": "Reconocer familias de figuras geométricas a partir de sus ejes y centros de simetría."
+    },
+    {
+      "id": "2-1-3",
+      "page": 3,
+      "text": "Resolver problemas no rutinarios que involucren el cálculo de áreas de polígonos por medio de la utilización de figuras compuestas."
+    },
+    {
+      "id": "2-2-0",
+      "page": 3,
+      "text": "Identificar el concepto de congruencia y sus propiedades, aplicadas a las transformaciones isométricas."
+    },
+    {
+      "id": "2-2-1",
+      "page": 3,
+      "text": "Realizar traslaciones, reflexiones o simetrías axiales, simetrías centrales y simetrías rotacionales a figuras planas en el plano cartesiano."
+    },
+    {
+      "id": "2-2-2",
+      "page": 3,
+      "text": "Identificar traslaciones, rotaciones y reflexiones presentes en la naturaleza y en obras de arte."
+    },
+    {
+      "id": "3-0-0",
+      "page": 3,
+      "text": "Interpretar y comparar información presentada a través de diversos tipos de gráficos, tales como gráficos de barras, de líneas, circulares, de tallo y hoja, etc."
+    },
+    {
+      "id": "3-0-1",
+      "page": 3,
+      "text": "Interpretar la información que entregan las diferentes medidas de tendencia central para un conjunto de datos no agrupados."
+    },
+    {
+      "id": "3-0-2",
+      "page": 3,
+      "text": "Evaluar y seleccionar el indicador estadístico (medidas de tendencia central y rango) que resulte más pertinente en función de un problema dado."
+    },
+    {
+      "id": "3-0-3",
+      "page": 3,
+      "text": "Identificar y/o diferenciar y/o ejemplificar los conceptos de población y muestra."
+    },
+    {
+      "id": "3-1-0",
+      "page": 3,
+      "text": "Identificar y diferenciar el espacio muestral (todos los eventos posibles) y los eventos o sucesos, como subconjuntos de él."
+    },
+    {
+      "id": "3-1-1",
+      "page": 3,
+      "text": "Estimar la probabilidad de ocurrencia de un evento mediante el uso de la frecuencia relativa."
+    },
+    {
+      "id": "3-1-2",
+      "page": 3,
+      "text": "Determinar la cardinalidad de un espacio muestral (cantidad de todos los eventos posibles), aplicando el principio multiplicativo."
+    },
+    {
+      "id": "3-1-3",
+      "page": 3,
+      "text": "Determinar la probabilidad de ocurrencia de un evento mediante el modelo de Laplace."
+    },
+    {
+      "id": "4-0-0",
+      "page": 4,
+      "text": "Decidir estrategias metodológicas y/o actividades para abordar objetivos o habilidades propios de la asignatura de Matemática."
+    },
+    {
+      "id": "4-0-1",
+      "page": 4,
+      "text": "Determinar variadas formas de representar y formular los contenidos, de modo de hacerlos comprensibles para todos los estudiantes, por ejemplo: analogías, ilustraciones, explicaciones, metáforas, ejemplos, contraejemplos, demostraciones."
+    },
+    {
+      "id": "4-0-2",
+      "page": 4,
+      "text": "Justificar en situaciones de aula, la toma de decisiones e intervenciones del docente que favorecen el aprendizaje en la asignatura de Matemática."
+    },
+    {
+      "id": "4-0-3",
+      "page": 4,
+      "text": "Seleccionar recursos didácticos apropiados para abordar diferentes objetivos de aprendizaje de la asignatura de Matemática."
+    },
+    {
+      "id": "4-0-4",
+      "page": 4,
+      "text": "Seleccionar el diseño de estrategias o actividades de aprendizaje en función de los énfasis curriculares de la asignatura de Matemática."
+    },
+    {
+      "id": "4-0-5",
+      "page": 4,
+      "text": "Distinguir estrategias para enfrentar las dificultades que se presentan en el proceso de aprendizaje de los estudiantes, con el fin de que estas puedan ser superadas."
+    },
+    {
+      "id": "4-1-0",
+      "page": 4,
+      "text": "Identificar los conocimientos previos requeridos para abordar los distintos aprendizajes de la asignatura de Matemática."
+    },
+    {
+      "id": "4-1-1",
+      "page": 4,
+      "text": "Reconocer errores comunes en el aprendizaje de la asignatura con el fin de retroalimentar y promover el aprendizaje a partir del error."
+    },
+    {
+      "id": "4-2-0",
+      "page": 4,
+      "text": "Determinar los indicadores de evaluación y desempeños que dan cuenta de los distintos objetivos de aprendizaje de la asignatura de Matemática."
+    },
+    {
+      "id": "4-2-1",
+      "page": 4,
+      "text": "Seleccionar actividades, estrategias o instrumentos de evaluación pertinentes a los indicadores y para evaluar el logro de los objetivos de aprendizajes de la asignatura de Matemática."
+    }
+  ],
+  "basica-ciencias": [
+    {
+      "id": "0-0-0",
+      "page": 1,
+      "text": "Evaluar las principales características de los mecanismos de intercambio entre célula y ambiente, transporte activo, pasivo y mediados por vesículas como, por ejemplo: difusión, osmosis, endocitosis."
+    },
+    {
+      "id": "0-0-1",
+      "page": 1,
+      "text": "Distinguir las propiedades o funciones de las principales moléculas inorgánicas y orgánicas que componen la célula (proteínas, carbohidratos, lípidos, ácidos nucleicos, etc.)."
+    },
+    {
+      "id": "0-1-0",
+      "page": 1,
+      "text": "Explicar la función de las estructuras de los sistemas circulatorio, respiratorio y digestivo."
+    },
+    {
+      "id": "0-1-1",
+      "page": 1,
+      "text": "Describir el mecanismo de infección de un virus a una célula huésped."
+    },
+    {
+      "id": "0-1-2",
+      "page": 1,
+      "text": "Describir el mecanismo de acción de las barreras inespecíficas de defensas."
+    },
+    {
+      "id": "0-1-3",
+      "page": 1,
+      "text": "Contrastar el mecanismo de acción de macrófagos y neutrófilos en la barrera secundaria."
+    },
+    {
+      "id": "0-2-0",
+      "page": 1,
+      "text": "Caracterizar nutrientes según su composición química y su función en el organismo."
+    },
+    {
+      "id": "0-2-1",
+      "page": 1,
+      "text": "Relacionar el consumo diario necesario de nutrientes y los factores que se deben considerar en una dieta balanceada según las necesidades del organismo (reparación, defensas, crecimiento, actividad física, embarazo, diabetes, periodo del desarrollo biológico, etc.)."
+    },
+    {
+      "id": "0-2-2",
+      "page": 1,
+      "text": "Identificar las principales sustancias tóxicas y adictivas asociadas al consumo de alcohol, cigarrillos y/o drogas ilícitas."
+    },
+    {
+      "id": "0-3-0",
+      "page": 1,
+      "text": "Explicar el funcionamiento del sistema reproductor masculino y femenino, describiendo el rol de sus estructuras."
+    },
+    {
+      "id": "0-3-1",
+      "page": 1,
+      "text": "Establecer las etapas del ciclo uterino y ovárico con las distintas hormonas que participan en estos."
+    },
+    {
+      "id": "0-3-2",
+      "page": 1,
+      "text": "Evaluar los mecanismos de acción de los métodos de regulación de la fertilidad (naturales y artificiales)."
+    },
+    {
+      "id": "1-0-0",
+      "page": 1,
+      "text": "Explicar las principales etapas del proceso de fotosíntesis."
+    },
+    {
+      "id": "1-1-0",
+      "page": 1,
+      "text": "Diferenciar los conceptos de especie, población, comunidad y ecosistema, en situaciones reales."
+    },
+    {
+      "id": "1-1-1",
+      "page": 1,
+      "text": "Evaluar beneficios y perjuicios que conlleva la explotación de las especies de una zona."
+    },
+    {
+      "id": "2-0-0",
+      "page": 2,
+      "text": "Caracterizar las partículas subatómicas en términos de masa y carga relativa."
+    },
+    {
+      "id": "2-0-1",
+      "page": 2,
+      "text": "Inferir las relaciones entre las variables de presión y temperatura de un gas ideal, de acuerdo con el modelo cinético molecular."
+    },
+    {
+      "id": "2-0-2",
+      "page": 2,
+      "text": "Relacionar procedimientos de separación de mezclas heterogéneas y homogéneas (decantar, filtrar, tamizar, destilar, evaporar) con las características de las sustancias."
+    },
+    {
+      "id": "3-0-0",
+      "page": 2,
+      "text": "Comparar el peso de un cuerpo en función de la masa de un planeta y de su ubicación en el sistema solar."
+    },
+    {
+      "id": "3-0-1",
+      "page": 2,
+      "text": "Relacionar la diferencia de rapidez que experimentan los cuerpos que caen con la resistencia del aire y no con su peso."
+    },
+    {
+      "id": "3-0-2",
+      "page": 2,
+      "text": "Reconocer, en distintos contextos, el efecto de distintas fuerzas (roce, normal, peso, neta, tensión, empuje, elástica, entre otras) en un cuerpo en movimiento."
+    },
+    {
+      "id": "3-1-0",
+      "page": 2,
+      "text": "Diferenciar entre calor y temperatura."
+    },
+    {
+      "id": "3-1-1",
+      "page": 2,
+      "text": "Explicar la absorción o liberación de calor en situaciones cotidianas."
+    },
+    {
+      "id": "3-1-2",
+      "page": 2,
+      "text": "Explicar las transformaciones energéticas que ocurren en procesos físicos, biológicos y químicos cotidianos (por ejemplo: iluminación, ejercicio físico y en la cocina)."
+    },
+    {
+      "id": "3-1-3",
+      "page": 2,
+      "text": "Reconocer la función de los elementos básicos de un circuito eléctrico."
+    },
+    {
+      "id": "3-1-4",
+      "page": 2,
+      "text": "Organizar mecanismos de electrización de cuerpos, considerando tipo y cantidad de carga eléctrica."
+    },
+    {
+      "id": "3-1-5",
+      "page": 2,
+      "text": "Diferenciar corriente eléctrica de electricidad e intensidad."
+    },
+    {
+      "id": "3-1-6",
+      "page": 2,
+      "text": "Diferenciar circuitos simples en serie y paralelo."
+    },
+    {
+      "id": "4-0-0",
+      "page": 2,
+      "text": "Caracterizar tipos de suelo según sus propiedades (color, textura y capacidad de retención de agua)."
+    },
+    {
+      "id": "4-0-1",
+      "page": 2,
+      "text": "Reconocer los parámetros físicos (temperatura, luz, profundidad, movimientos de aguas) y biológicos (flora y fauna) que poseen los lagos y océanos."
+    },
+    {
+      "id": "4-0-2",
+      "page": 2,
+      "text": "Calificar fenómenos naturales a gran escala (temporales, mareas, sismos, erupciones volcánicas, etc.) según la teoría de tectónica de placas, aplicando nociones de energía, fuerza y movimiento."
+    },
+    {
+      "id": "4-0-3",
+      "page": 2,
+      "text": "Describir procesos de erosión de la superficie de la Tierra, los agentes que los provocan y sus consecuencias en contextos nacionales."
+    },
+    {
+      "id": "5-0-0",
+      "page": 3,
+      "text": "Distinguir entre variables dependientes, independientes y controladas en un diseño experimental."
+    },
+    {
+      "id": "5-0-1",
+      "page": 3,
+      "text": "Distinguir un procedimiento o diseño experimental adecuado para comprobar una hipótesis o responder una determinada pregunta de investigación."
+    },
+    {
+      "id": "5-0-2",
+      "page": 3,
+      "text": "Identificar modificaciones para mejorar un diseño experimental, a partir del propósito, los resultados o las conclusiones obtenidas."
+    },
+    {
+      "id": "6-0-0",
+      "page": 3,
+      "text": "Determinar estrategias metodológicas y/o actividades para abordar objetivos o habilidades propias de la asignatura."
+    },
+    {
+      "id": "6-0-1",
+      "page": 3,
+      "text": "Determinar diversas (variadas) formas de representar y formular los contenidos de modo de hacerlos comprensibles para todos los estudiantes. Por ejemplo: analogías, ilustraciones, explicaciones, metáforas, ejemplos, contraejemplos, demostraciones."
+    },
+    {
+      "id": "6-0-2",
+      "page": 3,
+      "text": "Identificar, en situaciones de aula, decisiones e intervenciones pedagógicas que favorecen el aprendizaje en Ciencias Naturales."
+    },
+    {
+      "id": "6-0-3",
+      "page": 3,
+      "text": "Seleccionar estrategias para enfrentar las dificultades que se presentan en el proceso de aprendizaje de los estudiantes, de modo que estas puedan ser superadas."
+    },
+    {
+      "id": "6-1-0",
+      "page": 3,
+      "text": "Identificar los conocimientos previos requeridos para abordar los distintos aprendizajes de la asignatura."
+    },
+    {
+      "id": "6-1-1",
+      "page": 3,
+      "text": "Reconocer errores comunes en el aprendizaje de la asignatura con el fin de retroalimentar y promover el aprendizaje a partir del error."
+    },
+    {
+      "id": "6-2-0",
+      "page": 3,
+      "text": "Identificar los indicadores de evaluación y evidencias de desempeños que dan cuenta de los distintos objetivos de aprendizaje de la asignatura."
+    },
+    {
+      "id": "6-2-1",
+      "page": 3,
+      "text": "Seleccionar estrategias, actividades e instrumentos de evaluación pertinentes a los aprendizajes en la asignatura."
+    }
+  ],
+  "basica-historia": [
+    {
+      "id": "0-0-0",
+      "page": 1,
+      "text": "Identificar en representaciones espaciales conceptos geográficos como: paralelo, meridiano, latitud, longitud, densidad y relieve, entre otros."
+    },
+    {
+      "id": "0-0-1",
+      "page": 1,
+      "text": "Localizar en representaciones espaciales regiones, relieve, fenómenos y procesos, utilizando conceptos de orientación espacial como paralelo, meridiano, latitud, longitud, entre otros."
+    },
+    {
+      "id": "0-0-2",
+      "page": 1,
+      "text": "Interpretar información geográfica a partir de distintas representaciones geográficas como: cartas, perfiles topográficos, climogramas, fotografías, planos, entre otros; como a su vez, pirámides poblacionales, información estadística, etc."
+    },
+    {
+      "id": "0-1-0",
+      "page": 1,
+      "text": "Distinguir características geográficas del territorio americano y chileno, tales como grandes unidades del relieve, climas, hidrografía y aspectos demográficos."
+    },
+    {
+      "id": "0-1-1",
+      "page": 1,
+      "text": "Caracterizar las zonas naturales de Chile en términos de clima, hidrografía, población, topografía, etc. (Norte Grande, Norte Chico, Zona Central, Zona Sur y Zona Austral)."
+    },
+    {
+      "id": "0-1-2",
+      "page": 1,
+      "text": "Distinguir particularidades y desafíos de las regiones en Chile considerando aspectos físicos, humanos, económicos, culturales y sociales."
+    },
+    {
+      "id": "0-1-3",
+      "page": 1,
+      "text": "Interpretar información geográfica de Chile, América y el mundo, a partir de información proveniente de diversas fuentes (imágenes, gráficos, textos, estadísticas entre otras)."
+    },
+    {
+      "id": "0-2-0",
+      "page": 1,
+      "text": "Explicar posibles efectos de las actividades productivas en el entorno, que afectan al medio ambiente, a corto y largo plazo."
+    },
+    {
+      "id": "0-2-1",
+      "page": 1,
+      "text": "Identificar los efectos de los procesos productivos y/o de la urbanización en el entorno, explicando sus efectos a corto y largo plazo."
+    },
+    {
+      "id": "1-0-0",
+      "page": 1,
+      "text": "Explicar conceptos relacionados al conocimiento histórico como hito, hecho, proceso, periodo, acontecimiento, perspectiva e interpretación historiográfica, entre otros."
+    },
+    {
+      "id": "1-0-1",
+      "page": 1,
+      "text": "Aplicar el concepto de tiempo histórico y sus componentes como duración, sucesión, cambio y continuidad, ritmo, causalidad, sincronía, diacronía, entre otros."
+    },
+    {
+      "id": "1-1-0",
+      "page": 2,
+      "text": "Reconocer características de la vida cotidiana y legado de las civilizaciones griega y romana de la Antigüedad: rasgos de su vida diaria y sus aportes al presente (organización democrática, derecho, idioma, arte, arquitectura, escultura, filosofía, mitología, alfabeto, juegos olímpicos, entre otros)"
+    },
+    {
+      "id": "1-1-1",
+      "page": 2,
+      "text": "Comparar modos de vida y satisfacción de necesidades humanas: cómo distintos pueblos de la Antigüedad enfrentaron el desafío de desarrollarse y resolver necesidades comunes, y comparación de esos modos de vida con el propio (costumbres, trabajos y oficios, creencias, vestimentas y características de las ciudades). Distinguir las características de la organización económica de los pueblos originarios y grandes civilizaciones de América."
+    },
+    {
+      "id": "1-1-2",
+      "page": 2,
+      "text": "Distinguir las diferentes formas de organización política de las civilizaciones americanas."
+    },
+    {
+      "id": "1-1-3",
+      "page": 2,
+      "text": "Analizar los factores propios del contexto europeo de los siglos XV y XVI que permitieron los viajes de exploración y la ampliación del mundo conocido, incluyendo la llegada de los europeos al continente americano."
+    },
+    {
+      "id": "1-1-4",
+      "page": 2,
+      "text": "Contrastar fuentes históricas para explicar las características del proceso de descubrimiento y conquista de América"
+    },
+    {
+      "id": "1-1-5",
+      "page": 2,
+      "text": "Contrastar fuentes históricas para explicar las características del periodo colonial"
+    },
+    {
+      "id": "1-1-6",
+      "page": 2,
+      "text": "Interpretar fuentes históricas para explicar las características del proceso de independencia de América y Chile."
+    },
+    {
+      "id": "1-1-7",
+      "page": 2,
+      "text": "Analizar el periodo de la organización nacional como una época de enfrentamiento de posturas políticas e ideológicas que se tradujo en diferentes ensayos constitucionales (1823, 1826, 1828)."
+    },
+    {
+      "id": "1-1-8",
+      "page": 2,
+      "text": "Interpretar fuentes históricas para explicar las características del periodo de Organización de la República, incluyendo desafíos que implicó organizar el Estado, el surgimiento de grupos con diferentes ideas políticas, características de la Constitución de 1833 y las reformas liberales del siglo XIX."
+    },
+    {
+      "id": "1-1-9",
+      "page": 2,
+      "text": "Explicar la conformación del territorio chileno durante el siglo XIX como parte de la conformación del Estado-nación, considerando la Guerra del Pacífico."
+    },
+    {
+      "id": "1-1-10",
+      "page": 2,
+      "text": "Explicar los elementos característicos del sistema presidencial y del parlamentarismo que han tenido lugar en la historia republicana de Chile."
+    },
+    {
+      "id": "1-1-11",
+      "page": 2,
+      "text": "Explicar la progresiva democratización de la sociedad chilena durante el siglo XX, ejemplificándola en materia política, económica, social y cultural."
+    },
+    {
+      "id": "1-1-12",
+      "page": 2,
+      "text": "Analizar las transformaciones políticas y económicas implementadas durante el régimen o dictadura militar."
+    },
+    {
+      "id": "1-1-13",
+      "page": 2,
+      "text": "Explicar el proceso de recuperación de la democracia, considerando personajes, circunstancias y condiciones."
+    },
+    {
+      "id": "1-1-14",
+      "page": 2,
+      "text": "Comparar la organización político-social del periodo colonial con la del Chile republicano."
+    },
+    {
+      "id": "2-0-0",
+      "page": 3,
+      "text": "Describir el Estado de derecho en función de los componentes fundamentales que lo caracterizan"
+    },
+    {
+      "id": "2-0-1",
+      "page": 3,
+      "text": "Explicar funciones y atribuciones de diferentes órganos de gobierno de la República de Chile en la actualidad."
+    },
+    {
+      "id": "2-0-2",
+      "page": 3,
+      "text": "Caracterizar el sistema democrático en Chile en la actualidad, considerando los principios, fundamentos y atributos que lo sustentan."
+    },
+    {
+      "id": "3-0-0",
+      "page": 3,
+      "text": "Proponer estrategias metodológicas y/o actividades para abordar objetivos o habilidades propias de la asignatura."
+    },
+    {
+      "id": "3-0-1",
+      "page": 3,
+      "text": "Seleccionar variadas formas de representar y formular los contenidos de modo de hacerlos comprensibles para todos/as los/as estudiantes. Por ejemplo:  analogías, ilustraciones, explicaciones, metáforas, ejemplos, contraejemplos, demostraciones, entre otras."
+    },
+    {
+      "id": "3-0-2",
+      "page": 3,
+      "text": "Ejemplificar el uso de un lenguaje comprensible y conceptualmente preciso para la enseñanza de la asignatura, en situaciones de aula."
+    },
+    {
+      "id": "3-0-3",
+      "page": 3,
+      "text": "Seleccionar recursos didácticos apropiados para abordar diferentes objetivos de aprendizaje de la asignatura."
+    },
+    {
+      "id": "3-0-4",
+      "page": 3,
+      "text": "Diseñar estrategias o actividades de aprendizaje en función de los énfasis curriculares de la asignatura."
+    },
+    {
+      "id": "3-0-5",
+      "page": 3,
+      "text": "Seleccionar estrategias para enfrentar las dificultades que se presentan en el proceso de aprendizaje de los estudiantes, de modo que estas puedan ser superadas."
+    },
+    {
+      "id": "3-1-0",
+      "page": 3,
+      "text": "Identificar los conocimientos previos requeridos para abordar los distintos aprendizajes de la asignatura."
+    },
+    {
+      "id": "3-1-1",
+      "page": 3,
+      "text": "Retroalimentar las dificultades en el proceso de aprendizaje, a partir evidencias de desempeños."
+    },
+    {
+      "id": "3-2-0",
+      "page": 3,
+      "text": "Identificar los indicadores de evaluación y desempeños que dan cuenta del nivel de logro de los distintos objetivos de aprendizaje de la asignatura."
+    },
+    {
+      "id": "3-2-1",
+      "page": 3,
+      "text": "Seleccionar actividades, estrategias e instrumentos de evaluación pertinentes para evaluar los aprendizajes de la asignatura."
+    },
+    {
+      "id": "3-2-2",
+      "page": 3,
+      "text": "Proponer prácticas e interacciones pedagógicas que contribuyen a retroalimentar formativamente el aprendizaje de los estudiantes ante evidencias de desempeños."
+    }
+  ],
+  "basica-ingles": [
+    {
+      "id": "0-0-0",
+      "page": 1,
+      "text": "Identificar información literal a nivel global en textos escritos auténticos o adaptados con diferentes propósitos comunicativos (informativo, argumentativo, persuasivo, entre otros)."
+    },
+    {
+      "id": "0-0-1",
+      "page": 1,
+      "text": "Identificar información literal a nivel local en textos escritos auténticos o adaptados con diferentes propósitos comunicativos (informativo, argumentativo, persuasivo, entre otros)."
+    },
+    {
+      "id": "0-0-2",
+      "page": 1,
+      "text": "Resumir información global de un texto escrito en una frase u oración."
+    },
+    {
+      "id": "0-0-3",
+      "page": 1,
+      "text": "Identificar el destinatario de un texto escrito determinado."
+    },
+    {
+      "id": "0-0-4",
+      "page": 1,
+      "text": "Extraer conclusiones a partir de la información presentada en un texto escrito."
+    },
+    {
+      "id": "0-0-5",
+      "page": 1,
+      "text": "Identificar relaciones entre diferentes componentes o ideas de un texto escrito (por ejemplo, relacionar el título con el sentido global del texto, establecer semejanzas entre dos o más ideas, contrastar ideas presentadas en diferentes párrafos, establecer relaciones de causa y efecto entre los componentes del texto, distinguir citas que apoyen una idea, relacionar el problema y solución planteados en un texto, etc.)."
+    },
+    {
+      "id": "0-0-6",
+      "page": 1,
+      "text": "Inferir información global de un texto escrito, recurriendo a pistas contextuales, componentes pragmáticos, etc. (por ejemplo, identificar el tema central de un texto)."
+    },
+    {
+      "id": "0-0-7",
+      "page": 1,
+      "text": "Identificar información local de un texto escrito, recurriendo a pistas contextuales, componentes pragmáticos, etc. (por ejemplo, tono del emisor, intención detrás de una enunciación, lugar donde se despliegan los eventos del texto, etc.)."
+    },
+    {
+      "id": "0-0-8",
+      "page": 1,
+      "text": "Extraer el punto de vista del emisor de un texto dado."
+    },
+    {
+      "id": "0-1-0",
+      "page": 1,
+      "text": "Interpretar el significado de vocabulario en contexto, en textos escritos auténticos o adaptados."
+    },
+    {
+      "id": "0-1-1",
+      "page": 1,
+      "text": "Analizar mecanismos de referencia entre elementos del texto, mediante el uso de pronombres, cláusulas u otras estructuras lingüísticas (anáfora vs catáfora)."
+    },
+    {
+      "id": "1-0-0",
+      "page": 1,
+      "text": "Identificar información literal a nivel global en textos orales auténticos o adaptados con diferentes propósitos comunicativos (informativo, argumentativo, persuasivo, entre otros)."
+    },
+    {
+      "id": "1-0-1",
+      "page": 1,
+      "text": "Identificar información literal a nivel local en textos orales auténticos o adaptados con diferentes propósitos comunicativos (informativo, argumentativo, persuasivo, entre otros)."
+    },
+    {
+      "id": "1-0-2",
+      "page": 1,
+      "text": "Extraer conclusiones a partir de la información presentada en un texto oral."
+    },
+    {
+      "id": "1-0-3",
+      "page": 1,
+      "text": "Resumir información general de un texto escuchado, en una frase u oración."
+    },
+    {
+      "id": "1-0-4",
+      "page": 1,
+      "text": "Establecer relaciones entre diferentes componentes o ideas de un texto oral (por ejemplo, establecer semejanzas entre dos o más ideas, contrastar ideas presentadas en diferentes partes del texto, establecer relaciones de causa y efecto entre enunciados de un texto, relacionar el problema y solución planteados en un texto, etc.)."
+    },
+    {
+      "id": "1-0-5",
+      "page": 2,
+      "text": "Inferir información global de un texto oral, recurriendo a pistas contextuales, elementos paraverbales, etc. (por ejemplo, identificar el tema central de un texto)."
+    },
+    {
+      "id": "1-0-6",
+      "page": 2,
+      "text": "Inferir información local de un texto oral, recurriendo a pistas contextuales y/o elementos paraverbales."
+    },
+    {
+      "id": "1-0-7",
+      "page": 2,
+      "text": "Identificar el destinatario de un texto oral determinado."
+    },
+    {
+      "id": "1-0-8",
+      "page": 2,
+      "text": "Determinar el propósito comunicativo (dar instrucciones, persuadir, entregar o solicitar información, emitir una opinión, vender un producto, etc.) en un texto oral auténtico o adaptado."
+    },
+    {
+      "id": "1-0-9",
+      "page": 2,
+      "text": "Determinar el tipo de situación comunicativa en la que se desarrolla la interacción presentada en el texto oral."
+    },
+    {
+      "id": "1-1-0",
+      "page": 2,
+      "text": "Determinar el significado de ítems léxicos en un texto oral auténtico o adaptado, utilizando pistas contextuales y/o elementos paraverbales."
+    },
+    {
+      "id": "1-1-1",
+      "page": 2,
+      "text": "Interpretar el significado de expresiones idiomáticas y/o modismos en un texto oral auténtico o adaptado, utilizando pistas contextuales y/o elementos paraverbales."
+    },
+    {
+      "id": "2-0-0",
+      "page": 2,
+      "text": "Identificar el uso correcto de tiempos verbales y verbos modales (permiso, obligación, probabilidad, etc.)."
+    },
+    {
+      "id": "2-0-1",
+      "page": 2,
+      "text": "Evaluar el uso correcto de gerundios y/o infinitivos en una oración o frase según la función que cumplan."
+    },
+    {
+      "id": "2-0-2",
+      "page": 2,
+      "text": "Distinguir las funcionalidades de los modos verbales (indicativo, imperativo y las formas subjuntivas del inglés)."
+    },
+    {
+      "id": "2-0-3",
+      "page": 2,
+      "text": "Reconocer las funciones de estructuras de uso complejo tales como voz pasiva, reported speech y condicionales (exceptuando el III condicional y el mixto)."
+    },
+    {
+      "id": "2-0-4",
+      "page": 2,
+      "text": "Distinguir la función de elementos morfosintácticos tales como raíces, prefijos, sufijos, sustantivos, verbos, adverbios, conectores, etc."
+    },
+    {
+      "id": "2-0-5",
+      "page": 2,
+      "text": "Evaluar el uso correcto de conectores y elementos que denoten causa-efecto, orden, cohesión, coherencia y relación entre oraciones."
+    },
+    {
+      "id": "2-0-6",
+      "page": 2,
+      "text": "Identificar el uso correcto de phrasal verbs."
+    },
+    {
+      "id": "2-0-7",
+      "page": 2,
+      "text": "Determinar la función lingüística de ítems léxicos, expresiones, etc., según contexto en el que se presentan (por ejemplo, elementos pragmáticos, adverbios actuando como adjetivos, etc.)."
+    },
+    {
+      "id": "3-0-0",
+      "page": 2,
+      "text": "Seleccionar estrategias o actividades significativas y contextualizadas para promover la participación e interacción entre los y las estudiantes, en el marco de los/as objetivos de aprendizaje."
+    },
+    {
+      "id": "3-0-1",
+      "page": 2,
+      "text": "Proponer actividades que respondan metodologías activas, tales como: \"aprendizaje basado en tareas”, \"aprendizaje basado en proyectos\", entre otras."
+    },
+    {
+      "id": "3-0-2",
+      "page": 3,
+      "text": "Analizar secuencias de enseñanza-aprendizaje sustentadas en el desarrollo de las habilidades comunicativas receptivas y productivas del idioma."
+    },
+    {
+      "id": "3-0-3",
+      "page": 3,
+      "text": "Proponer, en situaciones de aula, diversas estrategias que conduzcan a la producción de textos orales, escritos y multimodales para fomentar el pensamiento creativo de acuerdo con los diferentes niveles educativos del estudiantado."
+    },
+    {
+      "id": "3-0-4",
+      "page": 3,
+      "text": "Proponer estrategias, actividades o secuencias didácticas para abordar los objetivos de aprendizaje relacionados con la incorporación de diversas manifestaciones culturales y literarias que estimulen el respeto, la discusión constructiva y el análisis crítico en el estudiantado."
+    },
+    {
+      "id": "3-0-5",
+      "page": 3,
+      "text": "Evaluar estrategias y actividades que respondan al desarrollo progresivo e integración de las cuatro habilidades comunicativas del idioma (lectura, escucha, expresión oral y expresión escrita), según el currículum vigente."
+    },
+    {
+      "id": "3-1-0",
+      "page": 3,
+      "text": "Seleccionar estrategias e instrumentos de evaluación para promover la reflexión sobre los procesos de aprendizajes del idioma, de acuerdo con los diferentes niveles educativos."
+    },
+    {
+      "id": "3-1-1",
+      "page": 3,
+      "text": "Evaluar los recursos físicos y virtuales, los medios de comunicación y las redes sociales en el proceso de enseñanza y aprendizaje del idioma para promover la interacción, colaboración y participación en el estudiantado."
+    },
+    {
+      "id": "3-1-2",
+      "page": 3,
+      "text": "Seleccionar actividades, procedimientos e instrumentos de evaluación, alineados con los objetivos de aprendizaje, para recoger evidencia sobre el progreso y logros en el aprendizaje del idioma, en coherencia con los distintos niveles educativos."
+    },
+    {
+      "id": "3-1-3",
+      "page": 3,
+      "text": "Implementar prácticas e interacciones pedagógicas que contribuyen a retroalimentar formativamente el aprendizaje de los estudiantes ante evidencias de desempeños."
+    }
+  ],
+  "basica-lenguaje": [
+    {
+      "id": "0-0-0",
+      "page": 1,
+      "text": "Analizar géneros literarios propios de la narrativa, demostrando estar familiarizado con la novela, el cuento, el mito, la leyenda, la fábula y la epopeya."
+    },
+    {
+      "id": "0-0-1",
+      "page": 1,
+      "text": "Reconocer figuras literarias en textos poéticos de dificultad variable: metáfora, personificación, comparación, hipérbole, onomatopeya, y aliteración."
+    },
+    {
+      "id": "0-0-2",
+      "page": 1,
+      "text": "Reconocer rima y formas métricas: soneto, oda, romance, haikú, poemas diamante, Limerick, etc."
+    },
+    {
+      "id": "0-0-3",
+      "page": 1,
+      "text": "Interpretar el sentido de las figuras literarias en fragmentos o estrofas de poemas."
+    },
+    {
+      "id": "0-0-4",
+      "page": 1,
+      "text": "Distinguir el efecto que produce el uso del lenguaje figurado en una determinada estrofa o en el poema en su globalidad: sentimientos, estados de ánimo e imágenes."
+    },
+    {
+      "id": "0-0-5",
+      "page": 1,
+      "text": "Determinar el tema central de un cómic."
+    },
+    {
+      "id": "0-0-6",
+      "page": 1,
+      "text": "Atribuir fundadamente un sentido al uso de recursos literarios en un cómic."
+    },
+    {
+      "id": "0-1-0",
+      "page": 1,
+      "text": "Analizar en distintos textos las características centrales de diversos géneros, cuyo principal propósito es informar."
+    },
+    {
+      "id": "0-1-1",
+      "page": 1,
+      "text": "Determinar el propósito comunicativo de los artículos informativos, noticias, biografías, relatos históricos, a partir de distintos recursos propios de la entrega de información, tales como descripciones, superestructura, etc."
+    },
+    {
+      "id": "0-1-2",
+      "page": 1,
+      "text": "Interpretar imágenes, gráficos, tablas, mapas o diagramas, y su relación con el texto en el que están insertos."
+    },
+    {
+      "id": "0-1-3",
+      "page": 1,
+      "text": "Caracterizar la situación de enunciación de textos continuos y discontinuos, determinando la finalidad o propósito de estos."
+    },
+    {
+      "id": "0-1-4",
+      "page": 1,
+      "text": "Diferenciar en textos provenientes de los medios masivos de comunicación, los hechos de las opiniones."
+    },
+    {
+      "id": "0-1-5",
+      "page": 1,
+      "text": "Determinar funciones básicas o propósitos de los distintos tipos de textos periodísticos: informar, educar, entretener, formar opinión."
+    },
+    {
+      "id": "1-0-0",
+      "page": 2,
+      "text": "Determinar problemas de cohesión en un texto (por ejemplo, uso incorrecto puntuación, repeticiones, uso excesivo de conjunción \"y\", entre otros.)."
+    },
+    {
+      "id": "1-1-0",
+      "page": 2,
+      "text": "Aplicar las normas propias de la ortografía acentual y literal."
+    },
+    {
+      "id": "1-1-1",
+      "page": 2,
+      "text": "Distinguir los elementos que intervienen en la gestión del diálogo con propósito de compartir, desarrollar ideas y buscar acuerdos: mantener el foco en un tema, complementar las ideas de otro y ofrecer sugerencias, aceptar sugerencias, hacer comentarios adecuados, mostrar acuerdo o desacuerdo con respeto, fundamentar su postura."
+    },
+    {
+      "id": "1-1-2",
+      "page": 2,
+      "text": "Distinguir en el discurso monologado sobre temas de interés elementos (exposición oral) que permiten expresarse frente a una audiencia de manera clara y adecuada a la situación: presentación de las ideas de manera coherente y cohesiva, fundamentación de los planteamientos con ejemplos y datos, organizando las ideas de introducción, desarrollo y cierre, utilización de un vocabulario variado y preciso, y un registro formal adecuado a la situación comunicativa."
+    },
+    {
+      "id": "2-0-0",
+      "page": 2,
+      "text": "Determinar estrategias metodológicas y/o actividades para abordar objetivos o habilidades propios de la asignatura."
+    },
+    {
+      "id": "2-0-1",
+      "page": 2,
+      "text": "Determinar estrategias de comprensión lectora para abordar con los estudiantes los objetivos de aprendizaje de la asignatura. Por ejemplo: relacionar la información del texto con sus experiencias y conocimientos previos, releer lo que no fue comprendido, entre otras."
+    },
+    {
+      "id": "2-0-2",
+      "page": 2,
+      "text": "Determinar actividades o estrategias para abordar los diferentes pasos que componen el proceso de escritura:  planificar, escribir, revisar, reescribir y editar los textos en función del contexto, el destinatario y el propósito."
+    },
+    {
+      "id": "2-0-3",
+      "page": 2,
+      "text": "Determinar actividades o estrategias para desarrollar la comunicación oral en los estudiantes con la finalidad de que puedan expresarse frente a una audiencia de manera clara y adecuada a la situación comunicativa."
+    },
+    {
+      "id": "2-0-4",
+      "page": 2,
+      "text": "Determinar actividades o estrategias para modelar y acompañar a los estudiantes en los distintos pasos del proceso de investigación (delimitación del tema, utilización de sistemas de búsqueda en la biblioteca o internet, uso de organizadores y estructura textual)."
+    },
+    {
+      "id": "2-0-5",
+      "page": 2,
+      "text": "Retroalimentar a los/as estudiantes con lenguaje comprensible y con precisión conceptual."
+    },
+    {
+      "id": "2-0-6",
+      "page": 2,
+      "text": "Seleccionar recursos didácticos apropiados para abordar diferentes objetivos de aprendizaje de la asignatura."
+    },
+    {
+      "id": "2-0-7",
+      "page": 2,
+      "text": "Sugerir estrategias para enfrentar las dificultades que se presentan en el proceso de aprendizaje de los estudiantes, de modo que estas puedan ser superadas."
+    },
+    {
+      "id": "2-1-0",
+      "page": 3,
+      "text": "Identificar los conocimientos previos requeridos para abordar los distintos aprendizajes de la asignatura."
+    },
+    {
+      "id": "2-1-1",
+      "page": 3,
+      "text": "Identificar errores comunes en la asignatura con el fin de retroalimentarlos y promover el aprendizaje a partir del error."
+    },
+    {
+      "id": "2-2-0",
+      "page": 3,
+      "text": "Identificar indicadores de evaluación y evidencia de desempeños que den cuenta de los distintos objetivos de aprendizaje de la asignatura de Lenguaje y Comunicación."
+    },
+    {
+      "id": "2-2-1",
+      "page": 3,
+      "text": "Seleccionar actividades, estrategias o instrumentos de evaluación pertinentes a los objetivos de aprendizaje de la asignatura."
+    },
+    {
+      "id": "2-2-2",
+      "page": 3,
+      "text": "Evaluar prácticas e interacciones pedagógicas que contribuyen a retroalimentar formativamente el aprendizaje de los estudiantes a partir de evidencias de su desempeño."
+    }
+  ],
+  "media-lengua": [
+    {
+      "id": "0-0-0",
+      "page": 1,
+      "text": "Reconocer e interpretar, en textos complejos y familiares, figuras literarias fónicas, sintácticas y/o semánticas tales como aliteración, hipérbaton, anáfora, metáfora, sinécdoque, ironía, metonimia, antítesis."
+    },
+    {
+      "id": "0-0-1",
+      "page": 1,
+      "text": "Distinguir el efecto que produce el uso del lenguaje figurado en una determinada estrofa o en el poema en su globalidad."
+    },
+    {
+      "id": "0-0-2",
+      "page": 1,
+      "text": "Distinguir las características de las técnicas narrativas (modos narrativos, focos, tonos, grado de participación, tipos de narradores, etc.) y los efectos que provocan en la narración."
+    },
+    {
+      "id": "0-0-3",
+      "page": 1,
+      "text": "Identificar elementos constitutivos complejos del mundo dramático: características del (los) personaje(s); formas: tragedia, comedia, drama; estructuras: acto, escena, cuadro, unidad del tiempo, acción y lugar; conflicto dramático: presentación, clímax, desenlace; lenguaje dramático: acotación, diálogo, monólogo, aparte, mutis."
+    },
+    {
+      "id": "0-0-4",
+      "page": 1,
+      "text": "Explicar la razón de la clasificación de un determinado texto en géneros y subgéneros dramáticos tales como comedia, drama, tragedia, tragicomedia, entremés, sainete, farsa."
+    },
+    {
+      "id": "0-0-5",
+      "page": 1,
+      "text": "Atribuir fundadamente un sentido al uso de recursos literarios en un cómic."
+    },
+    {
+      "id": "0-0-6",
+      "page": 1,
+      "text": "Distinguir el uso de recursos o procedimientos literarios en cómics."
+    },
+    {
+      "id": "0-0-7",
+      "page": 1,
+      "text": "Distinguir el carácter argumentativo de los enfoques o puntos de vista que contienen las obras literarias: a. Legitimación de valores, visiones, tipos humanos, acciones, etc. b. Invalidación de estos. c. Recursos que emplea: persuasión."
+    },
+    {
+      "id": "0-0-8",
+      "page": 1,
+      "text": "Distinguir elementos relevantes y características centrales del contexto de producción y recepción en fragmentos literarios: Periodos históricos literarios, tendencias o movimientos culturales, artísticos y filosóficos, Historia y tradición literaria, situación de la obra en esa historia."
+    },
+    {
+      "id": "0-0-9",
+      "page": 1,
+      "text": "Reconocer los temas centrales abordados en las obras literarias contemporáneas: soledad e incomunicación humana; inabarcabilidad de la realidad; ilogicidad del mundo y de la conducta humana; literatura como tema de sí misma."
+    },
+    {
+      "id": "0-0-10",
+      "page": 1,
+      "text": "Distinguir las principales características de las diferentes teorías literarias: formalismo, estructuralismo, new criticism, teorías postestructuralistas, deconstructivismo, estética de la recepción, estética del efecto estético."
+    },
+    {
+      "id": "0-1-0",
+      "page": 1,
+      "text": "Caracterizar la situación de enunciación de textos con propósitos informativos: a. Relación emisor/receptor. b. Finalidad o propósito del discurso."
+    },
+    {
+      "id": "0-1-1",
+      "page": 1,
+      "text": "Reconocer los componentes y funciones del discurso argumentativo o textos con propósito argumentativo o persuasivo relacionados con las finalidades o propósitos de la argumentación: a. El componente lógico-racional. b. El componente persuasivo."
+    },
+    {
+      "id": "0-1-2",
+      "page": 1,
+      "text": "Distinguir los tipos de argumentos presentes en un texto:  a. Basados en datos y hechos. b. Basados en explicaciones: definiciones, comparaciones, descripciones, relaciones de causalidad. c. Basados en valores. d. Basados en autoridad."
+    },
+    {
+      "id": "0-1-3",
+      "page": 2,
+      "text": "Determinar los elementos básicos constitutivos y la estructura del discurso público: a. Integración de diversas formas discursivas: dialógica, expositiva, argumentativa, elogio y descalificación.   b. Organización o disposición del discurso, las partes constitutivas básicas y sus funciones: - Introducción o exordio. - Exposición del tema propuesto. - Conclusión o peroratio."
+    },
+    {
+      "id": "0-1-4",
+      "page": 2,
+      "text": "Caracterizar la relación emisor-mensaje-receptor en los diversos mensajes provenientes de los medios de comunicación."
+    },
+    {
+      "id": "0-1-5",
+      "page": 2,
+      "text": "Distinguir el contexto y circunstancias de enunciación en diversos mensajes provenientes de los medios de comunicación."
+    },
+    {
+      "id": "0-1-6",
+      "page": 2,
+      "text": "Relacionar los recursos y elementos de los medios con otras manifestaciones del lenguaje o procedimientos literarios."
+    },
+    {
+      "id": "0-1-7",
+      "page": 2,
+      "text": "Relacionar el tipo de mundo propuesto por los medios de comunicación, con los tipos de mundos literarios."
+    },
+    {
+      "id": "0-1-8",
+      "page": 2,
+      "text": "Reconocer estrategias de persuasión utilizadas en diversos textos de medios masivos de comunicación (uso del humor, presencia de estereotipos, apelación a los sentimientos, etc.)."
+    },
+    {
+      "id": "1-0-0",
+      "page": 2,
+      "text": "Determinar en los textos escritos de acuerdo con su propósito, los procedimientos de cohesión empleados: 1) Correferencia: pronominalización, sustitución, anáforas, catáforas, elipsis, sinonimia, hiperonimia, hiponimia, entre otros. 2) Conexión: tipos de conexión (adición, contraste, causa, consecuencia, finalidad, sucesión temporal) y sus conectores (aditivos, adversativos, consecutivos, causales, condicionales, temporales)."
+    },
+    {
+      "id": "1-0-1",
+      "page": 2,
+      "text": "Determinar el propósito comunicativo de informar o persuadir a través de distintos tipos de oraciones coordinadas (copulativas, adversativas y disyuntivas) y subordinadas (causal, consecutiva y condicional) en diferentes textos de diversos géneros."
+    },
+    {
+      "id": "1-0-2",
+      "page": 2,
+      "text": "Identificar el tipo de progresión temática de un texto (de lo general a lo particular, idea principal/idea secundaria, entre otros)."
+    },
+    {
+      "id": "1-1-0",
+      "page": 2,
+      "text": "Distinguir, en textos literarios y no literarios, las marcas gráficas y textuales que representan las modalizaciones discursivas utilizadas."
+    },
+    {
+      "id": "1-1-1",
+      "page": 2,
+      "text": "Aplicar las normas propias de la ortografía literal y acentual."
+    },
+    {
+      "id": "1-1-2",
+      "page": 2,
+      "text": "Distinguir los elementos que intervienen en la gestión del diálogo y la habilidad para argumentar: seguir el hilo de la discusión, motivar la participación de todos los hablantes, escuchar activamente lo que el otro tiene que decir, hacerse entender y contribuir al desarrollo de la conversación, fundamentar su postura, hacer preguntas o comentarios, reformular las propias ideas."
+    },
+    {
+      "id": "1-1-3",
+      "page": 2,
+      "text": "Caracterizar situaciones con propósitos argumentativos formales: debate, foro, juicio y textos argumentativos orales públicos (clases, discursos, ponencias, entrevistas, entre otros)."
+    },
+    {
+      "id": "2-0-0",
+      "page": 3,
+      "text": "Determinar estrategias de comprensión lectora para abordar los objetivos de aprendizaje de la asignatura. Por ejemplo, relacionar la información del texto con sus experiencias y conocimientos previos, releer lo que no fue comprendido, formular preguntas sobre lo leído y responderlas, identificar las ideas más importantes de acuerdo con el propósito del lector, organizar la información en esquemas o mapas conceptuales y resumir, entre otras."
+    },
+    {
+      "id": "2-0-1",
+      "page": 3,
+      "text": "Determinar actividades pedagógicas para modelar y acompañar a los estudiantes en los distintos pasos del proceso de investigación (delimitación del tema, utilización de sistemas de búsqueda en la biblioteca o internet, uso de organizadores y estructura textual para encontrar información de manera eficiente, registro bibliográfico de las fuentes investigadas)."
+    },
+    {
+      "id": "2-0-2",
+      "page": 3,
+      "text": "Disponer de diversas formas de representar y formular los contenidos, de modo de hacerlos comprensibles para todos los estudiantes, por ejemplo: analogías, ilustraciones, explicaciones, metáforas, ejemplos, contraejemplos, demostraciones, entre otras."
+    },
+    {
+      "id": "2-0-3",
+      "page": 3,
+      "text": "Retroalimentar con lenguaje comprensible y precisión conceptual."
+    },
+    {
+      "id": "2-0-4",
+      "page": 3,
+      "text": "Identificar, en situaciones de aula, decisiones e intervenciones pedagógicas que favorecen el aprendizaje en la asignatura de Lengua y Literatura."
+    },
+    {
+      "id": "2-0-5",
+      "page": 3,
+      "text": "Seleccionar recursos didácticos apropiados para abordar diferentes objetivos de aprendizaje de la asignatura."
+    },
+    {
+      "id": "2-0-6",
+      "page": 3,
+      "text": "Diseñar estrategias o actividades de aprendizaje en función de los énfasis curriculares de la asignatura."
+    },
+    {
+      "id": "2-1-0",
+      "page": 3,
+      "text": "Identificar los conocimientos previos requeridos para abordar los distintos aprendizajes de la asignatura."
+    },
+    {
+      "id": "2-1-1",
+      "page": 3,
+      "text": "Identificar errores comunes, con el fin de retroalimentar y promover el aprendizaje a partir del error."
+    },
+    {
+      "id": "2-2-0",
+      "page": 3,
+      "text": "Proponer criterios, los indicadores de evaluación e identificar desempeños que dan cuenta de los distintos objetivos de aprendizaje de la asignatura de Lengua y Literatura, para retroalimentar en forma individual y/o grupal el proceso de enseñanza-aprendizaje."
+    },
+    {
+      "id": "2-2-1",
+      "page": 3,
+      "text": "Evaluar prácticas e interacciones pedagógicas que contribuyen a retroalimentar formativamente el aprendizaje de los/as estudiantes ante evidencias de desempeños."
+    }
+  ]
+}

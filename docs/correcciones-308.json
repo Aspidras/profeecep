@@ -1,0 +1,1391 @@
+{
+  "version": "3.0.8",
+  "count": 173,
+  "contentRewritten": 135,
+  "items": [
+    {
+      "id": "a3-r308",
+      "replaces": "a3",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "g3-r308",
+      "replaces": "g3",
+      "specialty": "basica-matematica",
+      "indicator": "2-2-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "d1-r308",
+      "replaces": "d1",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-1",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "n5-r308",
+      "replaces": "n5",
+      "specialty": "basica-matematica",
+      "indicator": "0-2-0",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "a6-r308",
+      "replaces": "a6",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-2",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "g6-r308",
+      "replaces": "g6",
+      "specialty": "basica-matematica",
+      "indicator": "2-2-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "a11-r308",
+      "replaces": "a11",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-2",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "g10-r308",
+      "replaces": "g10",
+      "specialty": "basica-matematica",
+      "indicator": "2-1-3",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "d7-r308",
+      "replaces": "d7",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "d8-r308",
+      "replaces": "d8",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "d12-r308",
+      "replaces": "d12",
+      "specialty": "basica-matematica",
+      "indicator": "3-1-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-28-02-r308",
+      "replaces": "basica-matematica-28-02",
+      "specialty": "basica-matematica",
+      "indicator": "0-1-3",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-28-05-r308",
+      "replaces": "basica-matematica-28-05",
+      "specialty": "basica-matematica",
+      "indicator": "0-2-0",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-28-07-r308",
+      "replaces": "basica-matematica-28-07",
+      "specialty": "basica-matematica",
+      "indicator": "1-1-2",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-28-09-r308",
+      "replaces": "basica-matematica-28-09",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-matematica-28-10-r308",
+      "replaces": "basica-matematica-28-10",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-2",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-matematica-28-11-r308",
+      "replaces": "basica-matematica-28-11",
+      "specialty": "basica-matematica",
+      "indicator": "2-0-1",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "basica-matematica-28-14-r308",
+      "replaces": "basica-matematica-28-14",
+      "specialty": "basica-matematica",
+      "indicator": "2-1-0",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-28-16-r308",
+      "replaces": "basica-matematica-28-16",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-1",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-28-18-r308",
+      "replaces": "basica-matematica-28-18",
+      "specialty": "basica-matematica",
+      "indicator": "3-1-3",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-287-09-r308",
+      "replaces": "basica-matematica-287-09",
+      "specialty": "basica-matematica",
+      "indicator": "0-2-0",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-287-16-r308",
+      "replaces": "basica-matematica-287-16",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-matematica-287-18-r308",
+      "replaces": "basica-matematica-287-18",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-2",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-matematica-287-27-r308",
+      "replaces": "basica-matematica-287-27",
+      "specialty": "basica-matematica",
+      "indicator": "2-1-0",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-287-28-r308",
+      "replaces": "basica-matematica-287-28",
+      "specialty": "basica-matematica",
+      "indicator": "2-1-3",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-287-32-r308",
+      "replaces": "basica-matematica-287-32",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-0",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-287-33-r308",
+      "replaces": "basica-matematica-287-33",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-matematica-287-36-r308",
+      "replaces": "basica-matematica-287-36",
+      "specialty": "basica-matematica",
+      "indicator": "3-1-2",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "basica-matematica-287-37-r308",
+      "replaces": "basica-matematica-287-37",
+      "specialty": "basica-matematica",
+      "indicator": "3-1-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-305-2023-25-r308",
+      "replaces": "basica-matematica-305-2023-25",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-matematica-305-2023-42-r308",
+      "replaces": "basica-matematica-305-2023-42",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-307-09-r308",
+      "replaces": "basica-matematica-307-09",
+      "specialty": "basica-matematica",
+      "indicator": "0-2-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-matematica-307-16-r308",
+      "replaces": "basica-matematica-307-16",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-0",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-307-18-r308",
+      "replaces": "basica-matematica-307-18",
+      "specialty": "basica-matematica",
+      "indicator": "1-2-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-307-21-r308",
+      "replaces": "basica-matematica-307-21",
+      "specialty": "basica-matematica",
+      "indicator": "2-0-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-307-28-r308",
+      "replaces": "basica-matematica-307-28",
+      "specialty": "basica-matematica",
+      "indicator": "2-1-3",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-matematica-307-32-r308",
+      "replaces": "basica-matematica-307-32",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-matematica-307-33-r308",
+      "replaces": "basica-matematica-307-33",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-matematica-307-35-r308",
+      "replaces": "basica-matematica-307-35",
+      "specialty": "basica-matematica",
+      "indicator": "3-0-3",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-matematica-307-36-r308",
+      "replaces": "basica-matematica-307-36",
+      "specialty": "basica-matematica",
+      "indicator": "3-1-0",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-matematica-307-37-r308",
+      "replaces": "basica-matematica-307-37",
+      "specialty": "basica-matematica",
+      "indicator": "3-1-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ciencias-23-02-r308",
+      "replaces": "basica-ciencias-23-02",
+      "specialty": "basica-ciencias",
+      "indicator": "3-1-6",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ciencias-23-04-r308",
+      "replaces": "basica-ciencias-23-04",
+      "specialty": "basica-ciencias",
+      "indicator": "4-0-3",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ciencias-28-01-r308",
+      "replaces": "basica-ciencias-28-01",
+      "specialty": "basica-ciencias",
+      "indicator": "0-0-0",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-28-02-r308",
+      "replaces": "basica-ciencias-28-02",
+      "specialty": "basica-ciencias",
+      "indicator": "0-1-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ciencias-28-04-r308",
+      "replaces": "basica-ciencias-28-04",
+      "specialty": "basica-ciencias",
+      "indicator": "0-3-1",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-28-06-r308",
+      "replaces": "basica-ciencias-28-06",
+      "specialty": "basica-ciencias",
+      "indicator": "1-1-1",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ciencias-28-10-r308",
+      "replaces": "basica-ciencias-28-10",
+      "specialty": "basica-ciencias",
+      "indicator": "3-1-6",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-28-12-r308",
+      "replaces": "basica-ciencias-28-12",
+      "specialty": "basica-ciencias",
+      "indicator": "4-0-3",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-287-07-r308",
+      "replaces": "basica-ciencias-287-07",
+      "specialty": "basica-ciencias",
+      "indicator": "0-0-1",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-287-17-r308",
+      "replaces": "basica-ciencias-287-17",
+      "specialty": "basica-ciencias",
+      "indicator": "2-0-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ciencias-287-21-r308",
+      "replaces": "basica-ciencias-287-21",
+      "specialty": "basica-ciencias",
+      "indicator": "5-0-0",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-305-2023-20-r308",
+      "replaces": "basica-ciencias-305-2023-20",
+      "specialty": "basica-ciencias",
+      "indicator": "5-0-1",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-305-2023-22-r308",
+      "replaces": "basica-ciencias-305-2023-22",
+      "specialty": "basica-ciencias",
+      "indicator": "2-0-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ciencias-305-2023-29-r308",
+      "replaces": "basica-ciencias-305-2023-29",
+      "specialty": "basica-ciencias",
+      "indicator": "0-1-3",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ciencias-305-2023-47-r308",
+      "replaces": "basica-ciencias-305-2023-47",
+      "specialty": "basica-ciencias",
+      "indicator": "3-1-5",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ciencias-305-2023-53-r308",
+      "replaces": "basica-ciencias-305-2023-53",
+      "specialty": "basica-ciencias",
+      "indicator": "4-0-2",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ciencias-307-03-r308",
+      "replaces": "basica-ciencias-307-03",
+      "specialty": "basica-ciencias",
+      "indicator": "0-1-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ciencias-307-05-r308",
+      "replaces": "basica-ciencias-307-05",
+      "specialty": "basica-ciencias",
+      "indicator": "0-1-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-307-12-r308",
+      "replaces": "basica-ciencias-307-12",
+      "specialty": "basica-ciencias",
+      "indicator": "0-3-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-307-15-r308",
+      "replaces": "basica-ciencias-307-15",
+      "specialty": "basica-ciencias",
+      "indicator": "1-1-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ciencias-307-17-r308",
+      "replaces": "basica-ciencias-307-17",
+      "specialty": "basica-ciencias",
+      "indicator": "2-0-1",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ciencias-307-27-r308",
+      "replaces": "basica-ciencias-307-27",
+      "specialty": "basica-ciencias",
+      "indicator": "3-1-5",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ciencias-307-31-r308",
+      "replaces": "basica-ciencias-307-31",
+      "specialty": "basica-ciencias",
+      "indicator": "4-0-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-307-32-r308",
+      "replaces": "basica-ciencias-307-32",
+      "specialty": "basica-ciencias",
+      "indicator": "4-0-3",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ciencias-307-47-r308",
+      "replaces": "basica-ciencias-307-47",
+      "specialty": "basica-ciencias",
+      "indicator": "4-0-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ciencias-307-50-r308",
+      "replaces": "basica-ciencias-307-50",
+      "specialty": "basica-ciencias",
+      "indicator": "5-0-2",
+      "contentRewritten": false,
+      "answer": "C"
+    },
+    {
+      "id": "hg22-01-r308",
+      "replaces": "hg22-01",
+      "specialty": "basica-historia",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "hg22-03-r308",
+      "replaces": "hg22-03",
+      "specialty": "basica-historia",
+      "indicator": "1-1-4",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-23-01-r308",
+      "replaces": "basica-historia-23-01",
+      "specialty": "basica-historia",
+      "indicator": "0-1-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-23-04-r308",
+      "replaces": "basica-historia-23-04",
+      "specialty": "basica-historia",
+      "indicator": "0-2-0",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-28-01-r308",
+      "replaces": "basica-historia-28-01",
+      "specialty": "basica-historia",
+      "indicator": "0-0-2",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-28-04-r308",
+      "replaces": "basica-historia-28-04",
+      "specialty": "basica-historia",
+      "indicator": "1-0-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-28-05-r308",
+      "replaces": "basica-historia-28-05",
+      "specialty": "basica-historia",
+      "indicator": "1-1-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-28-06-r308",
+      "replaces": "basica-historia-28-06",
+      "specialty": "basica-historia",
+      "indicator": "1-1-4",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-28-07-r308",
+      "replaces": "basica-historia-28-07",
+      "specialty": "basica-historia",
+      "indicator": "1-1-6",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-28-08-r308",
+      "replaces": "basica-historia-28-08",
+      "specialty": "basica-historia",
+      "indicator": "1-1-12",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-historia-28-12-r308",
+      "replaces": "basica-historia-28-12",
+      "specialty": "basica-historia",
+      "indicator": "3-0-1",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-28-18-r308",
+      "replaces": "basica-historia-28-18",
+      "specialty": "basica-historia",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-28-19-r308",
+      "replaces": "basica-historia-28-19",
+      "specialty": "basica-historia",
+      "indicator": "0-1-3",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-287-01-r308",
+      "replaces": "basica-historia-287-01",
+      "specialty": "basica-historia",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-287-02-r308",
+      "replaces": "basica-historia-287-02",
+      "specialty": "basica-historia",
+      "indicator": "0-0-1",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-historia-287-03-r308",
+      "replaces": "basica-historia-287-03",
+      "specialty": "basica-historia",
+      "indicator": "0-0-2",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-287-11-r308",
+      "replaces": "basica-historia-287-11",
+      "specialty": "basica-historia",
+      "indicator": "1-1-4",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-287-12-r308",
+      "replaces": "basica-historia-287-12",
+      "specialty": "basica-historia",
+      "indicator": "1-1-5",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-287-13-r308",
+      "replaces": "basica-historia-287-13",
+      "specialty": "basica-historia",
+      "indicator": "1-1-6",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-287-14-r308",
+      "replaces": "basica-historia-287-14",
+      "specialty": "basica-historia",
+      "indicator": "1-1-7",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-287-15-r308",
+      "replaces": "basica-historia-287-15",
+      "specialty": "basica-historia",
+      "indicator": "1-1-9",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-287-18-r308",
+      "replaces": "basica-historia-287-18",
+      "specialty": "basica-historia",
+      "indicator": "1-1-12",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-306-2023-21-r308",
+      "replaces": "basica-historia-306-2023-21",
+      "specialty": "basica-historia",
+      "indicator": "0-2-0",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-306-2023-24-r308",
+      "replaces": "basica-historia-306-2023-24",
+      "specialty": "basica-historia",
+      "indicator": "0-1-2",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-historia-306-2023-29-r308",
+      "replaces": "basica-historia-306-2023-29",
+      "specialty": "basica-historia",
+      "indicator": "1-1-5",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-306-2023-34-r308",
+      "replaces": "basica-historia-306-2023-34",
+      "specialty": "basica-historia",
+      "indicator": "1-1-9",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-307-01-r308",
+      "replaces": "basica-historia-307-01",
+      "specialty": "basica-historia",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-307-02-r308",
+      "replaces": "basica-historia-307-02",
+      "specialty": "basica-historia",
+      "indicator": "0-0-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-307-03-r308",
+      "replaces": "basica-historia-307-03",
+      "specialty": "basica-historia",
+      "indicator": "0-0-2",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-307-06-r308",
+      "replaces": "basica-historia-307-06",
+      "specialty": "basica-historia",
+      "indicator": "0-1-2",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-historia-307-13-r308",
+      "replaces": "basica-historia-307-13",
+      "specialty": "basica-historia",
+      "indicator": "1-1-1",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-307-16-r308",
+      "replaces": "basica-historia-307-16",
+      "specialty": "basica-historia",
+      "indicator": "1-1-4",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-historia-307-17-r308",
+      "replaces": "basica-historia-307-17",
+      "specialty": "basica-historia",
+      "indicator": "1-1-5",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-307-19-r308",
+      "replaces": "basica-historia-307-19",
+      "specialty": "basica-historia",
+      "indicator": "1-1-7",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-307-21-r308",
+      "replaces": "basica-historia-307-21",
+      "specialty": "basica-historia",
+      "indicator": "1-1-9",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-historia-307-24-r308",
+      "replaces": "basica-historia-307-24",
+      "specialty": "basica-historia",
+      "indicator": "1-1-12",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-307-25-r308",
+      "replaces": "basica-historia-307-25",
+      "specialty": "basica-historia",
+      "indicator": "1-1-13",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-historia-307-42-r308",
+      "replaces": "basica-historia-307-42",
+      "specialty": "basica-historia",
+      "indicator": "1-1-8",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-historia-307-43-r308",
+      "replaces": "basica-historia-307-43",
+      "specialty": "basica-historia",
+      "indicator": "0-0-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-historia-307-46-r308",
+      "replaces": "basica-historia-307-46",
+      "specialty": "basica-historia",
+      "indicator": "1-1-5",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-historia-307-47-r308",
+      "replaces": "basica-historia-307-47",
+      "specialty": "basica-historia",
+      "indicator": "1-1-13",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-23-01-r308",
+      "replaces": "basica-ingles-23-01",
+      "specialty": "basica-ingles",
+      "indicator": "0-0-0",
+      "contentRewritten": false,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-23-02-r308",
+      "replaces": "basica-ingles-23-02",
+      "specialty": "basica-ingles",
+      "indicator": "0-1-1",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ingles-28-02-r308",
+      "replaces": "basica-ingles-28-02",
+      "specialty": "basica-ingles",
+      "indicator": "0-1-1",
+      "contentRewritten": false,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-28-03-r308",
+      "replaces": "basica-ingles-28-03",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-2",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ingles-28-04-r308",
+      "replaces": "basica-ingles-28-04",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-5",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ingles-28-05-r308",
+      "replaces": "basica-ingles-28-05",
+      "specialty": "basica-ingles",
+      "indicator": "2-0-4",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ingles-28-16-r308",
+      "replaces": "basica-ingles-28-16",
+      "specialty": "basica-ingles",
+      "indicator": "0-1-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-28-17-r308",
+      "replaces": "basica-ingles-28-17",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-9",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ingles-28-18-r308",
+      "replaces": "basica-ingles-28-18",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-2",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-287-10-r308",
+      "replaces": "basica-ingles-287-10",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-287-11-r308",
+      "replaces": "basica-ingles-287-11",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-1",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-287-12-r308",
+      "replaces": "basica-ingles-287-12",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-8",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-287-13-r308",
+      "replaces": "basica-ingles-287-13",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-9",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-287-14-r308",
+      "replaces": "basica-ingles-287-14",
+      "specialty": "basica-ingles",
+      "indicator": "1-1-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-306-2023-35-r308",
+      "replaces": "basica-ingles-306-2023-35",
+      "specialty": "basica-ingles",
+      "indicator": "2-0-3",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ingles-306-2023-48-r308",
+      "replaces": "basica-ingles-306-2023-48",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-3",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ingles-306-2023-51-r308",
+      "replaces": "basica-ingles-306-2023-51",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-3",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-306-2023-58-r308",
+      "replaces": "basica-ingles-306-2023-58",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-3",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-307-05-r308",
+      "replaces": "basica-ingles-307-05",
+      "specialty": "basica-ingles",
+      "indicator": "0-0-1",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ingles-307-12-r308",
+      "replaces": "basica-ingles-307-12",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-8",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "basica-ingles-307-14-r308",
+      "replaces": "basica-ingles-307-14",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-2",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-307-35-r308",
+      "replaces": "basica-ingles-307-35",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-3",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-307-39-r308",
+      "replaces": "basica-ingles-307-39",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-1",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-ingles-307-44-r308",
+      "replaces": "basica-ingles-307-44",
+      "specialty": "basica-ingles",
+      "indicator": "1-0-1",
+      "contentRewritten": false,
+      "answer": "C"
+    },
+    {
+      "id": "basica-ingles-307-47-r308",
+      "replaces": "basica-ingles-307-47",
+      "specialty": "basica-ingles",
+      "indicator": "3-1-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-ingles-307-48-r308",
+      "replaces": "basica-ingles-307-48",
+      "specialty": "basica-ingles",
+      "indicator": "0-0-1",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "basica-lenguaje-23-01-r308",
+      "replaces": "basica-lenguaje-23-01",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-lenguaje-23-02-r308",
+      "replaces": "basica-lenguaje-23-02",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-6",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-lenguaje-28-01-r308",
+      "replaces": "basica-lenguaje-28-01",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-lenguaje-28-03-r308",
+      "replaces": "basica-lenguaje-28-03",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-1-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-lenguaje-28-05-r308",
+      "replaces": "basica-lenguaje-28-05",
+      "specialty": "basica-lenguaje",
+      "indicator": "1-0-0",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-lenguaje-28-15-r308",
+      "replaces": "basica-lenguaje-28-15",
+      "specialty": "basica-lenguaje",
+      "indicator": "2-2-0",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-lenguaje-28-18-r308",
+      "replaces": "basica-lenguaje-28-18",
+      "specialty": "basica-lenguaje",
+      "indicator": "1-1-1",
+      "contentRewritten": false,
+      "answer": "C"
+    },
+    {
+      "id": "basica-lenguaje-28-19-r308",
+      "replaces": "basica-lenguaje-28-19",
+      "specialty": "basica-lenguaje",
+      "indicator": "2-0-6",
+      "contentRewritten": false,
+      "answer": "C"
+    },
+    {
+      "id": "basica-lenguaje-28-20-r308",
+      "replaces": "basica-lenguaje-28-20",
+      "specialty": "basica-lenguaje",
+      "indicator": "2-2-0",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-lenguaje-287-01-r308",
+      "replaces": "basica-lenguaje-287-01",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "basica-lenguaje-287-03-r308",
+      "replaces": "basica-lenguaje-287-03",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-2",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-lenguaje-287-06-r308",
+      "replaces": "basica-lenguaje-287-06",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-5",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-lenguaje-287-07-r308",
+      "replaces": "basica-lenguaje-287-07",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-6",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-lenguaje-287-08-r308",
+      "replaces": "basica-lenguaje-287-08",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-1-0",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-lenguaje-287-10-r308",
+      "replaces": "basica-lenguaje-287-10",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-1-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-lenguaje-287-12-r308",
+      "replaces": "basica-lenguaje-287-12",
+      "specialty": "basica-lenguaje",
+      "indicator": "1-0-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-lenguaje-305-2023-15-r308",
+      "replaces": "basica-lenguaje-305-2023-15",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-lenguaje-305-2023-17-r308",
+      "replaces": "basica-lenguaje-305-2023-17",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "basica-lenguaje-307-10-r308",
+      "replaces": "basica-lenguaje-307-10",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-1-2",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-lenguaje-307-13-r308",
+      "replaces": "basica-lenguaje-307-13",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-1-5",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "basica-lenguaje-307-29-r308",
+      "replaces": "basica-lenguaje-307-29",
+      "specialty": "basica-lenguaje",
+      "indicator": "2-2-0",
+      "contentRewritten": false,
+      "answer": "B"
+    },
+    {
+      "id": "basica-lenguaje-307-34-r308",
+      "replaces": "basica-lenguaje-307-34",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-0-0",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "basica-lenguaje-307-41-r308",
+      "replaces": "basica-lenguaje-307-41",
+      "specialty": "basica-lenguaje",
+      "indicator": "0-1-2",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "media-lengua-23-04-r308",
+      "replaces": "media-lengua-23-04",
+      "specialty": "media-lengua",
+      "indicator": "2-0-1",
+      "contentRewritten": false,
+      "answer": "D"
+    },
+    {
+      "id": "media-lengua-28-08-r308",
+      "replaces": "media-lengua-28-08",
+      "specialty": "media-lengua",
+      "indicator": "1-0-2",
+      "contentRewritten": true,
+      "answer": "D"
+    },
+    {
+      "id": "media-lengua-28-13-r308",
+      "replaces": "media-lengua-28-13",
+      "specialty": "media-lengua",
+      "indicator": "2-0-2",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "media-lengua-28-15-r308",
+      "replaces": "media-lengua-28-15",
+      "specialty": "media-lengua",
+      "indicator": "2-2-0",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "media-lengua-28-16-r308",
+      "replaces": "media-lengua-28-16",
+      "specialty": "media-lengua",
+      "indicator": "0-0-5",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "media-lengua-28-17-r308",
+      "replaces": "media-lengua-28-17",
+      "specialty": "media-lengua",
+      "indicator": "0-1-0",
+      "contentRewritten": true,
+      "answer": "C"
+    },
+    {
+      "id": "media-lengua-287-05-r308",
+      "replaces": "media-lengua-287-05",
+      "specialty": "media-lengua",
+      "indicator": "0-0-4",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "media-lengua-287-06-r308",
+      "replaces": "media-lengua-287-06",
+      "specialty": "media-lengua",
+      "indicator": "0-0-5",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "media-lengua-287-08-r308",
+      "replaces": "media-lengua-287-08",
+      "specialty": "media-lengua",
+      "indicator": "0-0-8",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "media-lengua-287-09-r308",
+      "replaces": "media-lengua-287-09",
+      "specialty": "media-lengua",
+      "indicator": "0-0-9",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "media-lengua-287-16-r308",
+      "replaces": "media-lengua-287-16",
+      "specialty": "media-lengua",
+      "indicator": "1-0-0",
+      "contentRewritten": false,
+      "answer": "A"
+    },
+    {
+      "id": "media-lengua-307-05-r308",
+      "replaces": "media-lengua-307-05",
+      "specialty": "media-lengua",
+      "indicator": "0-0-4",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "media-lengua-307-09-r308",
+      "replaces": "media-lengua-307-09",
+      "specialty": "media-lengua",
+      "indicator": "0-0-8",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "media-lengua-307-10-r308",
+      "replaces": "media-lengua-307-10",
+      "specialty": "media-lengua",
+      "indicator": "0-0-9",
+      "contentRewritten": true,
+      "answer": "B"
+    },
+    {
+      "id": "media-lengua-307-22-r308",
+      "replaces": "media-lengua-307-22",
+      "specialty": "media-lengua",
+      "indicator": "1-0-1",
+      "contentRewritten": true,
+      "answer": "A"
+    },
+    {
+      "id": "media-lengua-307-43-r308",
+      "replaces": "media-lengua-307-43",
+      "specialty": "media-lengua",
+      "indicator": "0-1-7",
+      "contentRewritten": true,
+      "answer": "C"
+    }
+  ]
+}

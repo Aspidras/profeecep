@@ -10,7 +10,7 @@
   return domains().map(name=>{
    const hs=recent.filter(x=>x.domain===name), all=(S.byDomain||{})[name]||{}, d=diag[name]||{};
    const recentP=hs.length?pct(hs.filter(x=>x.ok).length,hs.length):null, allP=all.total?pct(all.right,all.total):null, diagP=d.total?pct(d.right,d.total):null;
-   const errors=(S.wrong||[]).filter(id=>{const q=Q.find(x=>x.id===id);return q&&q.d===name}).length;
+   const errors=(S.wrong||[]).filter(id=>{const q=Q.find(x=>(x.id===id||x.replaces===id));return q&&q.d===name}).length;
    const evidence=[recentP,allP,diagP].filter(x=>x!==null), accuracy=evidence.length?Math.round(evidence.reduce((a,b)=>a+b,0)/evidence.length):50;
    const priority=Math.max(0,100-accuracy)+errors*8+(hs.length?0:12);
    const reason=errors?'errores pendientes':diagP!==null&&diagP<70?'diagnóstico':recentP!==null&&recentP<70?'rendimiento reciente':'contenido por practicar';

@@ -2,6 +2,14 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.8 — Preguntas corregidas para el temario 2026
+
+- 173 preguntas revisadas: enunciados, materiales, explicaciones, clasificaciones y una clave incorrecta de Inglés. 135 reformulaciones sustantivas.
+- 16 mapas y gráficos nuevos; lecturas, tablas y cómics disponibles donde deben analizarse. Las 23 tareas auditivas activas tienen audio y transcripción al revisar.
+- 831 preguntas activas en seis especialidades, con práctica asociada a los 241 indicadores cargados. Esta correspondencia no certifica dificultad ni cobertura exhaustiva.
+- Versiones anteriores conservadas para recuperar simulacros guardados; la práctica y el refuerzo de errores usan las revisiones.
+- [Alcance, referencias y cambios](docs/revision-308.md).
+
 ## Versión 3.0.7 — Más práctica por indicador
 
 - 300 preguntas originales, 50 por especialidad, con 1.200 explicaciones. Los 241 indicadores cargados reciben práctica nueva; los 25 que dependían de plantillas tienen al menos dos ejercicios específicos.

@@ -17,7 +17,7 @@ PE18.patterns=function(){
  });
  const skills=Object.values(bySkill).map(x=>({...x,error:pct(x.wrong,x.total)})).filter(x=>x.total>=2&&x.wrong>0).sort((a,b)=>b.error-a.error);
  const subs=Object.values(bySub).map(x=>({...x,error:pct(x.wrong,x.total)})).filter(x=>x.total>=2&&x.wrong>0).sort((a,b)=>b.error-a.error);
- const repeat=Object.entries(repeated).filter(([,n])=>n>=2).map(([id,n])=>{const q=Q.find(x=>x.id===id);return q?{id,n,q}:null}).filter(Boolean).sort((a,b)=>b.n-a.n);
+ const repeat=Object.entries(repeated).filter(([,n])=>n>=2).map(([id,n])=>{const q=Q.find(x=>(x.id===id||x.replaces===id));return q?{id,n,q}:null}).filter(Boolean).sort((a,b)=>b.n-a.n);
  const result=[];
  if(repeat[0])result.push({type:"repeated",title:"Error repetido",detail:repeat[0].q.i,score:repeat[0].n*20,questionId:repeat[0].id});
  if(skills[0])result.push({type:"skill",title:"Patrón de razonamiento",detail:skills[0].name,score:skills[0].error,skill:skills[0].name,fastWrong:skills[0].fastWrong});
@@ -29,7 +29,7 @@ PE18.patterns=function(){
 
 PE18.pool=function(pattern){
  if(!pattern)return Q;
- if(pattern.type==="repeated"){const q=Q.find(x=>x.id===pattern.questionId);return q?[q,...Q.filter(x=>x.i===q.i&&x.id!==q.id)]:Q}
+ if(pattern.type==="repeated"){const q=Q.find(x=>(x.id===pattern.questionId||x.replaces===pattern.questionId));return q?[q,...Q.filter(x=>x.i===q.i&&x.id!==q.id)]:Q}
  if(pattern.type==="skill"||pattern.type==="fast")return Q.filter(q=>(q.skill||"general")===pattern.skill);
  if(pattern.type==="sub")return Q.filter(q=>q.i===pattern.sub);
  return Q;

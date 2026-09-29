@@ -24,12 +24,12 @@ for (const sid of Object.keys(specialties)) {
 }
 
 for (const sid of newSpecialties) {
-  test(`${sid}: claves de PDF, clasificación y cuatro razones propias para los 30 ítems`, () => {
+  test(`${sid}: claves históricas separadas de la revisión, clasificación y cuatro razones propias para los 30 ítems`, () => {
     const app = runtime(sid), rows = app.context.PE305.pool();
     assert.equal(rows.length, 30);
     const seen = new Set();
     for (const q of rows) {
-      assert.equal(q.a, sourceKeys[q.source.file].keys[q.source.number].charCodeAt(0) - 65, q.id);
+      assert.equal(q.a, (q.source.practiceKey || sourceKeys[q.source.file].keys[q.source.number]).charCodeAt(0) - 65, q.id);
       assert.equal(q.source.key, sourceKeys[q.source.file].keys[q.source.number], q.id);
       assert.ok(q.source.page > 1 && q.source.adaptation.length > 20, q.id);
       assert.ok(!seen.has(q.id)); seen.add(q.id);
@@ -123,7 +123,7 @@ test('oráculos independientes de cálculo y supuestos corregidos en Matemática
   assert.equal(7*3-16,5);assert.match(get(17).o[get(17).a],/^5 L/);
   const term=n=>2*n*(n+3)/3;
   assert.ok(Math.abs(term(7)-term(5)-20)<1e-10);assert.equal(get(21).o[get(21).a],'20');
-  assert.equal((80*12000+120*6000+40*15000)/240,9500);assert.equal(get(42).o[get(42).a],'9 500 km');
+  assert.equal((80*12000+120*6000+40*15000)/240,9500);assert.match(get(42).o[get(42).a],/repartiera por igual.*9.500 km/);
   assert.equal(7000*2/5,2800);assert.equal(get(44).o[get(44).a],'2 800');
   const frequency=get(46).stimulus[0].rows;
   for(const [n,k,f] of frequency) assert.equal(Number(k.replaceAll(' ',''))/Number(n.replaceAll(' ','')),Number(f.replace(',','.')));

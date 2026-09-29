@@ -30,7 +30,7 @@ for (const sid of Object.keys(selected)) {
     const app = runtime(sid), rows = app.context.PE305.pool();
     assert.deepEqual(plain(rows.map(q => q.source.number)), selected[sid]);
     for (const q of rows) {
-      assert.equal(q.a, keys[q.source.file].keys[q.source.number].charCodeAt(0)-65, q.id);
+      assert.equal(q.a, (q.source.practiceKey || keys[q.source.file].keys[q.source.number]).charCodeAt(0)-65, q.id);
       assert.equal(q.source.key, keys[q.source.file].keys[q.source.number], q.id);
       assert.ok(q.source.page > 1 && q.source.page <= 35);
       const [d,s,i] = q.indicatorId.split('-').map(Number);
@@ -115,7 +115,7 @@ test('los ajustes editoriales resuelven errores del original en el enunciado y e
   assert.match(h(8).o[h(8).a],/pregunta de investigación/);
   assert.match(h(19).q,/sin atribuirles causas/);
   assert.match(h(19).explanations[2],/No mide.*desertificación/);
-  assert.match(h(24).q,/debe mudarse/);
+  assert.match(h(24).q,/Valparaíso/);assert.match(h(24).o[h(24).a],/Desplazamiento residencial/);
   assert.match(h(33).e,/no.*constitución federal promulgada/i);
   assert.match(h(46).q,/14 de julio de 1789/);
   assert.match(h(48).q,/ordena.*cambiar/);
@@ -124,8 +124,8 @@ test('los ajustes editoriales resuelven errores del original en el enunciado y e
   assert.match(e(34).o[e(34).a],/not be required to pay/);
   assert.match(e(38).o[e(38).a],/mandative subjunctive/);
   assert.match(e(41).q,/correlative pair/);
-  assert.match(e(58).q,/not an identified supply/);
-  assert.match(e(58).e,/puede ser correcto/);
+  assert.match(e(58).q,/resource in general/);
+  assert.match(e(58).e,/referencia general.*específica/);
 });
 
 test('las representaciones nuevas coinciden con sus datos y usan archivos locales sin código activo', () => {
@@ -136,7 +136,7 @@ test('las representaciones nuevas coinciden con sus datos y usan archivos locale
     assert.match(svg,/<title/);assert.match(svg,/<desc/);
     assert.doesNotMatch(svg,/<script|<foreignObject|(?:href|src)="https?:\/\//i);
     assert.ok(s.alt.length>200);
-    assert.match(app.context.PE305.assetURL(s.asset),/\?v=3\.0\.7$/);
+    assert.match(app.context.PE305.assetURL(s.asset),/\?v=3\.0\.8$/);
   }
   const land=fs.readFileSync(path.join(root,'assets/prior-2023/historia-coberturas.svg'),'utf8');
   // Each map has 100 labelled cells, plus a single legend cell per category.
