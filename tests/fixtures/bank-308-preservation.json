@@ -1,0 +1,32 @@
+{
+  "basica-matematica": {
+    "active": "9a5647e5d33565f93e8eb868742ad0d03a0f0dddc761b3db3c1ab4f3b29630d5",
+    "historical": "9b79b394d04ea46bf4f13211c5a1fe97d29d4fece92d80f03e5d8b52501beaf9",
+    "count": 209
+  },
+  "basica-ciencias": {
+    "active": "b475fc016215ee91e1245a86ce0c63f27de597821e408b90ac6c2f1f61d76afb",
+    "historical": "d28a92e4b4adc9305de5fc6623c5c2a0a5497d83c58d48353500a2723ae4a9b0",
+    "count": 132
+  },
+  "basica-historia": {
+    "active": "e057f7c0048bf1a4c4cd7531d03b4c0bd40f21b8dc1f2c5f5811de156e06ec15",
+    "historical": "dd534bdf61e08cc65d46982daaf65066cf0e803aede7d233764bbe292e0992c8",
+    "count": 130
+  },
+  "basica-ingles": {
+    "active": "86e3263c05a7af0b19375eaec09a2ee5a87526aa587bddef14214f6bd6172528",
+    "historical": "03216eccb87f4c7903338c6452227a8ac739a6f51486852f89c44043c242307b",
+    "count": 130
+  },
+  "basica-lenguaje": {
+    "active": "ea93206141173894b26f8e6ca39fbe314bb5f31468e2a15a124c0498073db0d4",
+    "historical": "7ff0c759b1507e3b00956cfdd1ef0ca1fdc03dbc2c735aad466b01f2082de398",
+    "count": 130
+  },
+  "media-lengua": {
+    "active": "4888f0be8f6bb8d28cfb9f4ad18e0ead587aac94f61defb325a3ad9a4bdef15b",
+    "historical": "b90633ddb0ead443f1b438dd33fa6180cd63cab04244e47c9a210bc0edf850f4",
+    "count": 100
+  }
+}

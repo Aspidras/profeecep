@@ -24,7 +24,7 @@
   const assets=new Map(PE307_ITEMS.flatMap(q=>q.stimulus.filter(s=>['audio','figure'].includes(s.kind)).map(s=>[s.asset,s.kind])));
   function assetURL(name){
     const kind=assets.get(name); if(!kind||!/^[a-z0-9-]+\.(?:mp3|svg)$/.test(name)) return null;
-    return 'assets/'+(kind==='audio'?'audio-307/':'original-307/')+name+'?v=3.0.8';
+    return 'assets/'+(kind==='audio'?'audio-307/':'original-307/')+name+'?v=3.0.9';
   }
   const previousStimulus=PE305.stimulus, previousSource=PE305.source;
   PE305.stimulus=function(q){
@@ -72,7 +72,7 @@
     const dashboard=el('home')?.querySelector('.pe302-dashboard');
     if(dashboard&&!dashboard.querySelector('.pe307-home')){
       const card=document.createElement('section');card.className='card pe307-home';
-      card.innerHTML='<span class="pill">Más práctica · 3.0.8</span><h2>50 preguntas nuevas</h2><p>Tu especialidad tiene ahora '+Q.length+' ejercicios activos. Entrena con explicaciones para las cuatro alternativas.</p><button class="btn full" onclick="PE302.navigate(\'practice\',\'.pe307-practice\')">Explorar las nuevas preguntas</button>';dashboard.prepend(card);
+      card.innerHTML='<span class="pill">Mejoras de estudio · 3.0.9</span><h2>Practica y reporta tus dudas</h2><p>Tu especialidad tiene ahora '+Q.length+' ejercicios activos. Ahora puedes guardar el motivo de un problema y descargar tus reportes.</p><button class="btn full" onclick="PE302.navigate(\'practice\',\'.pe307-practice\')">Explorar las nuevas preguntas</button>';dashboard.prepend(card);
     }
   }
   window.PE307={fullBank,archived:(sid=PE_ACTIVE_SPECIALTY)=>[...(archived[sid]||[])],pool,choose,start,startFromForm,practiceQuestion,practiceCard,inject,assetURL};

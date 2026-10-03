@@ -1,4 +1,4 @@
-// ProfeECEP 3.0.8 — historical practice, with self-contained accessible stimuli.
+// ProfeECEP 3.0.9 — historical practice, with self-contained accessible stimuli.
 (function () {
   'use strict';
   const esc = PE304.esc;
@@ -6,7 +6,7 @@
   const items = [...(window.PE305_ITEMS || []), ...(window.PE306_ITEMS || [])];
   const itemIds = new Set(items.map(q => q.id));
   const assetNames = new Set(items.flatMap(q => q.stimulus.filter(s => s.kind === 'figure').map(s => s.asset)));
-  const assetURL = name => assetNames.has(name) && /^[a-z0-9-]+\.svg$/.test(name) ? 'assets/prior-2023/' + name + '?v=3.0.8' : null;
+  const assetURL = name => assetNames.has(name) && /^[a-z0-9-]+\.svg$/.test(name) ? 'assets/prior-2023/' + name + '?v=3.0.9' : null;
   const inserted = new Set();
   for (const item of items) {
     if (item.specialtyId === math && PE_ACTIVE_SPECIALTY !== math) continue;

@@ -1,0 +1,19 @@
+.pe309-reports{border-left:4px solid var(--pe-primary)}
+.pe309Modal h2{padding-right:2.75rem;margin-top:.5rem}
+.pe309Modal .pe309-question{padding:1rem;background:var(--pe-soft);border-radius:12px;line-height:1.55}
+.pe309Modal form{display:grid;gap:.7rem;margin:1rem 0}
+.pe309Modal label{font-weight:700}
+.pe309Modal select,.pe309Modal textarea{box-sizing:border-box;width:100%;max-width:100%;font:inherit;background:var(--pe-surface);color:var(--pe-text);border:1px solid var(--pe-border);border-radius:10px;padding:.75rem}
+.pe309Modal textarea{resize:vertical;min-height:7rem}
+.pe309Modal .pe309-actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin:1rem 0}
+.pe309Modal .mini{min-height:44px;white-space:normal}
+.pe309Modal [aria-pressed="true"]{outline:2px solid var(--pe-primary);background:var(--pe-soft)}
+.pe309Modal p,.pe309Modal small,.pe309Modal b{overflow-wrap:anywhere}
+.pe309Modal .pe309-note{white-space:pre-wrap}
+.pe309Modal #pe309-error{color:var(--pe-bad-text)}
+.pe309Modal #pe309-notice:empty,.pe309Modal #pe309-error:empty{display:none}
+.pe309Modal #pe309-notice{padding:.8rem;border:1px solid var(--pe-border);border-radius:10px;background:var(--pe-soft)}
+.pe309Modal .pe309-report{gap:.4rem;margin:1rem 0}
+.pe309Modal .pe309-report p{margin:.2rem 0}
+.pe309Modal .pe309-report .pe309-actions{margin:.5rem 0 0}
+@media(max-width:420px){.pe309Modal .pe309-actions button{flex:1 1 45%}.pe309Modal{padding:.85rem}}

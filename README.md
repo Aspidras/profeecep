@@ -2,6 +2,16 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.9 — Reportes y repaso personal
+
+- Se elimina la etiqueta de «calibrada» basada en intentos de una persona. Las estadísticas expresan rendimiento personal; el control estructural y la validación pedagógica tienen alcances distintos.
+- «Mi repaso de preguntas» usa marcas personales: por repasar, repasada y comprendida por mí. Las antiguas marcas «validada» se muestran como repasadas, sin modificar los registros históricos ni certificar el banco.
+- Reportes con siete motivos, comentario, edición, archivo y reapertura. Las marcas antiguas se recuperan como reportes sin detalle. Una pregunta sustituida conserva su ID y su enunciado histórico.
+- Acceso al reporte al responder y al revisar prácticas, diagnóstico y simulacros. Abrir el formulario durante un simulacro no muestra la clave ni detiene o reinicia el reloj.
+- Lista por especialidad, paginación e informe de texto descargable. Se guardan dentro del progreso existente; no se envían automáticamente a una bandeja del equipo. No se añaden cuentas, credenciales ni permisos de base de datos.
+- Se mantienen exactamente las 831 preguntas activas y sus versiones archivadas, claves, opciones y explicaciones. No se agregan preguntas ni microlecciones en esta versión.
+- [Alcance y comprobaciones](docs/revision-309.md).
+
 ## Versión 3.0.8 — Preguntas corregidas para el temario 2026
 
 - 173 preguntas revisadas: enunciados, materiales, explicaciones, clasificaciones y una clave incorrecta de Inglés. 135 reformulaciones sustantivas.
