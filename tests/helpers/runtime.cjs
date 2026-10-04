@@ -11,7 +11,7 @@ const specialties = {
   'basica-historia': 130,
   'basica-ingles': 130,
   'basica-lenguaje': 130,
-  'media-lengua': 100
+  'media-lengua': 146
 };
 
 // A deliberately small DOM facade for logic/integration tests, NOT a browser or

@@ -5,14 +5,14 @@ const plain = value => JSON.parse(JSON.stringify(value));
 const hash = value => crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
 for (const sid of Object.keys(specialties)) {
-  test(sid + ': el banco permanece idéntico a 3.0.8 y un reporte sobrevive a la recarga', () => {
+  test(sid + ': las preguntas previas permanecen idénticas a 3.0.8 y un reporte sobrevive a la recarga', () => {
     const app = runtime(sid), q = app.run('Q[0]');
     const before = plain(app.run('({history:S.history,total:S.total,right:S.right,wrong:S.wrong,simulations:S.simulations})'));
     assert.equal(app.context.PE309.saveReport(q.id, 'explicacion', 'La razón de la alternativa B necesita más detalle.').ok, true);
     const reloaded = runtime(sid, {storage: app.storage}), report = reloaded.context.PE309.get(q.id);
     assert.equal(report.reason, 'explicacion'); assert.match(report.details, /alternativa B/);
-    assert.equal(hash(reloaded.run('Q')), baseline[sid].active);
-    assert.equal(hash(reloaded.context.PE307.fullBank()), baseline[sid].historical);
+    assert.equal(hash(reloaded.run('Q').filter(q => q.version !== '3.0.10')), baseline[sid].active);
+    assert.equal(hash(reloaded.context.PE307.fullBank().filter(q => q.version !== '3.0.10')), baseline[sid].historical);
     assert.deepEqual(plain(reloaded.run('({history:S.history,total:S.total,right:S.right,wrong:S.wrong,simulations:S.simulations})')), before);
     assert.equal(reloaded.context.PE309.list().length, 1);
   });

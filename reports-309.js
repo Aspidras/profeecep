@@ -1,7 +1,7 @@
 // Reports are personal progress records. Export is explicit; no editorial inbox is implied.
 (function () {
   'use strict';
-  const version = '3.0.9', esc = PE304.esc, pageSize = 20;
+  const version = '3.0.10', esc = PE304.esc, pageSize = 20;
   const reasons = [
     ['ambigua', 'Puede haber más de una respuesta'],
     ['clave', 'La respuesta marcada como correcta parece equivocada'],

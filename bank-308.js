@@ -25,7 +25,7 @@
   const assets=new Set(PE308_ITEMS.flatMap(q=>(q.stimulus||[]).filter(s=>s.asset).map(s=>s.asset)));
   function assetURL(name){
     if(!assets.has(name)||!/^[a-z0-9-]+\.(?:svg|mp3)$/.test(name))return null;
-    if(name.startsWith('308-')&&name.endsWith('.svg'))return 'assets/revision-308/'+name+'?v=3.0.9';
+    if(name.startsWith('308-')&&name.endsWith('.svg'))return 'assets/revision-308/'+name+'?v=3.0.10';
     return PE307.assetURL(name)||PE305.assetURL(name);
   }
   const previousStimulus=PE305.stimulus, previousSource=PE305.source;

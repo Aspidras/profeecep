@@ -2,6 +2,15 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.10 — Lengua y Literatura 2023
+
+- Recibidos y revisados el cuadernillo EM-L 2023 y sus 46 claves. Se incorporan 46 adaptaciones con 184 explicaciones y seis recursos visuales originales; Lengua y Literatura pasa de 100 a 146 ejercicios.
+- Banco activo: 877 preguntas en seis especialidades. Las 831 anteriores y sus versiones históricas se conservan íntegramente.
+- Práctica adicional en 30 indicadores del temario oficial 2026 conservado, con referencia a pregunta fuente, página y decisión de adaptación. La clave de práctica se distingue de la pauta histórica.
+- Catálogo de pruebas anteriores y filtros habilitados para Educación Media. Lecturas, cómics y afiches accesibles y disponibles sin conexión; no se adelantan razones ni notas de adaptación al responder.
+- Con este par quedan recibidos los cuadernillos y pautas de las seis especialidades actuales. Siguen pendientes los siete audios de Inglés 2023.
+- [Alcance, ajustes y trazabilidad](docs/pruebas-anteriores-310.md). Las adaptaciones no son preguntas oficiales de 2026 ni tienen calibración psicométrica.
+
 ## Versión 3.0.9 — Reportes y repaso personal
 
 - Se elimina la etiqueta de «calibrada» basada en intentos de una persona. Las estadísticas expresan rendimiento personal; el control estructural y la validación pedagógica tienen alcances distintos.

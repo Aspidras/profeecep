@@ -1,12 +1,12 @@
-// ProfeECEP 3.0.9 — historical practice, with self-contained accessible stimuli.
+// ProfeECEP 3.0.10 — historical practice, with self-contained accessible stimuli.
 (function () {
   'use strict';
   const esc = PE304.esc;
   const math = 'basica-matematica';
-  const items = [...(window.PE305_ITEMS || []), ...(window.PE306_ITEMS || [])];
+  const items = [...(window.PE305_ITEMS || []), ...(window.PE306_ITEMS || []), ...(window.PE310_ITEMS || [])];
   const itemIds = new Set(items.map(q => q.id));
   const assetNames = new Set(items.flatMap(q => q.stimulus.filter(s => s.kind === 'figure').map(s => s.asset)));
-  const assetURL = name => assetNames.has(name) && /^[a-z0-9-]+\.svg$/.test(name) ? 'assets/prior-2023/' + name + '?v=3.0.9' : null;
+  const assetURL = name => assetNames.has(name) && /^[a-z0-9-]+\.svg$/.test(name) ? 'assets/prior-2023/' + name + '?v=3.0.10' : null;
   const inserted = new Set();
   for (const item of items) {
     if (item.specialtyId === math && PE_ACTIVE_SPECIALTY !== math) continue;
@@ -44,8 +44,8 @@
     if (format === 'all') return true;
     if (format === 'tables') return q.stimulus.some(s => s.kind === 'table');
     if (format === 'visual') return q.stimulus.some(s => s.kind === 'figure') && !['cómic', 'infografía'].includes(q.questionType);
-    if (format === 'reading') return ['basica-lenguaje', 'basica-ingles'].includes(q.specialtyId) && q.stimulus.length > 0;
-    const teachingDomain = {'basica-matematica': 4, 'basica-ciencias': 6, 'basica-historia': 3, 'basica-ingles': 3, 'basica-lenguaje': 2};
+    if (format === 'reading') return ['basica-lenguaje', 'basica-ingles', 'media-lengua'].includes(q.specialtyId) && q.stimulus.length > 0;
+    const teachingDomain = {'basica-matematica': 4, 'basica-ciencias': 6, 'basica-historia': 3, 'basica-ingles': 3, 'basica-lenguaje': 2, 'media-lengua': 2};
     if (format === 'classroom') return q.indicatorId.startsWith(teachingDomain[q.specialtyId] + '-');
     return false;
   }

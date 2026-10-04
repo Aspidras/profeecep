@@ -16,7 +16,7 @@ Para completar la revisión de la comprensión auditiva de SC-I(23).pdf hacen fa
 | Passenger | 12, 13, 14 |
 | Certificate of Citizenship | 15, 16, 17 |
 
-De las seis especialidades actuales de la aplicación, sigue pendiente el cuadernillo de **Educación Media — Lengua y Literatura** y su pauta de respuestas.
+En la versión 3.0.6 quedaban pendientes el cuadernillo de **Educación Media — Lengua y Literatura** y su pauta. **Recibidos el 4 de octubre e incorporados en 3.0.10:** [revisión de EM-L 2023](pruebas-anteriores-310.md).
 
 ## Alcance respecto de 2026
 
