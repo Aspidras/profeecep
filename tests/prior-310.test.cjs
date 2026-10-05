@@ -106,3 +106,31 @@ test('un reporte y un simulacro de la nueva colección sobreviven a recarga sin 
   assert.deepEqual(plain(next.run('quiz[0]')),plain(q));assert.equal(next.context.PE309.get(q.id).details,'Revisar el ejemplo de focalización.');
   next.run('finishSimulation12()');assert.equal(next.run('S.simulations.at(-1).right'),1);
 });
+
+test('volver al menú desde una pregunta o su corrección recupera ambos catálogos y conserva el avance',()=>{
+  for(const answered of [false,true]){
+    const app=runtime('media-lengua'), practice=app.elements.get('practice');
+    app.selectors.set('.screen.on',practice);
+    app.context.PE305.practiceQuestion('media-lengua-310-2023-07');
+    if(answered)app.run('pick(quiz[0].a,document.createElement("button"));checkAnswer()');
+    const before=app.run('JSON.stringify(S)'); practice.children=[];
+    app.run('render();go("practice");PE305.inject();PE307.inject()');
+    assert.ok(practice.children.some(x=>x.className==='card pe305-practice'));
+    assert.ok(practice.children.some(x=>x.className==='card pe307-practice'));
+    assert.equal(app.run('JSON.stringify(S)'),before);
+    assert.equal(app.context.PE305.practiceQuestion('media-lengua-310-2023-20'),true);
+    assert.match(practice.innerHTML,/Despedida/);
+  }
+});
+
+test('volver al menú conserva las preguntas y respuestas de un simulacro recuperable',()=>{
+  const app=runtime('media-lengua');
+  app.run('PE283.start();sim12Choose(1);PE303.persist()');
+  const questions=app.run('JSON.stringify(quiz)'), simulation=app.run('JSON.stringify(SIM12)');
+  app.run('render();go("practice")');
+  assert.equal(app.run('JSON.stringify(quiz)'),questions);
+  assert.equal(app.run('JSON.stringify(SIM12)'),simulation);
+  app.context.PE303.resume();
+  assert.equal(app.run('JSON.stringify(quiz)'),questions);
+  assert.equal(app.run('SIM12.answers[quiz[0].id]'),1);
+});

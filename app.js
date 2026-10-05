@@ -18,6 +18,9 @@ function insight(){const rows=D.map(d=>{let s=domainStats(d[0]);return{name:d[0]
 function render(){
  const homeEl=el("home"),mapEl=el("map"),practiceEl=el("practice"),progressEl=el("progress"),simulationEl=el("simulation");
  if(!homeEl||!mapEl||!practiceEl||!progressEl||!simulationEl)return;
+ // Rebuilding the menu ends the transient practice view. Keep simulation state
+ // intact so its saved questions, answers and timer remain recoverable.
+ if(mode==="practice"){quiz=[];pos=0;sel=null;answers=[];}
  const studyPct=pct(S.done.length,flat.length),priorities=priorityDomains();
  const diagCard=S.diagnosis?'<div class="card"><div class="row"><div><span class="pill">Diagnóstico completado</span><h3>Tu prioridad actual</h3><div class="muted">'+(priorities[0]?priorities[0].name:"—")+'</div></div><button class="btn ghost" onclick="showDiagnosisResult()">Ver resultado</button></div></div>':'<div class="card emphasis"><span class="pill">Diagnóstico</span><h3>Descubre por dónde empezar</h3><p>10 preguntas equilibradas entre los cinco dominios.</p><button class="btn full" onclick="startDiagnosis()">Comenzar diagnóstico</button></div>';
  const continueStudy=S.lastStudy?'<div class="card emphasis"><span class="pill">Centro de estudio</span><h3>Continuar estudiando</h3><p>'+((flat.find(x=>x.id===S.lastStudy)||{}).t||"")+'</p><button class="btn full" onclick="openStudy(\''+S.lastStudy+'\')">Continuar</button></div>':'';
