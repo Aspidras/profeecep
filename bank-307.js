@@ -24,7 +24,7 @@
   const assets=new Map(PE307_ITEMS.flatMap(q=>q.stimulus.filter(s=>['audio','figure'].includes(s.kind)).map(s=>[s.asset,s.kind])));
   function assetURL(name){
     const kind=assets.get(name); if(!kind||!/^[a-z0-9-]+\.(?:mp3|svg)$/.test(name)) return null;
-    return 'assets/'+(kind==='audio'?'audio-307/':'original-307/')+name+'?v=3.0.10';
+    return 'assets/'+(kind==='audio'?'audio-307/':'original-307/')+name+'?v=3.0.11';
   }
   const previousStimulus=PE305.stimulus, previousSource=PE305.source;
   PE305.stimulus=function(q){
@@ -72,8 +72,8 @@
     const dashboard=el('home')?.querySelector('.pe302-dashboard');
     if(dashboard&&!dashboard.querySelector('.pe307-home')){
       const card=document.createElement('section');card.className='card pe307-home';
-      const isMedia=PE_ACTIVE_SPECIALTY==='media-lengua';
-      card.innerHTML='<span class="pill">Actualización · 3.0.10</span><h2>'+(isMedia?'46 preguntas nuevas de Lengua y Literatura':'Practica y reporta tus dudas')+'</h2><p>'+(isMedia?'Lecturas, cómics, afiches y casos de aula adaptados de EM-L 2023. Las cuatro alternativas tienen explicación.':'Tu especialidad tiene '+Q.length+' ejercicios activos. Puedes guardar el motivo de un problema y descargar tus reportes.')+'</p><button class="btn full" onclick="PE302.navigate(\'practice\',\''+(isMedia?'.pe305-practice':'.pe307-practice')+'\')">'+(isMedia?'Practicar Lengua y Literatura 2023':'Explorar preguntas de práctica')+'</button>';dashboard.prepend(card);
+      const isEnglish=PE_ACTIVE_SPECIALTY==='basica-ingles';
+      card.innerHTML='<span class="pill">Actualización · 3.0.11</span><h2>'+(isEnglish?'17 preguntas nuevas de comprensión auditiva':'Practica y reporta tus dudas')+'</h2><p>'+(isEnglish?'Escucha las siete pistas de Inglés 2023. Al responder, revisa la transcripción y entiende por qué cada alternativa es correcta o incorrecta. Tu banco suma 147 preguntas.':'Tu especialidad tiene '+Q.length+' ejercicios activos. Puedes guardar el motivo de un problema y descargar tus reportes.')+'</p><button class="btn full" onclick="'+(isEnglish?'PE305.start(\'audio\')':'PE302.navigate(\'practice\',\'.pe307-practice\')')+'">'+(isEnglish?'Practicar comprensión auditiva 2023':'Explorar preguntas de práctica')+'</button>';dashboard.prepend(card);
     }
   }
   window.PE307={fullBank,archived:(sid=PE_ACTIVE_SPECIALTY)=>[...(archived[sid]||[])],pool,choose,start,startFromForm,practiceQuestion,practiceCard,inject,assetURL};

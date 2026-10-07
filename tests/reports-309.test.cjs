@@ -11,8 +11,8 @@ for (const sid of Object.keys(specialties)) {
     assert.equal(app.context.PE309.saveReport(q.id, 'explicacion', 'La razón de la alternativa B necesita más detalle.').ok, true);
     const reloaded = runtime(sid, {storage: app.storage}), report = reloaded.context.PE309.get(q.id);
     assert.equal(report.reason, 'explicacion'); assert.match(report.details, /alternativa B/);
-    assert.equal(hash(reloaded.run('Q').filter(q => q.version !== '3.0.10')), baseline[sid].active);
-    assert.equal(hash(reloaded.context.PE307.fullBank().filter(q => q.version !== '3.0.10')), baseline[sid].historical);
+    assert.equal(hash(reloaded.run('Q').filter(q => !['3.0.10','3.0.11'].includes(q.version))), baseline[sid].active);
+    assert.equal(hash(reloaded.context.PE307.fullBank().filter(q => !['3.0.10','3.0.11'].includes(q.version))), baseline[sid].historical);
     assert.deepEqual(plain(reloaded.run('({history:S.history,total:S.total,right:S.right,wrong:S.wrong,simulations:S.simulations})')), before);
     assert.equal(reloaded.context.PE309.list().length, 1);
   });

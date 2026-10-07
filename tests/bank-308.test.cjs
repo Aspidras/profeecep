@@ -42,8 +42,8 @@ test('los errores pendientes llevan a la revisión; acertarla no altera el histo
 });
 test('todas las tareas auditivas activas ofrecen audio y reservan transcripción y razones para revisión',()=>{
  const a=runtime('basica-ingles'),rows=a.run('Q').filter(q=>q.indicatorId.startsWith('1-'));
- assert.equal(rows.length,23);
- for(const q of rows){const audio=q.stimulus.find(s=>s.kind==='audio');assert.ok(audio,q.id);const html=a.context.PE305.stimulus(q);assert.match(html,/<audio controls/);assert.ok(!html.includes(a.context.PE304.esc(audio.transcript)));assert.doesNotMatch(html,/autoplay/);const feedback=a.context.PE304.feedback(q,(q.a+1)%4);assert.ok(feedback.includes(a.context.PE304.esc(audio.transcript)));q.explanations.forEach(e=>assert.ok(feedback.includes(a.context.PE304.esc(e))));}
+ assert.equal(rows.length,40);
+ for(const q of rows){const audio=q.stimulus.find(s=>s.kind==='audio');assert.ok(audio,q.id);const html=a.context.PE305.stimulus(q);assert.match(html,/<audio controls/);assert.ok(!html.includes(a.context.PE304.esc(audio.transcript)));assert.doesNotMatch(html,/autoplay/);const feedback=a.context.PE304.feedback(q,(q.a+1)%4);assert.ok(feedback.includes(a.context.PE304.esc(audio.transcript).replace(/\n/g,'<br>')));q.explanations.forEach(e=>assert.ok(feedback.includes(a.context.PE304.esc(e))));}
 });
 test('los 173 cambios y sus 16 diagramas nuevos están completos y disponibles en caché',()=>{
  const a=runtime(), patches=a.context.PE308_ITEMS;assert.equal(patches.length,173);assert.equal(manifest.count,173);assert.equal(manifest.contentRewritten,135);

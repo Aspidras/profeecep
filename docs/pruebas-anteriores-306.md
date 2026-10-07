@@ -1,3 +1,5 @@
+> Actualización 3.0.11: las siete pistas y 17 adaptaciones auditivas ya están incorporadas. [Estado actual](audios-311.md). La tabla siguiente conserva el inventario histórico de 3.0.6.
+
 # Historia e Inglés 2023 — revisión para ProfeECEP 3.0.6
 
 Se revisaron dos cuadernillos de 35 páginas y sus pautas: 50 ítems de Historia y 60 de Inglés. Se publican **60 adaptaciones**, 30 por especialidad, con **240 explicaciones**. Otras 33 preguntas quedan en reserva editorial y 17 de comprensión auditiva requieren los audios. Los originales aportados no se redistribuyen en el repositorio.

@@ -1,0 +1,110 @@
+[
+  {
+    "track": 1,
+    "title": "Happiness",
+    "questions": [
+      1,
+      2
+    ],
+    "file": "ingles-2023-01.mp3",
+    "bytes": 1182868,
+    "sha256": "bdf99d38c9e2c1abe4e3ade508955027101715a97e536069220fe14647ba6e42",
+    "gitSha": "d7cb1ae8467ac4663e6f78f7a9c8e31cdd8d66e9",
+    "sourceDuration": 147.7952,
+    "duration": 147.826939,
+    "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+  },
+  {
+    "track": 2,
+    "title": "Going to Mars",
+    "questions": [
+      3,
+      4
+    ],
+    "file": "ingles-2023-02.mp3",
+    "bytes": 974097,
+    "sha256": "7a8cb45a090afca9ebb0ca2035602a0e960642b4167c87b528dfcd336e0c737e",
+    "gitSha": "d8e7869bbe841c74a18351f09e94e1b09b4aa0a9",
+    "sourceDuration": 121.7072,
+    "duration": 121.730612,
+    "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+  },
+  {
+    "track": 3,
+    "title": "Agriculture",
+    "questions": [
+      5,
+      6
+    ],
+    "file": "ingles-2023-03.mp3",
+    "bytes": 769297,
+    "sha256": "8c14755f0973a0b48c77eab5883b76a777683d9078b377d807063ee3d76fa3bf",
+    "gitSha": "182b916f02bcc538ff683dbfe862554902b7cb1f",
+    "sourceDuration": 96.0992,
+    "duration": 96.130612,
+    "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+  },
+  {
+    "track": 4,
+    "title": "Plastic Trash",
+    "questions": [
+      7,
+      8,
+      9
+    ],
+    "file": "ingles-2023-04.mp3",
+    "bytes": 1468961,
+    "sha256": "8ed613a86ae2c5485368075dad8d0eb8d4e19f2ee260c7981ea50697a9baefd4",
+    "gitSha": "dcd296282540c7d9b92e0e57664a4240271f1e53",
+    "sourceDuration": 183.5552,
+    "duration": 183.588571,
+    "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+  },
+  {
+    "track": 5,
+    "title": "The Song of My Life",
+    "questions": [
+      10,
+      11
+    ],
+    "file": "ingles-2023-05.mp3",
+    "bytes": 1079005,
+    "sha256": "066f4feea329e53bf3235e69f964b2a2c2a962ea35b293f256cbbe2d43df43f2",
+    "gitSha": "2aeb889f929a31693dfe77c0efe6bea26806b172",
+    "sourceDuration": 134.8112,
+    "duration": 134.844082,
+    "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+  },
+  {
+    "track": 6,
+    "title": "Passenger",
+    "questions": [
+      12,
+      13,
+      14
+    ],
+    "file": "ingles-2023-06.mp3",
+    "bytes": 1325601,
+    "sha256": "95bd4e74b41014ed05968b2390e51d768a6d617e34ee986ab284fa4118e4a57d",
+    "gitSha": "4434d7904478adcbb844bf013f67c1a7a7bddc56",
+    "sourceDuration": 165.6272,
+    "duration": 165.668571,
+    "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+  },
+  {
+    "track": 7,
+    "title": "Certificate of Citizenship",
+    "questions": [
+      15,
+      16,
+      17
+    ],
+    "file": "ingles-2023-07.mp3",
+    "bytes": 1068765,
+    "sha256": "d4c4e057b1bb116eb815aec21d59d077f221e4f44c736ba2e6bda36152fcaf19",
+    "gitSha": "7fc1f3927eb656407bd50cf60d2a3b318bab473c",
+    "sourceDuration": 133.5392,
+    "duration": 133.564082,
+    "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+  }
+]

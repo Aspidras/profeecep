@@ -27,7 +27,7 @@ for (const sid of Object.keys(specialties)) {
 
 for (const sid of Object.keys(selected)) {
   test(sid+': 30 preguntas con clave contrastada, indicador válido y cuatro explicaciones completas', () => {
-    const app = runtime(sid), rows = app.context.PE305.pool();
+    const app = runtime(sid), rows = app.context.PE305.pool().filter(q => q.version !== '3.0.11');
     assert.deepEqual(plain(rows.map(q => q.source.number)), selected[sid]);
     for (const q of rows) {
       assert.equal(q.a, (q.source.practiceKey || keys[q.source.file].keys[q.source.number]).charCodeAt(0)-65, q.id);
@@ -82,7 +82,7 @@ test('los filtros incluyen los textos en inglés y los dominios docentes de amba
     assert.ok(expected.length>0);
     assert.equal(api.start('classroom'),true);
     assert.ok(app.run('quiz').every(q=>expected.some(e=>e.id===q.id)));
-    assert.match(api.practiceCard(),/Explorar las 30 preguntas/);
+    assert.match(api.practiceCard(),new RegExp('Explorar las '+(sid==='basica-ingles'?47:30)+' preguntas'));
     assert.equal(api.practiceQuestion('basica-matematica-305-2023-01'),false);
   }
   const english=runtime('basica-ingles').context.PE305;
@@ -94,12 +94,12 @@ test('los filtros incluyen los textos en inglés y los dominios docentes de amba
   assert.equal(history.pool('tables').length,1);
 });
 
-test('las 17 preguntas de audio permanecen pendientes y las 110 fuentes tienen disposición registrada', () => {
+test('el inventario histórico de 3.0.6 registra las 17 pendientes, incorporadas en 3.0.11', () => {
   const app=runtime('basica-ingles');
   assert.equal(Object.values(keys).reduce((sum,k)=>sum+k.count,0),110);
   assert.equal(app.context.PE306_ITEMS.length,60);
-  assert.ok(app.context.PE305.pool().every(q=>q.source.number>17));
-  assert.ok(app.context.PE305.pool().every(q=>!q.indicatorId.startsWith('1-')));
+  assert.ok(app.context.PE305.pool().filter(q=>q.version!=='3.0.11').every(q=>q.source.number>17));
+  assert.ok(app.context.PE305.pool().filter(q=>q.version!=='3.0.11').every(q=>!q.indicatorId.startsWith('1-')));
   const audit=JSON.parse(fs.readFileSync(path.join(root,'docs/revision-fuentes-306.json'),'utf8'));
   assert.equal(audit.items.length,110);
   assert.equal(audit.items.filter(q=>q.status==='publicada').length,60);
@@ -136,7 +136,7 @@ test('las representaciones nuevas coinciden con sus datos y usan archivos locale
     assert.match(svg,/<title/);assert.match(svg,/<desc/);
     assert.doesNotMatch(svg,/<script|<foreignObject|(?:href|src)="https?:\/\//i);
     assert.ok(s.alt.length>200);
-    assert.match(app.context.PE305.assetURL(s.asset),/\?v=3\.0\.10$/);
+    assert.match(app.context.PE305.assetURL(s.asset),/\?v=3\.0\.11$/);
   }
   const land=fs.readFileSync(path.join(root,'assets/prior-2023/historia-coberturas.svg'),'utf8');
   // Each map has 100 labelled cells, plus a single legend cell per category.

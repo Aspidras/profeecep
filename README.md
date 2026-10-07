@@ -2,13 +2,21 @@
 
 Plataforma web para preparar la Evaluación de Conocimientos Específicos y Pedagógicos (ECEP) en Chile.
 
+## Versión 3.0.11 — Audios de Inglés 2023
+
+- Siete pistas completas y 17 adaptaciones con 68 explicaciones específicas. Inglés suma 147 preguntas; el banco total, 894.
+- Comprensión auditiva con acceso directo y filtro; transcripciones automáticas de apoyo y referencias temporales al revisar. Audio disponible sin conexión, sin reproducción automática.
+- Correspondencia con 11 indicadores auditivos del temario 2026 conservado. Pauta histórica y clave de práctica separadas.
+- Las 877 preguntas anteriores y su historial se conservan. Las siete pistas pendientes de Inglés 2023 quedan incorporadas.
+- [Alcance y verificación](docs/audios-311.md). `npm test` utiliza Node.js, FFmpeg y FFprobe para incluir la decodificación de los MP3.
+
 ## Versión 3.0.10 — Lengua y Literatura 2023
 
 - Recibidos y revisados el cuadernillo EM-L 2023 y sus 46 claves. Se incorporan 46 adaptaciones con 184 explicaciones y seis recursos visuales originales; Lengua y Literatura pasa de 100 a 146 ejercicios.
 - Banco activo: 877 preguntas en seis especialidades. Las 831 anteriores y sus versiones históricas se conservan íntegramente.
 - Práctica adicional en 30 indicadores del temario oficial 2026 conservado, con referencia a pregunta fuente, página y decisión de adaptación. La clave de práctica se distingue de la pauta histórica.
 - Catálogo de pruebas anteriores y filtros habilitados para Educación Media. Lecturas, cómics y afiches accesibles y disponibles sin conexión; no se adelantan razones ni notas de adaptación al responder.
-- Con este par quedan recibidos los cuadernillos y pautas de las seis especialidades actuales. Siguen pendientes los siete audios de Inglés 2023.
+- Con este par quedan recibidos los cuadernillos y pautas de las seis especialidades actuales. Los siete audios de Inglés 2023, entonces pendientes, se incorporan en 3.0.11.
 - [Alcance, ajustes y trazabilidad](docs/pruebas-anteriores-310.md). Las adaptaciones no son preguntas oficiales de 2026 ni tienen calibración psicométrica.
 
 ## Versión 3.0.9 — Reportes y repaso personal

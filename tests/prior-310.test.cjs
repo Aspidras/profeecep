@@ -11,7 +11,7 @@ const plain = x => JSON.parse(JSON.stringify(x));
 test('EM-L: 46 fuentes completas, claves históricas separadas y 184 explicaciones específicas', () => {
   const app=runtime('media-lengua'), rows=app.context.PE305.pool();
   assert.equal(rows.length,46); assert.equal(app.run('Q.length'),146);
-  assert.equal(Object.values(specialties).reduce((n,x)=>n+x,0),877);
+  assert.equal(Object.values(specialties).reduce((n,x)=>n+x,0),894);
   assert.equal(audit.items.length,46); assert.equal(new Set(rows.map(q=>q.q)).size,46);
   assert.equal(rows.reduce((n,q)=>n+q.explanations.length,0),184);
   assert.equal(new Set(rows.map(q=>q.indicatorId)).size,30);

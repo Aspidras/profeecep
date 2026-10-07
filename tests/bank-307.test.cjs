@@ -19,8 +19,8 @@ for(const [sid,count] of Object.entries(specialties)){
   next.context.PE307.start();assert.ok(next.run('quiz').every(q=>['3.0.7','3.0.8'].includes(q.version)));for(let n=0;n<10;n++)assert.ok(next.context.PE283.build().every(q=>!q.id.includes('-281-')));
  });
 }
-test('300 preguntas de 3.0.7, 1200 razones y 25 vacíos cubiertos; total actual 877',()=>{
- const all=runtime().context.PE307_ITEMS;assert.equal(all.length,300);assert.equal(new Set(all.map(q=>q.id)).size,300);assert.equal(new Set(all.map(q=>q.q.toLowerCase())).size,300);assert.equal(Object.values(specialties).reduce((a,b)=>a+b,0),877);assert.equal(Object.values(audit.specialties).flatMap(s=>s.indicators.filter(i=>!i.beforeSpecific)).length,25);
+test('300 preguntas de 3.0.7, 1200 razones y 25 vacíos cubiertos; total actual 894',()=>{
+ const all=runtime().context.PE307_ITEMS;assert.equal(all.length,300);assert.equal(new Set(all.map(q=>q.id)).size,300);assert.equal(new Set(all.map(q=>q.q.toLowerCase())).size,300);assert.equal(Object.values(specialties).reduce((a,b)=>a+b,0),894);assert.equal(Object.values(audit.specialties).flatMap(s=>s.indicators.filter(i=>!i.beforeSpecific)).length,25);
 });
 test('16 ítems auditivos: transcript oculta antes de respuesta y disponible en revisión y tutor',()=>{
  const app=runtime('basica-ingles'),rows=app.context.PE307.pool('audio');assert.equal(rows.length,16);assert.equal(new Set(rows.map(q=>q.stimulus[0].asset)).size,4);

@@ -1,0 +1,479 @@
+{
+  "version": "3.0.11",
+  "reviewDate": "2026-10-07",
+  "source": {
+    "count": 60,
+    "keys": {
+      "1": "A",
+      "31": "B",
+      "2": "D",
+      "32": "D",
+      "3": "C",
+      "33": "B",
+      "4": "B",
+      "34": "B",
+      "5": "C",
+      "35": "A",
+      "6": "C",
+      "36": "B",
+      "7": "B",
+      "37": "A",
+      "8": "C",
+      "38": "C",
+      "9": "A",
+      "39": "A",
+      "10": "A",
+      "40": "A",
+      "11": "C",
+      "41": "C",
+      "12": "B",
+      "42": "C",
+      "13": "D",
+      "43": "C",
+      "14": "A",
+      "44": "D",
+      "15": "D",
+      "45": "C",
+      "16": "A",
+      "46": "D",
+      "17": "A",
+      "47": "D",
+      "18": "D",
+      "48": "B",
+      "19": "B",
+      "49": "C",
+      "20": "B",
+      "50": "B",
+      "21": "A",
+      "51": "D",
+      "22": "D",
+      "52": "B",
+      "23": "A",
+      "53": "D",
+      "24": "D",
+      "54": "C",
+      "25": "B",
+      "55": "D",
+      "26": "C",
+      "56": "B",
+      "27": "C",
+      "57": "C",
+      "28": "A",
+      "58": "B",
+      "29": "C",
+      "59": "D",
+      "30": "A",
+      "60": "B"
+    },
+    "paperSha256": "82b74219583a6105fcd055c3d402e6206f86db79e51729878f3ebc8362ae3c84",
+    "keySha256": "0c9e653c4c381417ffc08e4f78688e4535843962b7c6d6a0806f89fa26242a24"
+  },
+  "tracks": [
+    {
+      "track": 1,
+      "title": "Happiness",
+      "questions": [
+        1,
+        2
+      ],
+      "file": "ingles-2023-01.mp3",
+      "bytes": 1182868,
+      "sha256": "bdf99d38c9e2c1abe4e3ade508955027101715a97e536069220fe14647ba6e42",
+      "gitSha": "d7cb1ae8467ac4663e6f78f7a9c8e31cdd8d66e9",
+      "sourceDuration": 147.7952,
+      "duration": 147.826939,
+      "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+    },
+    {
+      "track": 2,
+      "title": "Going to Mars",
+      "questions": [
+        3,
+        4
+      ],
+      "file": "ingles-2023-02.mp3",
+      "bytes": 974097,
+      "sha256": "7a8cb45a090afca9ebb0ca2035602a0e960642b4167c87b528dfcd336e0c737e",
+      "gitSha": "d8e7869bbe841c74a18351f09e94e1b09b4aa0a9",
+      "sourceDuration": 121.7072,
+      "duration": 121.730612,
+      "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+    },
+    {
+      "track": 3,
+      "title": "Agriculture",
+      "questions": [
+        5,
+        6
+      ],
+      "file": "ingles-2023-03.mp3",
+      "bytes": 769297,
+      "sha256": "8c14755f0973a0b48c77eab5883b76a777683d9078b377d807063ee3d76fa3bf",
+      "gitSha": "182b916f02bcc538ff683dbfe862554902b7cb1f",
+      "sourceDuration": 96.0992,
+      "duration": 96.130612,
+      "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+    },
+    {
+      "track": 4,
+      "title": "Plastic Trash",
+      "questions": [
+        7,
+        8,
+        9
+      ],
+      "file": "ingles-2023-04.mp3",
+      "bytes": 1468961,
+      "sha256": "8ed613a86ae2c5485368075dad8d0eb8d4e19f2ee260c7981ea50697a9baefd4",
+      "gitSha": "dcd296282540c7d9b92e0e57664a4240271f1e53",
+      "sourceDuration": 183.5552,
+      "duration": 183.588571,
+      "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+    },
+    {
+      "track": 5,
+      "title": "The Song of My Life",
+      "questions": [
+        10,
+        11
+      ],
+      "file": "ingles-2023-05.mp3",
+      "bytes": 1079005,
+      "sha256": "066f4feea329e53bf3235e69f964b2a2c2a962ea35b293f256cbbe2d43df43f2",
+      "gitSha": "2aeb889f929a31693dfe77c0efe6bea26806b172",
+      "sourceDuration": 134.8112,
+      "duration": 134.844082,
+      "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+    },
+    {
+      "track": 6,
+      "title": "Passenger",
+      "questions": [
+        12,
+        13,
+        14
+      ],
+      "file": "ingles-2023-06.mp3",
+      "bytes": 1325601,
+      "sha256": "95bd4e74b41014ed05968b2390e51d768a6d617e34ee986ab284fa4118e4a57d",
+      "gitSha": "4434d7904478adcbb844bf013f67c1a7a7bddc56",
+      "sourceDuration": 165.6272,
+      "duration": 165.668571,
+      "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+    },
+    {
+      "track": 7,
+      "title": "Certificate of Citizenship",
+      "questions": [
+        15,
+        16,
+        17
+      ],
+      "file": "ingles-2023-07.mp3",
+      "bytes": 1068765,
+      "sha256": "d4c4e057b1bb116eb815aec21d59d077f221e4f44c736ba2e6bda36152fcaf19",
+      "gitSha": "7fc1f3927eb656407bd50cf60d2a3b318bab473c",
+      "sourceDuration": 133.5392,
+      "duration": 133.564082,
+      "encoding": "MP3 mono 44.1 kHz 64 kbps; grabación completa sin recortes ni voz generada"
+    }
+  ],
+  "count": 17,
+  "explanations": 68,
+  "previousActive": 877,
+  "activeTotal": 894,
+  "previousEnglish": 130,
+  "activeEnglish": 147,
+  "scope": "Correspondencia editorial con la pauta y transcripciones automáticas; no se afirma escucha humana completa ni transcripción literal certificada. Indicadores del temario 2026 conservado.",
+  "items": [
+    {
+      "number": 1,
+      "questionId": "basica-ingles-311-2023-01",
+      "sourceKey": "A",
+      "practiceKey": "C",
+      "track": 1,
+      "sourcePage": 2,
+      "indicatorId": "1-0-3",
+      "syllabusPage": 1,
+      "syllabusIndicator": "Resumir información general de un texto escuchado, en una frase u oración.",
+      "alignment": "Se distinguen cuatro síntesis de alcance diferente para evitar dos alternativas casi equivalentes sobre naturaleza y felicidad. Se resume el efecto global informado.",
+      "evidence": {
+        "start": 75.8,
+        "end": 98.4
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 2,
+      "questionId": "basica-ingles-311-2023-02",
+      "sourceKey": "D",
+      "practiceKey": "A",
+      "track": 1,
+      "sourcePage": 2,
+      "indicatorId": "1-1-0",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Determinar el significado de ítems léxicos en un texto oral auténtico o adaptado, utilizando pistas contextuales y/o elementos paraverbales.",
+      "alignment": "Se usa la enumeración oral para interpretar vocabulario. Los distractores representan conceptos distintos y evitan enfrentar placer y satisfacción como categorías excluyentes.",
+      "evidence": {
+        "start": 75.8,
+        "end": 82.5
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 3,
+      "questionId": "basica-ingles-311-2023-03",
+      "sourceKey": "C",
+      "practiceKey": "C",
+      "track": 2,
+      "sourcePage": 3,
+      "indicatorId": "1-0-0",
+      "syllabusPage": 1,
+      "syllabusIndicator": "Identificar información literal a nivel global en textos orales auténticos o adaptados con diferentes propósitos comunicativos (informativo, argumentativo, persuasivo, entre otros).",
+      "alignment": "Se identifica el argumento global explícito y se distingue de ejemplos secundarios sobre condición física y selección de astronautas.",
+      "evidence": {
+        "start": 14,
+        "end": 23
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 4,
+      "questionId": "basica-ingles-311-2023-04",
+      "sourceKey": "B",
+      "practiceKey": "A",
+      "track": 2,
+      "sourcePage": 3,
+      "indicatorId": "1-1-0",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Determinar el significado de ítems léxicos en un texto oral auténtico o adaptado, utilizando pistas contextuales y/o elementos paraverbales.",
+      "alignment": "Se interpreta el significado contextual de stymied mediante la relación causal del pasaje, sin confundir obstaculizar con hacer desaparecer.",
+      "evidence": {
+        "start": 52.3,
+        "end": 67.5
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 5,
+      "questionId": "basica-ingles-311-2023-05",
+      "sourceKey": "C",
+      "practiceKey": "C",
+      "track": 3,
+      "sourcePage": 4,
+      "indicatorId": "1-0-9",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Determinar el tipo de situación comunicativa en la que se desarrolla la interacción presentada en el texto oral.",
+      "alignment": "La situación comunicativa se fundamenta en la organización expositiva y los ejemplos. No se evalúan efectos de sonido que no se verificaron manualmente.",
+      "evidence": {
+        "start": 7.5,
+        "end": 69.2
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 6,
+      "questionId": "basica-ingles-311-2023-06",
+      "sourceKey": "C",
+      "practiceKey": "A",
+      "track": 3,
+      "sourcePage": 4,
+      "indicatorId": "1-0-8",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Determinar el propósito comunicativo (dar instrucciones, persuadir, entregar o solicitar información, emitir una opinión, vender un producto, etc.) en un texto oral auténtico o adaptado.",
+      "alignment": "Se distingue el propósito informativo global de una instrucción operativa, un relato biográfico y una venta de marca.",
+      "evidence": {
+        "start": 11.5,
+        "end": 88.9
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 7,
+      "questionId": "basica-ingles-311-2023-07",
+      "sourceKey": "B",
+      "practiceKey": "A",
+      "track": 4,
+      "sourcePage": 5,
+      "indicatorId": "1-0-4",
+      "syllabusPage": 1,
+      "syllabusIndicator": "Establecer relaciones entre diferentes componentes o ideas de un texto oral (por ejemplo, establecer semejanzas entre dos o más ideas, contrastar ideas presentadas en diferentes partes del texto, establecer relaciones de causa y efecto entre enunciados de un texto, relacionar el problema y solución planteados en un texto, etc.).",
+      "alignment": "Se comparan las ideas de dos invitados y se excluye expresamente al narrador para evitar confundir tres voces con dos aportes.",
+      "evidence": {
+        "start": 51.7,
+        "end": 181.1
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 8,
+      "questionId": "basica-ingles-311-2023-08",
+      "sourceKey": "C",
+      "practiceKey": "B",
+      "track": 4,
+      "sourcePage": 5,
+      "indicatorId": "1-0-2",
+      "syllabusPage": 1,
+      "syllabusIndicator": "Extraer conclusiones a partir de la información presentada en un texto oral.",
+      "alignment": "La conclusión relaciona la afirmación inclusiva con el llamado a colaborar; se evita transformarla en una supuesta culpa idéntica para todas las personas.",
+      "evidence": {
+        "start": 130.1,
+        "end": 140.3
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 9,
+      "questionId": "basica-ingles-311-2023-09",
+      "sourceKey": "A",
+      "practiceKey": "D",
+      "track": 4,
+      "sourcePage": 5,
+      "indicatorId": "1-0-7",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Identificar el destinatario de un texto oral determinado.",
+      "alignment": "Se identifica al destinatario mediante el registro accesible y la interpelación inclusiva, sin reducirlo a uno de los sectores mencionados.",
+      "evidence": {
+        "start": 88.8,
+        "end": 140.3
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 10,
+      "questionId": "basica-ingles-311-2023-10",
+      "sourceKey": "A",
+      "practiceKey": "C",
+      "track": 5,
+      "sourcePage": 6,
+      "indicatorId": "1-0-9",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Determinar el tipo de situación comunicativa en la que se desarrolla la interacción presentada en el texto oral.",
+      "alignment": "Se reconoce el rasgo observable de respuestas separadas a un tema común, sin inferir el protocolo completo de una entrevista a partir de un montaje.",
+      "evidence": {
+        "start": 0.3,
+        "end": 108.4
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 11,
+      "questionId": "basica-ingles-311-2023-11",
+      "sourceKey": "C",
+      "practiceKey": "B",
+      "track": 5,
+      "sourcePage": 6,
+      "indicatorId": "1-1-1",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Interpretar el significado de expresiones idiomáticas y/o modismos en un texto oral auténtico o adaptado, utilizando pistas contextuales y/o elementos paraverbales.",
+      "alignment": "Se interpreta una expresión figurada dentro del desafío musical que le da sentido, relacionando el problema previo con la solución descubierta.",
+      "evidence": {
+        "start": 14.6,
+        "end": 47.2
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 12,
+      "questionId": "basica-ingles-311-2023-12",
+      "sourceKey": "B",
+      "practiceKey": "D",
+      "track": 6,
+      "sourcePage": 7,
+      "indicatorId": "1-0-6",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Inferir información local de un texto oral, recurriendo a pistas contextuales y/o elementos paraverbales.",
+      "alignment": "La actitud se infiere de un pasaje delimitado y sus elecciones léxicas; no depende solo de una impresión no contrastada sobre la entonación.",
+      "evidence": {
+        "start": 150.7,
+        "end": 164.8
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 13,
+      "questionId": "basica-ingles-311-2023-13",
+      "sourceKey": "D",
+      "practiceKey": "A",
+      "track": 6,
+      "sourcePage": 7,
+      "indicatorId": "1-0-1",
+      "syllabusPage": 1,
+      "syllabusIndicator": "Identificar información literal a nivel local en textos orales auténticos o adaptados con diferentes propósitos comunicativos (informativo, argumentativo, persuasivo, entre otros).",
+      "alignment": "Se localiza un dato manteniendo el matiz as little as y distinguiendo ubicación, proceso y unidad. Las cifras se atribuyen a la grabación histórica.",
+      "evidence": {
+        "start": 94.2,
+        "end": 101.6
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 14,
+      "questionId": "basica-ingles-311-2023-14",
+      "sourceKey": "A",
+      "practiceKey": "D",
+      "track": 6,
+      "sourcePage": 7,
+      "indicatorId": "1-0-8",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Determinar el propósito comunicativo (dar instrucciones, persuadir, entregar o solicitar información, emitir una opinión, vender un producto, etc.) en un texto oral auténtico o adaptado.",
+      "alignment": "Se determina el propósito comercial global y el destinatario institucional, distinguiéndolos de los datos informativos utilizados como apoyo.",
+      "evidence": {
+        "start": 130.1,
+        "end": 164.8
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 15,
+      "questionId": "basica-ingles-311-2023-15",
+      "sourceKey": "D",
+      "practiceKey": "B",
+      "track": 7,
+      "sourcePage": 8,
+      "indicatorId": "1-0-1",
+      "syllabusPage": 1,
+      "syllabusIndicator": "Identificar información literal a nivel local en textos orales auténticos o adaptados con diferentes propósitos comunicativos (informativo, argumentativo, persuasivo, entre otros).",
+      "alignment": "Se identifica una referencia familiar explícita, diferenciando al titular del documento de las personas mencionadas después.",
+      "evidence": {
+        "start": 12.5,
+        "end": 19.2
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 16,
+      "questionId": "basica-ingles-311-2023-16",
+      "sourceKey": "A",
+      "practiceKey": "D",
+      "track": 7,
+      "sourcePage": 8,
+      "indicatorId": "1-0-6",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Inferir información local de un texto oral, recurriendo a pistas contextuales y/o elementos paraverbales.",
+      "alignment": "Se interpreta el sentido pragmático local mediante el comentario exacto y el contraste contextual, sin deducir consejos médicos ni rasgos de carácter.",
+      "evidence": {
+        "start": 82.1,
+        "end": 91.6
+      },
+      "status": "adaptada"
+    },
+    {
+      "number": 17,
+      "questionId": "basica-ingles-311-2023-17",
+      "sourceKey": "A",
+      "practiceKey": "A",
+      "track": 7,
+      "sourcePage": 8,
+      "indicatorId": "1-1-0",
+      "syllabusPage": 2,
+      "syllabusIndicator": "Determinar el significado de ítems léxicos en un texto oral auténtico o adaptado, utilizando pistas contextuales y/o elementos paraverbales.",
+      "alignment": "Se distingue el adjetivo emotivo del significado de desplazamiento, una confusión posible por el contexto migratorio del relato.",
+      "evidence": {
+        "start": 48.1,
+        "end": 56.3
+      },
+      "status": "adaptada"
+    }
+  ]
+}

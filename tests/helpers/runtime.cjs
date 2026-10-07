@@ -9,7 +9,7 @@ const specialties = {
   'basica-matematica': 209,
   'basica-ciencias': 132,
   'basica-historia': 130,
-  'basica-ingles': 130,
+  'basica-ingles': 147,
   'basica-lenguaje': 130,
   'media-lengua': 146
 };
